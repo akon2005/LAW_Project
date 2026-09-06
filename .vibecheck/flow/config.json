@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "projectName": "LAW project",
+  "userName": "developer",
+  "skillLevel": "intermediate",
+  "outputFolder": ".vibecheck/flow",
+  "planningArtifacts": ".vibecheck\\flow\\planning-artifacts",
+  "implementationArtifacts": ".vibecheck\\flow\\implementation-artifacts",
+  "installedAt": "2026-07-12T06:26:20.373Z",
+  "ide": [
+    "vscode"
+  ]
+}

@@ -1,0 +1,139 @@
+import React from 'react';
+
+export default function ApiHubAnimation() {
+  return (
+    <div className="relative w-full h-full flex justify-center items-center opacity-40">
+      <svg viewBox="0 0 600 440" className="w-full max-w-[800px] h-auto pointer-events-none" role="img" aria-label="Animated diagram of LAW API endpoints orbiting a central hub">
+        <defs>
+          <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#d4af37" stopOpacity="0.3"></stop>
+            <stop offset="60%" stopColor="#0B3D91" stopOpacity="0.4"></stop>
+            <stop offset="100%" stopColor="#262626" stopOpacity="0"></stop>
+          </radialGradient>
+          <linearGradient id="line-grad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.05"></stop>
+            <stop offset="50%" stopColor="#ffffff" stopOpacity="0.5"></stop>
+            <stop offset="100%" stopColor="#ffffff" stopOpacity="0.05"></stop>
+          </linearGradient>
+          <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="blur"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+        </defs>
+        
+        <g className="orbit-slow" style={{ transformOrigin: '300px 210px' }}>
+          <circle cx="300" cy="210" r="170" fill="none" stroke="rgba(255,255,255,0.15)" strokeDasharray="2 6"></circle>
+        </g>
+        <g className="orbit-fast" style={{ transformOrigin: '300px 210px' }}>
+          <circle cx="300" cy="210" r="120" fill="none" stroke="rgba(255,255,255,0.18)" strokeDasharray="1 7"></circle>
+        </g>
+        <circle cx="300" cy="210" r="120" fill="url(#hub-glow)"></circle>
+        
+        <g>
+          <path d="M80,70 Q190,110 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M80,70 Q190,110 300,210" stroke="#e5e5e5" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '3s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#e5e5e5" filter="url(#soft-glow)">
+            <animateMotion dur="3.2s" repeatCount="indefinite" path="M80,70 Q190,110 300,210"></animateMotion>
+          </circle>
+        </g>
+        <g>
+          <path d="M360,50 Q330,100 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M360,50 Q330,100 300,210" stroke="#d4af37" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '3.4s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#d4af37" filter="url(#soft-glow)">
+            <animateMotion dur="3.6s" repeatCount="indefinite" path="M360,50 Q330,100 300,210"></animateMotion>
+          </circle>
+        </g>
+        <g>
+          <path d="M540,130 Q420,140 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M540,130 Q420,140 300,210" stroke="#e5e5e5" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '3.8s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#e5e5e5" filter="url(#soft-glow)">
+            <animateMotion dur="4s" repeatCount="indefinite" path="M540,130 Q420,140 300,210"></animateMotion>
+          </circle>
+        </g>
+        <g>
+          <path d="M520,320 Q410,235 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M520,320 Q410,235 300,210" stroke="#d4af37" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '4.2s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#d4af37" filter="url(#soft-glow)">
+            <animateMotion dur="4.4s" repeatCount="indefinite" path="M520,320 Q410,235 300,210"></animateMotion>
+          </circle>
+        </g>
+        <g>
+          <path d="M300,380 Q300,265 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M300,380 Q300,265 300,210" stroke="#e5e5e5" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '4.6s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#e5e5e5" filter="url(#soft-glow)">
+            <animateMotion dur="4.8s" repeatCount="indefinite" path="M300,380 Q300,265 300,210"></animateMotion>
+          </circle>
+        </g>
+        <g>
+          <path d="M70,300 Q185,225 300,210" stroke="url(#line-grad)" strokeWidth="1.2" fill="none" opacity="0.7"></path>
+          <path d="M70,300 Q185,225 300,210" stroke="#e5e5e5" strokeWidth="1.4" fill="none" className="dash-flow" style={{ animationDuration: '5s', opacity: 0.85 }}></path>
+          <circle r="3" fill="#e5e5e5" filter="url(#soft-glow)">
+            <animateMotion dur="5.2s" repeatCount="indefinite" path="M70,300 Q185,225 300,210"></animateMotion>
+          </circle>
+        </g>
+        
+        <g>
+          <circle cx="80" cy="70" r="18" fill="#141414" stroke="#e5e5e5" strokeWidth="1.6"></circle>
+          <circle cx="80" cy="70" r="5" fill="#e5e5e5" className="pulse-soft"></circle>
+          <g transform="translate(102, 74)">
+            <rect x="0" y="-12" rx="6" ry="6" width="118" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="7" y="3" textAnchor="start" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">GET /precedents</text>
+          </g>
+        </g>
+        <g>
+          <circle cx="360" cy="50" r="18" fill="#141414" stroke="#d4af37" strokeWidth="1.6"></circle>
+          <circle cx="360" cy="50" r="5" fill="#d4af37" className="pulse-soft"></circle>
+          <g transform="translate(240, 54)">
+            <rect x="0" y="-12" rx="6" ry="6" width="98" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="91" y="3" textAnchor="end" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">POST /search</text>
+          </g>
+        </g>
+        <g>
+          <circle cx="540" cy="130" r="18" fill="#141414" stroke="#e5e5e5" strokeWidth="1.6"></circle>
+          <circle cx="540" cy="130" r="5" fill="#e5e5e5" className="pulse-soft"></circle>
+          <g transform="translate(420, 134)">
+            <rect x="0" y="-12" rx="6" ry="6" width="98" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="91" y="3" textAnchor="end" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">GET /statutes</text>
+          </g>
+        </g>
+        <g>
+          <circle cx="520" cy="320" r="18" fill="#141414" stroke="#d4af37" strokeWidth="1.6"></circle>
+          <circle cx="520" cy="320" r="5" fill="#d4af37" className="pulse-soft"></circle>
+          <g transform="translate(404, 324)">
+            <rect x="0" y="-12" rx="6" ry="6" width="94" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="87" y="3" textAnchor="end" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">GET /articles</text>
+          </g>
+        </g>
+        <g>
+          <circle cx="300" cy="380" r="18" fill="#141414" stroke="#e5e5e5" strokeWidth="1.6"></circle>
+          <circle cx="300" cy="380" r="5" fill="#e5e5e5" className="pulse-soft"></circle>
+          <g transform="translate(322, 384)">
+            <rect x="0" y="-12" rx="6" ry="6" width="88" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="7" y="3" textAnchor="start" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">GET /cases</text>
+          </g>
+        </g>
+        <g>
+          <circle cx="70" cy="300" r="18" fill="#141414" stroke="#e5e5e5" strokeWidth="1.6"></circle>
+          <circle cx="70" cy="300" r="5" fill="#e5e5e5" className="pulse-soft"></circle>
+          <g transform="translate(92, 304)">
+            <rect x="0" y="-12" rx="6" ry="6" width="108" height="22" fill="#141414" stroke="rgba(255,255,255,0.15)"></rect>
+            <text x="7" y="3" textAnchor="start" fill="#d4d4d8" fontSize="10.5" fontFamily="var(--font-mono)">GET /documents</text>
+          </g>
+        </g>
+        
+        <g>
+          <circle cx="300" cy="210" r="40" fill="#141414" stroke="#ffffff" strokeOpacity="0.5" strokeWidth="1.8"></circle>
+          <circle cx="300" cy="210" r="40" fill="none" stroke="#d4af37" strokeOpacity="0.6">
+            <animate attributeName="r" values="40;52;40" dur="3.4s" repeatCount="indefinite"></animate>
+            <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.4s" repeatCount="indefinite"></animate>
+          </circle>
+          <text x="300" y="206" textAnchor="middle" fill="#fafafa" fontSize="13" fontFamily="var(--font-display)" fontWeight="700">LAW Hub</text>
+          <text x="300" y="221" textAnchor="middle" fill="#a8a29e" fontSize="9" fontFamily="var(--font-mono)" letterSpacing="1">v1 · api</text>
+        </g>
+      </svg>
+    </div>
+  );
+}
