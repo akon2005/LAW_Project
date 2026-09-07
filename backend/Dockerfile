@@ -6,25 +6,21 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Install system dependencies
+# Install lightweight system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install PyTorch CPU first to avoid heavy CUDA packages (~2.5GB -> ~180MB)
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir --extra-index-url https://download.pytorch.org/whl/cpu \
-    torch==2.2.2+cpu torchvision torchaudio
-
-# Copy and install python dependencies
+# Copy requirements and install CPU-only torch and python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
-# Pre-download SentenceTransformer model into Docker image layer
+# Pre-download SentenceTransformer model into Docker image layer so startup is instant
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
 
-# Copy application code and datasets
+# Copy application code and datasets (respecting .dockerignore)
 COPY . /app
 
 EXPOSE 8000

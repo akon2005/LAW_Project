@@ -10,7 +10,10 @@ const getBaseUrl = () => {
     const cleanUrl = envUrl.replace(/\/+$/, '');
     return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
   }
-  return '/api';
+  if (import.meta.env.DEV) {
+    return '/api';
+  }
+  return 'https://vidhiveda-backend.onrender.com/api';
 };
 
 const api = axios.create({

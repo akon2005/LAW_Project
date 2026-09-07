@@ -13,7 +13,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 DATASET_DIR = DATA_DIR / "dataset"
-CHROMA_DIR = DATA_DIR / "chromadb"
+CHROMA_DIR = (DATA_DIR / "chroma_store") if (DATA_DIR / "chroma_store").exists() else (DATA_DIR / "chromadb")
 DB_DIR = DATA_DIR / "db"
 
 # Ensure directories exist
