@@ -1,0 +1,29 @@
+[
+  {
+    "doc_id": "const_parts",
+    "case_name": "Constitutional Framework - Parts",
+    "act_section": "Constitution of India, Parts",
+    "category": "Constitutional",
+    "description": "Overview of the 25 Parts of the Indian Constitution, detailing structural provisions, fundamental rights, and directive principles.",
+    "content": "The Constitution of India consists of 25 Parts. Key parts include: Part III (Fundamental Rights, Articles 12-35), Part IV (Directive Principles of State Policy, Articles 36-51), Part IVA (Fundamental Duties, Article 51A), Part V (The Union, Articles 52-151), Part VI (The States, Articles 152-237), Part XI (Relations between Union and States, Articles 245-263), Part XII (Finance, Property, Contracts and Suits, Articles 264-300A), Part XV (Elections, Articles 324-329A), Part XVIII (Emergency Provisions, Articles 352-360), and Part XX (Amendment of the Constitution, Article 368). These structure the governance of India.",
+    "valid_from": "1950-01-26"
+  },
+  {
+    "doc_id": "const_schedules",
+    "case_name": "Constitutional Framework - Schedules",
+    "act_section": "Constitution of India, Schedules 1-12",
+    "category": "Constitutional",
+    "description": "Overview of the 12 Schedules of the Indian Constitution detailing territories, oaths, languages, lists, and local governance.",
+    "content": "The 12 Schedules of the Indian Constitution are: Schedule 1: States and Union Territories. Schedule 2: Emoluments for high officials. Schedule 3: Oaths and Affirmations. Schedule 4: Allocation of seats in the Rajya Sabha. Schedule 5: Administration and control of Scheduled Areas and Scheduled Tribes. Schedule 6: Administration of Tribal Areas in Assam, Meghalaya, Tripura, and Mizoram. Schedule 7: Legislative Lists (Union, State, and Concurrent). Schedule 8: Official Languages. Schedule 9: Validation of certain Acts and Regulations (Land Reforms). Schedule 10: Anti-Defection provisions. Schedule 11: Panchayats (Rural local government). Schedule 12: Municipalities (Urban local government).",
+    "valid_from": "1950-01-26"
+  },
+  {
+    "doc_id": "const_basic_structure",
+    "case_name": "Basic Structure Doctrine",
+    "act_section": "Constitution of India, Article 368",
+    "category": "Constitutional",
+    "description": "Explanation of the Basic Structure Doctrine established in Kesavananda Bharati case.",
+    "content": "The Basic Structure Doctrine is an Indian judicial principle establishing that the Constitution of India has certain basic features that cannot be altered or destroyed through amendments by the parliament under Article 368. This doctrine was formalized by the Supreme Court of India in the landmark Kesavananda Bharati v. State of Kerala (1973) case. Key elements of the basic structure include the supremacy of the Constitution, a republican and democratic form of government, the secular character of the Constitution, separation of powers between the legislature, executive and the judiciary, and the federal character of the Constitution.",
+    "valid_from": "1973-04-24"
+  }
+]

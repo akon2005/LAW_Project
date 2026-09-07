@@ -1,0 +1,29 @@
+[
+  {
+    "doc_id": "crim_map_ipc_bns",
+    "case_name": "Criminal Law Mapping: IPC to BNS",
+    "act_section": "Indian Penal Code to Bharatiya Nyaya Sanhita",
+    "category": "Criminal",
+    "description": "Mapping of major offences from Indian Penal Code (IPC) to Bharatiya Nyaya Sanhita (BNS).",
+    "content": "Murder: IPC 302 -> BNS 103(1). Attempt to Murder: IPC 307 -> BNS 109. Dowry Death: IPC 304B -> BNS 80. Rape: IPC 375/376 -> BNS 63/64. Cruelty: IPC 498A -> BNS 85. Theft: IPC 379 -> BNS 303. Cheating: IPC 420 -> BNS 318. Criminal Breach of Trust: IPC 406 -> BNS 316. Extortion: IPC 384 -> BNS 308. Conspiracy: IPC 120B -> BNS 61. Sedition: IPC 124A -> BNS 152 (Acts endangering sovereignty). Common Intention: IPC 34 -> BNS 3(5). New specific offences in BNS include: Mob Lynching -> BNS 103(2). Snatching -> BNS 304. Terrorism -> BNS 113. Organized Crime -> BNS 111.",
+    "valid_from": "2024-07-01"
+  },
+  {
+    "doc_id": "crim_map_crpc_bnss",
+    "case_name": "Criminal Law Mapping: CrPC to BNSS",
+    "act_section": "Code of Criminal Procedure to Bharatiya Nagarik Suraksha Sanhita",
+    "category": "Criminal",
+    "description": "Mapping of major procedural sections from CrPC to BNSS.",
+    "content": "Arrest without warrant: CrPC 41 -> BNSS 35. Information in cognizable cases (FIR): CrPC 154 -> BNSS 173. Quashing of proceedings (Inherent powers of High Court): CrPC 482 -> BNSS 528. Regular Bail: CrPC 439 -> BNSS 483. Anticipatory Bail: CrPC 438 -> BNSS 482. Pre-cognizance hearing requirement for the accused: newly introduced under BNSS 223.",
+    "valid_from": "2024-07-01"
+  },
+  {
+    "doc_id": "crim_map_iea_bsa",
+    "case_name": "Criminal Law Mapping: Evidence Act to BSA",
+    "act_section": "Indian Evidence Act to Bharatiya Sakshya Adhiniyam",
+    "category": "Criminal",
+    "description": "Mapping of major evidentiary rules from Indian Evidence Act (IEA) to Bharatiya Sakshya Adhiniyam (BSA).",
+    "content": "Dying Declaration: IEA 32(1) -> BSA 26(a). Confession to Police Officer not to be proved: IEA 25 -> BSA 23. Admissibility of Electronic Records: IEA 65B -> BSA 63.",
+    "valid_from": "2024-07-01"
+  }
+]

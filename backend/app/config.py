@@ -50,5 +50,13 @@ ANTHROPIC_MODEL = os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-20250514")
 
 # ── Server ────────────────────────────────────────────────────────────
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
-API_PORT = int(os.getenv("API_PORT", "8000"))
-CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://localhost:3000").split(",")
+API_PORT = int(os.getenv("PORT", os.getenv("API_PORT", "8000")))
+
+raw_cors = os.getenv("CORS_ORIGINS", "*")
+if raw_cors == "*" or not raw_cors.strip():
+    CORS_ORIGINS = ["*"]
+else:
+    CORS_ORIGINS = [origin.strip() for origin in raw_cors.split(",") if origin.strip()]
+    if "https://frontend-akon2005s-projects.vercel.app" not in CORS_ORIGINS:
+        CORS_ORIGINS.append("https://frontend-akon2005s-projects.vercel.app")
+

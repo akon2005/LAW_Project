@@ -1,0 +1,20 @@
+[
+  {
+    "doc_id": "court_hierarchy_structure",
+    "case_name": "Indian Court Hierarchy",
+    "act_section": "Constitution of India",
+    "category": "Judiciary",
+    "description": "Structure of the Indian Judicial System.",
+    "content": "The Indian Judicial System is a unified hierarchy. 1. Supreme Court of India: The apex court with Original (Art 131), Appellate (Art 132-136), Advisory (Art 143), and Writ (Art 32) jurisdiction. 2. High Courts: 25 High Courts across states with Writ jurisdiction under Art 226 and appellate jurisdiction over lower courts. 3. District/Sessions Courts: The principal civil and criminal courts at the district level. 4. Tribunals: Specialized bodies such as the Central Administrative Tribunal (CAT) established under Art 323A.",
+    "valid_from": "1950-01-26"
+  },
+  {
+    "doc_id": "court_case_types",
+    "case_name": "Major Petition and Case Types",
+    "act_section": "Supreme Court Rules / Constitution",
+    "category": "Judiciary",
+    "description": "Common case types filed in higher judiciary.",
+    "content": "Writ Petition: Filed under Art 32 (SC) or Art 226 (HC) for violation of fundamental rights. Special Leave Petition (SLP): Filed under Art 136 against any judgment from any court/tribunal in India. Civil Appeal: Regular appeals in civil matters. Criminal Appeal: Regular appeals in criminal matters. Public Interest Litigation (PIL): Petitions for public cause. Review Petition: Filed under Art 137 to review a binding judgment of the Supreme Court. Curative Petition: The final remedy to cure gross miscarriage of justice after dismissal of a review petition.",
+    "valid_from": "1950-01-26"
+  }
+]

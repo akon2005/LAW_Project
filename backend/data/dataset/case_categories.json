@@ -1,0 +1,20 @@
+[
+  {
+    "doc_id": "cat_01_09",
+    "case_name": "Supreme Court Category Codes 01 to 09",
+    "act_section": "Supreme Court Rules",
+    "category": "Court Procedure",
+    "description": "Official Supreme Court of India case category codes 01 to 09.",
+    "content": "01: Admiralty/Maritime. 02: Constitutional Functionary Appointments. 03: Arbitration/ADR. 04: Armed Forces. 05: Aviation. 06: Banking. 07: Bar Council. 08: Benami Transactions. 09: Civil Law.",
+    "valid_from": "2025-04-21"
+  },
+  {
+    "doc_id": "cat_10_40",
+    "case_name": "Supreme Court Category Codes 10 to 40",
+    "act_section": "Supreme Court Rules",
+    "category": "Court Procedure",
+    "description": "Official Supreme Court of India case category codes 10 to 40 covering major domains.",
+    "content": "10: Criminal Law. 11: Corporate Law. 12: Direct Taxation. 13: Indirect Taxation. 14: Labour and Employment. 15: Human Rights and PIL. 16: Cyber Law and IT. 17: Environmental Law. 18: Family Law. 19: Land Acquisition. 20: Election Matters. 21: Service Matters. 22: Consumer Protection. 23: Intellectual Property. 24: Contempt of Court. (Includes categories up to 40 for administrative and specialized tribunals).",
+    "valid_from": "2025-04-21"
+  }
+]

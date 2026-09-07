@@ -22,11 +22,17 @@ yarn-debug.log*
 yarn-error.log*
 
 # ---- Backend build/data artifacts ----
-backend/data/
+backend/data/.embed_cache.json
+backend/data/processed/
+backend/data/chromadb/
+backend/data/db/
+backend/data/doj_dataset.json
 backend/errors.log
 *.log
 *.sqlite3
 *.db
+!backend/data/metadata.db
+!backend/data/chroma_store/**
 
 # ---- Datasets / large data ----
 indian-supreme-court-judgments/

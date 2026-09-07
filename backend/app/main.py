@@ -56,10 +56,12 @@ async def global_exception_handler(request, exc):
     traceback.print_exc()
     return JSONResponse(status_code=500, content={"detail": str(exc)})
 
+is_wildcard = "*" in CORS_ORIGINS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=CORS_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"] if is_wildcard else CORS_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_credentials=not is_wildcard,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -73,6 +75,17 @@ app.include_router(trends.router, prefix="/api", tags=["Trend Analysis"])
 app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
 
 
+@app.get("/")
+async def root():
+    return {
+        "status": "online",
+        "service": "VIDHIVEDA Legal Research API",
+        "docs": "/docs",
+        "health": "/api/health",
+    }
+
+
+@app.get("/health")
 @app.get("/api/health")
 async def health_check():
     doc_count = 0
@@ -94,3 +107,4 @@ async def health_check():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app.main:app", host=API_HOST, port=API_PORT, reload=True)
+

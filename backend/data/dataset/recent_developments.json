@@ -1,0 +1,20 @@
+[
+  {
+    "doc_id": "recent_criminal_laws",
+    "case_name": "New Criminal Laws 2024",
+    "act_section": "BNS, BNSS, BSA",
+    "category": "Criminal",
+    "description": "Effective dates for the new criminal statutes replacing IPC, CrPC, and Evidence Act.",
+    "content": "The Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA) came into effect on July 1, 2024, replacing the colonial-era Indian Penal Code (IPC), Code of Criminal Procedure (CrPC), and Indian Evidence Act (IEA) respectively.",
+    "valid_from": "2024-07-01"
+  },
+  {
+    "doc_id": "draft_ai_regulations_2026",
+    "case_name": "Draft AI in Courts Regulations 2026",
+    "act_section": "Draft Guidelines",
+    "category": "Administrative",
+    "description": "Key regulations for the use of AI in judicial systems proposed for 2026.",
+    "content": "The Draft AI in Courts Regulations 2026, introduced in June 2026, outline the boundaries of artificial intelligence in the Indian judiciary. Key rules include: 1. No AI adjudication (AI cannot issue verdicts or binding legal decisions). 2. No black-box risk scoring for bail or sentencing. 3. Lawyer liability for AI hallucinations in submissions. 4. Mandatory disclosure of AI-use in any legal drafting or research presented to the court.",
+    "valid_from": "2026-06-01"
+  }
+]

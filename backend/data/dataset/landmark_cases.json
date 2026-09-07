@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id": "lm_001", "case_name": "Kesavananda Bharati Sripadagalvaru & Ors. v. State of Kerala", "year": 1973, "court": "Supreme Court of India", "bench_size": "13 Judges", "law_area": "Constitutional", "act_section": "Constitution of India, Article 368", "facts": "Challenge to the 24th, 25th, and 29th Amendments which curtailed fundamental rights and expanded Parliament's amending power.", "holding": "Parliament can amend any part of the Constitution, but cannot alter its 'Basic Structure'.", "citation": "(1973) 4 SCC 225", "valid_from": "1973-04-24"
+  },
+  {
+    "doc_id": "lm_002", "case_name": "Justice K.S. Puttaswamy (Retd.) v. Union of India", "year": 2017, "court": "Supreme Court of India", "bench_size": "9 Judges", "law_area": "Constitutional", "act_section": "Constitution of India, Article 21", "facts": "Challenge to the Aadhaar scheme on the grounds that it violated the right to privacy.", "holding": "Right to Privacy is a fundamental right intrinsic to life and liberty under Article 21.", "citation": "(2017) 10 SCC 1", "valid_from": "2017-08-24"
+  },
+  {
+    "doc_id": "lm_003", "case_name": "Navtej Singh Johar v. Union of India", "year": 2018, "court": "Supreme Court of India", "bench_size": "5 Judges", "law_area": "Constitutional", "act_section": "IPC Section 377", "facts": "Challenge to the constitutionality of Section 377 of the IPC which criminalized consensual same-sex sexual acts.", "holding": "Section 377 IPC is unconstitutional insofar as it criminalizes consensual sexual conduct between adults of the same sex.", "citation": "(2018) 10 SCC 1", "valid_from": "2018-09-06"
+  },
+  {
+    "doc_id": "lm_004", "case_name": "D.K. Basu v. State of West Bengal", "year": 1996, "court": "Supreme Court of India", "bench_size": "2 Judges", "law_area": "Criminal", "act_section": "Constitution of India, Articles 21, 22", "facts": "A PIL was filed addressing custodial deaths and police violence.", "holding": "Established detailed guidelines to be followed by police during arrest and detention to prevent custodial torture.", "citation": "(1997) 1 SCC 416", "valid_from": "1996-12-18"
+  },
+  {
+    "doc_id": "lm_005", "case_name": "Lalita Kumari v. Govt. of U.P.", "year": 2013, "court": "Supreme Court of India", "bench_size": "5 Judges", "law_area": "Criminal", "act_section": "CrPC Section 154", "facts": "Refusal by police to register an FIR based on a complaint of a cognizable offence.", "holding": "Registration of FIR is mandatory under Section 154 CrPC if the information discloses commission of a cognizable offence.", "citation": "(2014) 2 SCC 1", "valid_from": "2013-11-12"
+  },
+  {
+    "doc_id": "lm_006", "case_name": "Vishaka & Ors. v. State of Rajasthan", "year": 1997, "court": "Supreme Court of India", "bench_size": "3 Judges", "law_area": "Human Rights", "act_section": "Constitution of India, Articles 14, 15, 21", "facts": "PIL filed after the gang rape of a social worker, Bhanwari Devi, demanding workplace safety.", "holding": "Laid down the 'Vishaka Guidelines' to prevent and address sexual harassment of women at the workplace.", "citation": "(1997) 6 SCC 241", "valid_from": "1997-08-13"
+  },
+  {
+    "doc_id": "lm_007", "case_name": "Shayara Bano v. Union of India", "year": 2017, "court": "Supreme Court of India", "bench_size": "5 Judges", "law_area": "Family", "act_section": "Muslim Personal Law", "facts": "Challenge to the practice of Triple Talaq (talaq-e-biddat) among Muslims.", "holding": "The practice of instant Triple Talaq is unconstitutional and void as it violates Article 14.", "citation": "(2017) 9 SCC 1", "valid_from": "2017-08-22"
+  },
+  {
+    "doc_id": "lm_008", "case_name": "Vineeta Sharma v. Rakesh Sharma", "year": 2020, "court": "Supreme Court of India", "bench_size": "3 Judges", "law_area": "Family", "act_section": "Hindu Succession Act, Section 6", "facts": "Conflict in interpretations of the 2005 amendment granting coparcenary rights to daughters.", "holding": "Daughters have equal coparcenary rights in Hindu Undivided Family property irrespective of whether the father was alive at the time of the 2005 amendment.", "citation": "(2020) 9 SCC 1", "valid_from": "2020-08-11"
+  },
+  {
+    "doc_id": "lm_009", "case_name": "Bangalore Water Supply and Sewerage Board v. A. Rajappa", "year": 1978, "court": "Supreme Court of India", "bench_size": "7 Judges", "law_area": "Labour", "act_section": "Industrial Disputes Act, 1947", "facts": "Dispute over the definition of 'industry' under the Industrial Disputes Act.", "holding": "Provided a broad definition of 'industry' based on the triple test: systematic activity, cooperation between employer and employee, and production of goods/services.", "citation": "(1978) 2 SCC 213", "valid_from": "1978-02-21"
+  },
+  {
+    "doc_id": "lm_010", "case_name": "Swiss Ribbons Pvt. Ltd. v. Union of India", "year": 2019, "court": "Supreme Court of India", "bench_size": "2 Judges", "law_area": "Commercial", "act_section": "Insolvency and Bankruptcy Code, 2016", "facts": "Constitutional challenge to various provisions of the IBC.", "holding": "Upheld the constitutional validity of the IBC in its entirety, emphasizing the economic revival objective of the Code.", "citation": "(2019) 4 SCC 17", "valid_from": "2019-01-25"
+  },
+  {
+    "doc_id": "lm_011", "case_name": "Gayatri Balasamy v. ISG Novasoft Technologies Ltd.", "year": 2014, "court": "Madras High Court", "bench_size": "1 Judge", "law_area": "Civil", "act_section": "Arbitration and Conciliation Act, 1996", "facts": "Dispute on whether a court under Section 34 can modify an arbitral award.", "holding": "Court cannot modify the arbitral award under Section 34, it can only set it aside.", "citation": "(2015) 1 MLJ 5", "valid_from": "2014-09-02"
+  },
+  {
+    "doc_id": "lm_012", "case_name": "Vodafone International Holdings BV v. Union of India", "year": 2012, "court": "Supreme Court of India", "bench_size": "3 Judges", "law_area": "Taxation", "act_section": "Income Tax Act, 1961, Section 9", "facts": "Tax department sought to tax the offshore transfer of shares between non-residents resulting in indirect transfer of Indian assets.", "holding": "Offshore share transactions not taxable in India unless explicitly provided by law. Led to retrospective taxation amendment.", "citation": "(2012) 6 SCC 613", "valid_from": "2012-01-20"
+  },
+  {
+    "doc_id": "lm_013", "case_name": "Maneka Gandhi v. Union of India", "year": 1978, "court": "Supreme Court of India", "bench_size": "7 Judges", "law_area": "Administrative", "act_section": "Constitution of India, Article 21", "facts": "Impounding of passport without giving reasons or a hearing.", "holding": "Article 21 requires the procedure established by law to be fair, just, and reasonable. Interlinked Articles 14, 19, and 21 ('Golden Triangle').", "citation": "(1978) 1 SCC 248", "valid_from": "1978-01-25"
+  },
+  {
+    "doc_id": "lm_014", "case_name": "Shreya Singhal v. Union of India", "year": 2015, "court": "Supreme Court of India", "bench_size": "2 Judges", "law_area": "Cyber", "act_section": "Information Technology Act, 2000, Section 66A", "facts": "Challenge to Section 66A of the IT Act criminalizing online speech.", "holding": "Struck down Section 66A of the IT Act as unconstitutional for violating freedom of speech and expression (Article 19(1)(a)).", "citation": "(2015) 5 SCC 1", "valid_from": "2015-03-24"
+  },
+  {
+    "doc_id": "lm_015", "case_name": "M.C. Mehta v. Union of India (Oleum Gas Leak Case)", "year": 1986, "court": "Supreme Court of India", "bench_size": "5 Judges", "law_area": "Environment", "act_section": "Constitution of India, Article 32", "facts": "Leakage of oleum gas from Shriram Foods and Fertilizer Industries in Delhi.", "holding": "Established the principle of 'Absolute Liability' for hazardous industries, deviating from the Rylands v. Fletcher rule of strict liability.", "citation": "(1987) 1 SCC 395", "valid_from": "1986-12-20"
+  },
+  {
+    "doc_id": "lm_016", "case_name": "National Legal Services Authority (NALSA) v. Union of India", "year": 2014, "court": "Supreme Court of India", "bench_size": "2 Judges", "law_area": "Human Rights", "act_section": "Constitution of India, Articles 14, 15, 19, 21", "facts": "PIL seeking legal recognition of transgender persons.", "holding": "Recognized transgender individuals as the 'third gender' and affirmed their fundamental rights under the Constitution.", "citation": "(2014) 5 SCC 438", "valid_from": "2014-04-15"
+  }
+]

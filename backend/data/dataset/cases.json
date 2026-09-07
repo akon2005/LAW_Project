@@ -1,0 +1,1931 @@
+[
+  {
+    "case_id": "SC_2019_001",
+    "case_name": "State of Maharashtra v. Rajesh Kumar Sharma",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "The accused Rajesh Kumar Sharma was charged with the murder of his business partner Anil Verma. On the night of 15th March 2017, the accused visited the deceased's residence under the pretext of discussing a financial dispute. Witnesses testified that a heated argument ensued regarding unpaid debts amounting to Rs. 15 lakhs. The accused produced a licensed revolver and fired two shots at the deceased, one hitting the chest and another the abdomen. The deceased was rushed to a nearby hospital where he was declared dead on arrival. The weapon was recovered from the accused's vehicle. Forensic analysis confirmed the bullets matched the accused's weapon. The accused claimed self-defense, stating the deceased attacked him first with a knife, but no knife was recovered from the scene and no injuries were found on the accused.",
+    "sections": [
+      "302",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the prosecution successfully established the chain of circumstances beyond reasonable doubt. The recovery of the murder weapon from the accused's vehicle, corroborated by ballistic evidence and eyewitness testimony, conclusively proved the accused's guilt. The claim of self-defense was found untenable as no weapon was recovered from the deceased and no injuries were present on the accused. The court sentenced the accused to life imprisonment."
+  },
+  {
+    "case_id": "SC_2019_002",
+    "case_name": "Ramesh Babu v. State of Tamil Nadu",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "The appellant Ramesh Babu was convicted for the murder of one Suresh under Section 302 IPC. The prosecution case was that on 10th June 2016, the appellant attacked the deceased with a machete following a land dispute. However, the sole eyewitness was the wife of the deceased who had prior enmity with the accused's family. No independent witnesses corroborated the incident. The recovery of the alleged weapon was made after 15 days and the forensic report was inconclusive about blood matching. The medical evidence showed the deceased died of multiple cut injuries but the weapon could not be conclusively linked. The appellant had a consistent alibi supported by two independent witnesses who testified he was at a temple function 20 kilometers away.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that the prosecution's case rested primarily on the testimony of an interested witness who had prior enmity with the accused. The delayed recovery of the weapon after 15 days cast serious doubts on the prosecution's case. The forensic evidence was inconclusive and could not link the weapon to the crime. The alibi presented by the defence was supported by independent witnesses. Applying the principle of 'benefit of doubt,' the court acquitted the appellant."
+  },
+  {
+    "case_id": "HC_DEL_2020_001",
+    "case_name": "Priya Sharma v. State (NCT of Delhi)",
+    "year": 2020,
+    "court": "Delhi High Court",
+    "facts": "The petitioner Priya Sharma filed a complaint under Section 498A IPC against her husband Vikram Sharma and in-laws alleging persistent cruelty and demand for additional dowry of Rs. 10 lakhs after marriage. She presented medical records showing injuries consistent with physical abuse on three separate occasions. Her parents testified to receiving repeated demands for a car and cash. Phone records showed threatening messages from the mother-in-law. The husband claimed the complaint was filed to gain advantage in divorce proceedings and that injuries were self-inflicted. Neighbors testified to hearing frequent quarrels and the woman crying for help on multiple occasions.",
+    "sections": [
+      "498A",
+      "304B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the testimony of the complainant credible and corroborated by independent evidence including medical records, phone records, and neighbor testimony. The pattern of dowry demands was established through the testimony of the complainant's parents. The defense's claim of the complaint being motivated by divorce proceedings was rejected as the medical evidence clearly showed physical abuse. The court convicted the husband and mother-in-law under Section 498A IPC."
+  },
+  {
+    "case_id": "HC_BOM_2020_002",
+    "case_name": "State of Maharashtra v. Dinesh Patil",
+    "year": 2020,
+    "court": "Bombay High Court",
+    "facts": "Dinesh Patil was charged under Section 420 IPC for allegedly cheating 45 investors by running a fraudulent investment scheme promising 36% annual returns. Between 2015 and 2018, he collected approximately Rs. 3.2 crores from investors. Investigation revealed that no legitimate business activity was conducted and funds from new investors were used to pay returns to earlier investors in a classic Ponzi scheme. Bank records showed the accused transferred a significant portion of collected funds to personal accounts and purchased properties in his wife's name. The accused claimed he was running a legitimate chit fund business that failed due to market conditions.",
+    "sections": [
+      "420",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found overwhelming documentary evidence establishing the fraudulent nature of the scheme. Bank records clearly showed diversion of investor funds to personal accounts. The purchase of properties during the period of alleged business losses contradicted the defense of legitimate business failure. The court convicted the accused under Sections 420 and 406 IPC and ordered restitution of the defrauded amounts."
+  },
+  {
+    "case_id": "SC_2018_003",
+    "case_name": "Mohd. Iqbal v. State of Uttar Pradesh",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "The appellant Mohd. Iqbal was convicted under Section 307 IPC for attempting to murder his neighbor Sunil Singh over a water dispute. The prosecution alleged that the appellant attacked the victim with an axe, causing grievous injuries to the head and shoulder. The victim survived after undergoing surgery. Two eyewitnesses, both relatives of the victim, identified the appellant. The medical evidence confirmed two deep cut injuries requiring 35 stitches. The appellant's defense was that a group of unknown persons attacked the victim and he was falsely implicated due to the ongoing water dispute. The axe allegedly used was not recovered.",
+    "sections": [
+      "307",
+      "326"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court upheld the conviction noting that the medical evidence corroborated the nature of injuries described by eyewitnesses. While the eyewitnesses were related to the victim, their testimony was consistent and withstood cross-examination. The nature of injuries — deep axe cuts to the head — clearly demonstrated intent to kill. The defense of false implication was not supported by any independent evidence. However, the court modified the sentence considering the long-standing water dispute as a mitigating factor."
+  },
+  {
+    "case_id": "HC_KAR_2021_001",
+    "case_name": "Anita Devi v. State of Karnataka",
+    "year": 2021,
+    "court": "Karnataka High Court",
+    "facts": "Anita Devi was charged under Section 304B IPC for the dowry death of her daughter-in-law Lakshmi who died within two years of marriage. The deceased was found hanging in her room. The prosecution alleged that Anita Devi and her son constantly harassed Lakshmi for additional dowry. The deceased's parents testified that Lakshmi had complained about dowry demands during phone calls. However, the post-mortem report was inconclusive about whether the death was suicide or homicide. No suicide note was found. The deceased's phone records showed regular contact with her parents but no distress messages. Neighbors testified that the family appeared normal and no quarrels were observed.",
+    "sections": [
+      "304B",
+      "498A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that while the death occurred within two years of marriage, the prosecution failed to establish the essential ingredient of 'soon before death' harassment in connection with dowry demand. The evidence of dowry demands was based solely on hearsay testimony of the deceased's parents. The inconclusive post-mortem report, absence of suicide note, normal phone records, and positive neighbor testimony created reasonable doubt. The court acquitted the accused giving benefit of doubt."
+  },
+  {
+    "case_id": "SC_2020_004",
+    "case_name": "State of Rajasthan v. Kailash Chand",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Kailash Chand was prosecuted under Section 376 IPC for the rape of a 22-year-old woman. The victim alleged that the accused, who was her employer at a garment factory, raped her in his office on 3rd August 2018 after office hours. The victim reported the incident the next day. Medical examination confirmed recent sexual intercourse and injuries consistent with forced penetration. The accused admitted to sexual intercourse but claimed it was consensual and that they had been in a relationship for six months. He produced WhatsApp messages showing affectionate communication. However, the victim explained these messages were sent under duress as the accused had threatened to terminate her employment.",
+    "sections": [
+      "376"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the medical evidence strongly corroborated the victim's version of forced intercourse. The power dynamics between employer and employee negated any claim of genuine consent. The court observed that messages sent under coercion and economic dependence cannot constitute consent. The victim's prompt reporting within 24 hours and consistent testimony throughout trial proceedings established credibility. The accused was convicted under Section 376 IPC."
+  },
+  {
+    "case_id": "HC_ALL_2019_002",
+    "case_name": "Govind Prasad v. State of Uttar Pradesh",
+    "year": 2019,
+    "court": "Allahabad High Court",
+    "facts": "Govind Prasad was convicted under Section 379 IPC for theft of agricultural equipment worth Rs. 2.5 lakhs from a cooperative society. The prosecution's case relied on CCTV footage showing the accused near the storage facility at night, recovery of some stolen items from his residence, and testimony of a watchman who identified him. However, the CCTV footage was of poor quality and the face was not clearly identifiable. The recovered items were generic agricultural tools commonly available. The accused presented evidence of purchasing similar items from a market with receipts dated before the theft. The watchman's initial statement to police did not name the accused and identification was made only during court proceedings.",
+    "sections": [
+      "379"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found that the prosecution evidence was insufficient to prove guilt beyond reasonable doubt. The CCTV footage was inconclusive for positive identification. The recovered items being generic agricultural tools available in the market weakened the recovery evidence. The watchman's belated identification was unreliable as he did not name the accused in his initial statement. The accused's purchase receipts for similar items created reasonable doubt about the recovery evidence."
+  },
+  {
+    "case_id": "SC_2021_005",
+    "case_name": "State of Gujarat v. Prakash Jha",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Prakash Jha and two others were charged under Sections 392 and 34 IPC for committing robbery at a jewelry shop. On 12th November 2019, three masked men entered the shop, threatened the owner with a country-made pistol, and fled with gold jewelry worth Rs. 28 lakhs. CCTV footage from the shop and adjacent buildings tracked the getaway vehicle. The vehicle was traced to Prakash Jha. DNA evidence from a mask dropped at the scene matched one co-accused. The stolen jewelry was partially recovered from a pawn shop where the accused had sold items using a fake ID. Mobile tower location data placed all three accused in the vicinity of the shop at the time of robbery.",
+    "sections": [
+      "392",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the prosecution established an unbroken chain of evidence connecting the accused to the robbery. The CCTV footage, vehicle registration, DNA evidence, recovery of stolen property, and mobile tower location data collectively proved guilt beyond reasonable doubt. The scientific evidence corroborated the circumstantial evidence. All three accused were convicted under Sections 392 read with 34 IPC."
+  },
+  {
+    "case_id": "HC_MAD_2020_003",
+    "case_name": "Sundaram v. State of Tamil Nadu",
+    "year": 2020,
+    "court": "Madras High Court",
+    "facts": "Sundaram was charged under Section 306 IPC for abetting the suicide of his wife Meena. Meena was found dead in their home with a suicide note blaming her husband's extramarital affair and alcoholism. The deceased's family testified that Sundaram had been having an affair with a colleague and frequently came home drunk, beating Meena. Medical records showed Meena had sought treatment for depression at a government hospital. However, the suicide note was examined by a handwriting expert who could only give a probable opinion about its authenticity. Sundaram denied the affair and claimed his wife had a history of mental illness. Employment records showed no female colleague matching the description given by the deceased's family.",
+    "sections": [
+      "306"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that to constitute abetment of suicide, there must be a direct or indirect act of incitement. The suicide note's authenticity was not conclusively established. The alleged extramarital affair was not proved as employment records did not support the claim. While the deceased suffered from depression, it could not be solely attributed to the accused's conduct without stronger evidence. The prosecution failed to prove the essential ingredient of instigation or intentional aiding beyond reasonable doubt."
+  },
+  {
+    "case_id": "SC_2017_006",
+    "case_name": "State of Madhya Pradesh v. Ram Kishore Verma",
+    "year": 2017,
+    "court": "Supreme Court of India",
+    "facts": "Ram Kishore Verma was charged under Section 302 IPC for murdering his wife Sunita. The prosecution alleged that on the night of 5th January 2015, the accused strangled his wife following a domestic dispute about her visiting her parents. The deceased's body was found the next morning by neighbors. Post-mortem confirmed death by asphyxiation due to ligature strangulation. The accused initially told police that his wife committed suicide by hanging but the post-mortem findings contradicted this claim. Scratch marks on the accused's arms were documented. The couple's 8-year-old daughter testified in court that she saw her father pressing her mother's neck. No other eyewitnesses were present.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the post-mortem evidence conclusively ruled out suicide and established homicide by strangulation. The accused's false initial claim of suicide demonstrated consciousness of guilt. The testimony of the minor child, though given special consideration, was found truthful and consistent. The scratch marks on the accused corroborated a struggle. The court convicted the accused under Section 302 IPC noting that the last-seen theory and contradictory defense established guilt beyond reasonable doubt."
+  },
+  {
+    "case_id": "HC_DEL_2021_004",
+    "case_name": "Sanjay Gupta v. State (NCT of Delhi)",
+    "year": 2021,
+    "court": "Delhi High Court",
+    "facts": "Sanjay Gupta was charged under Section 420 IPC for cheating a real estate buyer. The complainant Ashok Mehta alleged that he paid Rs. 45 lakhs to the accused for purchasing a flat in Dwarka, Delhi. The accused showed forged property documents and a fake builder's authorization. After receiving the amount, the accused became unreachable. Investigation revealed the property belonged to a third party who had no knowledge of the transaction. The accused had used a fake PAN card and forged notarized documents. The accused was arrested in Jaipur after two years. He claimed he was acting as a genuine broker and was himself deceived by a developer who has since absconded.",
+    "sections": [
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court rejected the defense of the accused being a mere broker. The use of fake identity documents, forged property papers, and subsequent absconding clearly established fraudulent intent from inception. The fact that the accused personally received the entire payment and disappeared constituted dishonest inducement to deliver property. The court convicted under Section 420 IPC and directed restitution."
+  },
+  {
+    "case_id": "SC_2018_007",
+    "case_name": "Lakshmi Narayan v. State of Bihar",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "The appellant Lakshmi Narayan was convicted under Section 304A IPC for causing death by negligence. The appellant, a licensed doctor, operated on a patient for appendicitis. During surgery, the patient suffered cardiac arrest and died. The prosecution alleged that the doctor failed to conduct pre-operative tests, did not have an anesthesiologist present, and operated in a clinic without adequate emergency equipment. The defense presented evidence that the doctor had 25 years of experience and had successfully performed hundreds of similar surgeries. Expert medical testimony was divided — one expert supporting the prosecution's claim of negligence and another stating the complication could occur even with proper precautions.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that in cases of medical negligence, the standard is gross negligence, not simple negligence. Applying the Bolam test, the court found that while the doctor's practice of operating without an anesthesiologist was concerning, the divided medical expert opinion prevented a conclusive finding of gross negligence. The court noted that a mere error of judgment does not constitute criminal negligence and acquitted the appellant, though recommending regulatory action by the medical council."
+  },
+  {
+    "case_id": "HC_KER_2020_005",
+    "case_name": "State of Kerala v. Ajith Kumar",
+    "year": 2020,
+    "court": "Kerala High Court",
+    "facts": "Ajith Kumar and four others were charged under Section 395 IPC for committing dacoity at a bank. On 15th September 2018, five armed men entered a cooperative bank, held employees at gunpoint, and decamped with Rs. 18 lakhs. The accused was identified through CCTV footage and fingerprints recovered from the counter. An informer tip led to the arrest. The stolen money was partially recovered from a hideout. The accused confessed during police interrogation but later retracted in court, claiming police torture. The confession led to discovery of evidence including weapons and the remaining stolen amount.",
+    "sections": [
+      "395",
+      "392"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that while the retracted confession was not admissible as evidence, the discovery of weapons and stolen money pursuant to information given by the accused was admissible under Section 27 of the Indian Evidence Act. CCTV identification and fingerprint evidence independently established the accused's presence. The recovery of stolen money from the hideout disclosed by the accused completed the chain of evidence. All accused were convicted under Section 395 IPC."
+  },
+  {
+    "case_id": "HC_BOM_2019_006",
+    "case_name": "Meera Desai v. State of Maharashtra",
+    "year": 2019,
+    "court": "Bombay High Court",
+    "facts": "Meera Desai filed a complaint under Section 498A against her husband Ashish Desai and his family members alleging cruelty and dowry harassment. She alleged that after marriage, her husband and in-laws demanded a luxury car worth Rs. 15 lakhs and gold jewelry. When demands were not met, she was physically assaulted and confined to a room. She escaped and lodged a police complaint. However, investigation revealed that the complainant had filed similar complaints against two previous partners that were later withdrawn. The accused presented video evidence from home surveillance cameras showing normal family interactions. Medical examination found no injuries. The complainant's own sister testified that the allegations were exaggerated.",
+    "sections": [
+      "498A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that while Section 498A serves a critical purpose in protecting married women, it cannot be allowed to become a weapon of harassment. The complainant's history of similar complaints against previous partners, contradicting video evidence, absence of medical evidence of injuries, and adverse testimony from her own sister collectively undermined the credibility of the allegations. The court acquitted all accused and noted concerns about misuse of Section 498A."
+  },
+  {
+    "case_id": "SC_2020_008",
+    "case_name": "State of Andhra Pradesh v. K. Venkata Rao",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "K. Venkata Rao, a government officer, was charged under Sections 420 and 120B IPC for orchestrating a fraudulent scholarship disbursement scheme. Investigation revealed that over a period of three years, the accused created 500 fictitious student beneficiaries and diverted scholarship funds amounting to Rs. 4.5 crores to accounts controlled by him and his associates. Bank statements, IP address logs, and digital forensic evidence linked the accused to the dummy accounts. Three co-conspirators turned approvers and testified against the accused. The accused claimed he was following orders from senior officials who have since retired.",
+    "sections": [
+      "420",
+      "120B",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the digital forensic evidence conclusively linked the accused to the fraudulent accounts. The approver testimony, corroborated by independent documentary evidence, established the accused's central role in the conspiracy. The defense of acting under orders was rejected as the accused was the primary beneficiary of the diverted funds. The court convicted under Sections 420 and 120B IPC, imposing both imprisonment and fine with direction for recovery of embezzled amounts."
+  },
+  {
+    "case_id": "HC_CAL_2021_007",
+    "case_name": "Subhash Mondal v. State of West Bengal",
+    "year": 2021,
+    "court": "Calcutta High Court",
+    "facts": "Subhash Mondal was charged under Section 302 for the murder of a rival political party worker during an election period. The prosecution alleged that the accused, along with others, attacked the deceased with crude bombs and sharp weapons during a political rally. Three eyewitnesses from the deceased's party identified the accused. However, investigation revealed that FIR was lodged 72 hours after the incident. The post-mortem was delayed by 48 hours. The witnesses were all political rivals of the accused. CCTV footage from a nearby shop showed a mob attack but individual identification was impossible due to distance and chaos. The accused presented evidence of being in a different constituency during the incident.",
+    "sections": [
+      "302",
+      "34"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed serious procedural lapses including the 72-hour delay in FIR registration and 48-hour delay in post-mortem. All eyewitnesses being political rivals cast doubt on their objectivity. The CCTV footage, while showing a mob attack, could not identify the accused. The defense's alibi evidence was supported by documentary proof. The court held that the prosecution's case was riddled with reasonable doubt and acquitted the accused while directing investigation into the mob violence."
+  },
+  {
+    "case_id": "SC_2019_009",
+    "case_name": "State of Punjab v. Harpreet Singh",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Harpreet Singh was charged under Section 307 IPC for the attempted murder of his uncle over an ancestral property dispute. The prosecution alleged that the accused fired three shots from a country-made pistol at his uncle, two of which hit the victim in the shoulder and leg. The victim survived after hospitalization. The weapon was recovered from a canal near the accused's farm. Ballistic evidence confirmed the recovered weapon fired the bullets extracted from the victim. Two independent witnesses — a shopkeeper and a passerby — identified the accused. The accused's defense was that he was provoked by his uncle who had been threatening to disinherit him and had attacked him first with a lathi.",
+    "sections": [
+      "307"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the use of a firearm demonstrated clear intent to kill, establishing the offense under Section 307. The ballistic evidence conclusively linked the recovered weapon to the crime. Two independent witnesses corroborated the prosecution's version. While the defense of provocation was raised, the court observed that previous provocation cannot justify an attempt to murder. The accused was convicted under Section 307 IPC with a modified sentence considering the family property dispute background."
+  },
+  {
+    "case_id": "HC_PAT_2020_008",
+    "case_name": "Ranjit Kumar v. State of Bihar",
+    "year": 2020,
+    "court": "Patna High Court",
+    "facts": "Ranjit Kumar was charged under Section 376 IPC for rape. The victim, a college student, alleged that the accused, her tuition teacher, sexually assaulted her at his coaching center. She reported the incident after three months when she discovered she was pregnant. DNA test confirmed the accused was the father. The accused claimed a consensual relationship and presented greeting cards and gifts exchanged between them. The victim's friend testified that the victim had spoken positively about the accused before the incident. However, the victim was 17 years old at the time of the incident, making consent legally irrelevant under POCSO Act provisions.",
+    "sections": [
+      "376"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that since the victim was below 18 years of age, the question of consent was irrelevant under POCSO Act and the amended Section 375 IPC. The DNA evidence conclusively established sexual intercourse. The accused's position as a tutor placed him in a position of trust and authority over the victim. The delay in reporting was explained by the victim's fear and social stigma. The court convicted the accused under both Section 376 IPC and relevant POCSO provisions."
+  },
+  {
+    "case_id": "HC_DEL_2018_009",
+    "case_name": "Rajendra Prasad v. State (NCT of Delhi)",
+    "year": 2018,
+    "court": "Delhi High Court",
+    "facts": "Rajendra Prasad was charged under Section 406 IPC for criminal breach of trust. The complainant, a diamond merchant, alleged that he entrusted diamonds worth Rs. 85 lakhs to the accused for selling on commission basis. The accused sold the diamonds but failed to remit the sale proceeds, claiming the diamonds were stolen from his showroom. Investigation revealed that no theft report was filed, the showroom CCTV was conveniently non-functional, and insurance claims were made for a much lower amount. Bank records showed large cash deposits in the accused's accounts during the period of alleged theft. The accused maintained that the theft was genuine and he was a victim too.",
+    "sections": [
+      "406",
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused's story of theft was fabricated. The failure to file a timely theft report, non-functional CCTV, significantly lower insurance claim, and suspicious bank deposits collectively established dishonest misappropriation. The entrustment of diamonds was proved through business records and correspondence. The court convicted under Section 406 IPC and directed recovery of the misappropriated amount."
+  },
+  {
+    "case_id": "SC_2021_010",
+    "case_name": "Kamal Kishore v. State of Haryana",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Kamal Kishore was convicted by the trial court under Section 302 IPC for the murder of a moneylender to whom he owed Rs. 3 lakhs. The only evidence was a dying declaration of the deceased naming the accused, recorded by a magistrate at the hospital. The deceased died 6 hours after the declaration. However, the medical records showed the deceased was administered heavy doses of painkillers and sedatives before the declaration. The doctor's opinion was that the deceased was in a semi-conscious state. No other eyewitness was present. The murder weapon was not recovered. The accused had an alibi of being at his brother's house in another village.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that a dying declaration must be made by a person who is in a fit state of mind. The medical records showing administration of heavy sedatives and painkillers, combined with the doctor's opinion about the semi-conscious state, rendered the dying declaration unreliable. Without corroborating evidence, a dying declaration of doubtful reliability cannot form the sole basis of conviction. The non-recovery of the weapon and the alibi defense further weakened the prosecution's case. The court acquitted the appellant."
+  },
+  {
+    "case_id": "HC_GUJ_2019_010",
+    "case_name": "State of Gujarat v. Imran Sheikh",
+    "year": 2019,
+    "court": "Gujarat High Court",
+    "facts": "Imran Sheikh was charged under Section 363 IPC for kidnapping a 14-year-old girl. The girl's parents alleged that the accused, a neighbor, lured their daughter away from home on 10th March 2018. The girl was found with the accused at a relative's house in another city after 5 days. The accused claimed the girl came willingly because she was being physically abused at home. The girl's statement to the magistrate corroborated the accused's version about domestic abuse. Child welfare records showed two prior complaints of abuse at the girl's home. However, the accused did not inform police or any authority and instead took the minor across state lines.",
+    "sections": [
+      "363"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that regardless of the motive, taking a minor out of the custody of lawful guardians without their consent constitutes kidnapping under Section 363. The accused should have reported the alleged abuse to police or child welfare authorities instead of taking the law into his own hands. The consent of a minor below 16 years (for male) or 18 years (for female) is irrelevant. However, the court recommended minimum punishment considering the mitigating circumstances and directed investigation into the domestic abuse allegations."
+  },
+  {
+    "case_id": "SC_2020_011",
+    "case_name": "Deepak Sharma v. State of Rajasthan",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Deepak Sharma was charged under Section 506 IPC for criminal intimidation. The complainant, a journalist, alleged that the accused, a local politician, threatened to kill him and his family if he published an investigative story about the accused's involvement in illegal mining. The journalist produced audio recordings of threatening phone calls. Voice analysis by forensic experts confirmed the caller's voice matched the accused. The accused denied making the calls and alleged the recordings were fabricated. However, call detail records confirmed calls from the accused's registered number to the journalist's phone on the dates mentioned. The accused claimed his phone was stolen and filed a belated theft report.",
+    "sections": [
+      "506"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the audio recordings authentic based on forensic voice analysis. The call detail records independently corroborated the calls. The belated theft report for the phone was found to be an afterthought as it was filed only after the criminal complaint. The threats were specific and serious enough to constitute criminal intimidation. The court convicted under Section 506 IPC and emphasized the importance of protecting press freedom and journalists from intimidation."
+  },
+  {
+    "case_id": "HC_KAR_2018_011",
+    "case_name": "Venkatesh Murthy v. State of Karnataka",
+    "year": 2018,
+    "court": "Karnataka High Court",
+    "facts": "Venkatesh Murthy was charged under Section 304A IPC for death caused by negligence. The accused was driving his SUV at an estimated speed of 90 kmph in a 40 kmph residential zone when he hit a pedestrian crossing the road at a zebra crossing. The pedestrian died on the spot. The accused claimed the pedestrian suddenly appeared and he could not brake in time. However, traffic camera footage showed the accused was on his mobile phone while driving. Blood alcohol test conducted 3 hours after the incident showed alcohol levels above the permissible limit. The accused had three prior traffic violations for speeding.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the combination of excessive speed in a residential zone, use of mobile phone while driving, and driving under the influence of alcohol clearly constituted criminal negligence amounting to a rash and negligent act. The traffic camera evidence was conclusive. The accused's prior record of speeding violations demonstrated a pattern of reckless behavior. The court convicted under Section 304A IPC and imposed maximum punishment given the aggravating circumstances."
+  },
+  {
+    "case_id": "HC_ALL_2021_012",
+    "case_name": "Santosh Yadav v. State of Uttar Pradesh",
+    "year": 2021,
+    "court": "Allahabad High Court",
+    "facts": "Santosh Yadav was charged under Section 302 IPC for the murder of his wife's alleged paramour. The accused claimed he caught his wife in a compromising position with the deceased in their home and in a fit of rage attacked the deceased with a kitchen knife, causing fatal injuries. The accused immediately surrendered to police and gave a voluntary confession. The prosecution relied on the confession and recovery of the blood-stained knife. The defense argued grave and sudden provocation reducing the offense from murder to culpable homicide. Psychiatric evaluation showed the accused had no prior history of violence and was in acute emotional distress.",
+    "sections": [
+      "302",
+      "304"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court accepted the defense of grave and sudden provocation partially, reducing the charge from Section 302 to Section 304 Part I (culpable homicide not amounting to murder). The court noted that while the provocation was grave and sudden, the use of a knife causing multiple fatal injuries went beyond the proportionate response expected even under provocation. The accused was convicted under Section 304 Part I with a sentence of 10 years imprisonment, considering his immediate surrender and clean prior record."
+  },
+  {
+    "case_id": "SC_2019_012",
+    "case_name": "State of Telangana v. P. Srinivas Reddy",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "P. Srinivas Reddy, a mining contractor, was charged under Sections 420 and 120B IPC for defrauding the state government through illegal mining operations. The accused obtained mining licenses for limestone but was found extracting granite, a more valuable mineral, from the leased areas. Satellite imagery spanning three years showed extensive granite quarrying. Revenue department records showed the accused reported only limestone production, evading royalty payments estimated at Rs. 12 crores. The geological survey confirmed granite extraction. Co-conspirators in the revenue department who facilitated fake inspections were also charged. The accused claimed the geological composition of the leased area was mixed and some granite extraction was incidental.",
+    "sections": [
+      "420",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found overwhelming evidence of systematic fraud. Satellite imagery conclusively showed large-scale granite quarrying inconsistent with the limestone license. The geological survey confirmed intentional granite extraction. The conspiracy with revenue officials to file false inspection reports demonstrated premeditated fraud. The defense of incidental extraction was rejected given the scale of granite quarrying visible in satellite images. The court convicted all accused and directed recovery of evaded royalties."
+  },
+  {
+    "case_id": "HC_BOM_2020_013",
+    "case_name": "Asha Pawar v. State of Maharashtra",
+    "year": 2020,
+    "court": "Bombay High Court",
+    "facts": "Asha Pawar was charged under Section 304B IPC for the dowry death of her daughter-in-law Sunita. Sunita died by consuming poison within 3 years of marriage. The deceased's parents alleged persistent dowry demands and cruelty by the mother-in-law. A diary maintained by the deceased was found detailing instances of harassment and dowry demands with specific dates. Phone records showed the deceased called a women's helpline twice in the month before her death. The mother-in-law's financial records showed she had been pressuring her son and daughter-in-law for money to fund a property purchase. The accused denied all allegations claiming she treated the daughter-in-law like her own daughter.",
+    "sections": [
+      "304B",
+      "498A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court gave significant evidentiary weight to the deceased's diary as a contemporaneous record of harassment, similar to a dying declaration in its probative value. The helpline call records corroborated the diary entries. The financial records established the motive for dowry demands. The death by poison within 3 years of marriage, combined with evidence of harassment soon before death, satisfied all ingredients of Section 304B. The court convicted the accused noting that the diary provided a rare but powerful firsthand account of the victim's ordeal."
+  },
+  {
+    "case_id": "HC_MAD_2018_014",
+    "case_name": "Murugan v. State of Tamil Nadu",
+    "year": 2018,
+    "court": "Madras High Court",
+    "facts": "Murugan was charged under Section 326 IPC for voluntarily causing grievous hurt with a dangerous weapon. During a village festival, a dispute arose between two groups over seating arrangements. The accused allegedly attacked the victim with a sickle, causing deep lacerations on the arm, resulting in permanent disability. The victim lost the use of three fingers. Medical evidence confirmed the injuries were caused by a sharp curved weapon. Four eyewitnesses from the village identified the accused. The accused's defense was that there was a general melee and the victim was injured in the chaos, not by any specific individual's act. Two defense witnesses supported this version.",
+    "sections": [
+      "326",
+      "323"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that four independent eyewitnesses consistently identified the accused as the person who attacked the victim with a sickle. The medical evidence about a sharp curved weapon was consistent with a sickle. The nature of injuries — deep lacerations causing permanent disability — clearly attracted Section 326. The defense of general melee was contradicted by the specific and consistent eyewitness accounts. The two defense witnesses were found unreliable as they were relatives of the accused."
+  },
+  {
+    "case_id": "SC_2021_013",
+    "case_name": "Narendra Kumar v. State of Madhya Pradesh",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Narendra Kumar was convicted under Section 302 IPC for poisoning his business partner to claim insurance money. The prosecution established that the accused had taken a Rs. 50 lakh life insurance policy naming himself as beneficiary on the deceased just three months before the death. Forensic analysis found traces of organophosphate poison in the deceased's blood and in a water bottle in the accused's office. The accused's internet search history showed queries about undetectable poisons. Financial investigation revealed the accused's business was on the verge of bankruptcy. The accused claimed the deceased committed suicide due to business stress and that he was unaware of the insurance details.",
+    "sections": [
+      "302",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the circumstantial evidence formed a complete chain establishing guilt. The insurance policy taken shortly before death, poison traces matching the accused's internet research on undetectable poisons, the accused's financial distress providing motive, and recovery of poison from the accused's office left no reasonable hypothesis other than guilt. The defense of suicide was rejected as the deceased had no known suicidal tendencies and the poison was found in the accused's possession. The court affirmed the conviction and death sentence."
+  },
+  {
+    "case_id": "HC_KER_2019_015",
+    "case_name": "Joseph Mathew v. State of Kerala",
+    "year": 2019,
+    "court": "Kerala High Court",
+    "facts": "Joseph Mathew was charged under Section 354 IPC for outraging the modesty of a female colleague at their workplace. The complainant alleged that the accused inappropriately touched her during a late-night work session when they were alone in the office. She immediately called a friend and reported the incident to HR the next morning. CCTV footage from the office corridor showed the accused entering and leaving the cabin but did not cover the interior. The accused claimed the interaction was accidental contact while reaching for files. Five female colleagues submitted statements that the accused had a history of making uncomfortable comments. The accused had a clean record otherwise and had worked at the company for 12 years.",
+    "sections": [
+      "354"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the complainant's testimony credible given the contemporaneous reporting to her friend and HR within hours. The pattern of behavior established by five female colleagues' statements, though not independently actionable, corroborated the complainant's version of the accused's predatory behavior. The CCTV evidence placing the accused in the cabin with the complainant after work hours supported the opportunity. The defense of accidental contact was rejected given the pattern of complaints. The court convicted under Section 354 IPC."
+  },
+  {
+    "case_id": "SC_2020_014",
+    "case_name": "Bhagwan Das v. State of Chhattisgarh",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Bhagwan Das was charged under Section 302 for honor killing of his daughter. The accused admitted to killing his 20-year-old daughter because she was in a relationship with a man from another caste. The victim was found with her throat slit in the family home. The accused surrendered to police with the blood-stained weapon. He stated that the family's honor was at stake and he had no regret. Medical evidence confirmed the cause of death. The defense argued that the accused was under extreme emotional disturbance and the act was committed under the influence of cultural beliefs. Several community members submitted statements supporting the accused's actions.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court strongly condemned honor killing as a barbaric practice incompatible with constitutional values. The defense of cultural beliefs and emotional disturbance was firmly rejected. The court held that no cultural practice can justify the taking of a life. The accused's admission, recovery of weapon, and medical evidence left no doubt about guilt. The court convicted under Section 302 IPC, imposed life imprisonment, and observed that honor killings deserve deterrent punishment to send a clear societal message."
+  },
+  {
+    "case_id": "HC_GUJ_2021_016",
+    "case_name": "Patel Brothers Construction v. State of Gujarat",
+    "year": 2021,
+    "court": "Gujarat High Court",
+    "facts": "Directors of Patel Brothers Construction were charged under Sections 420 and 406 IPC for collecting Rs. 150 crores from 800 homebuyers for a housing project but failing to deliver apartments within the promised timeline. Investigation showed that 60% of collected funds were diverted to other projects and personal investments. The RERA registration was obtained with false documentation about land ownership. Construction had stalled for over 3 years. The accused claimed market downturn and regulatory hurdles caused the delay and that they intended to complete the project. However, they had launched two new projects during the period of alleged financial distress.",
+    "sections": [
+      "420",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the systematic diversion of homebuyer funds to other projects and personal accounts established dishonest intention from the outset. The false RERA documentation proved the fraudulent foundation of the project. The launch of new projects while claiming inability to complete the current one completely contradicted the defense. All directors were held vicariously liable. The court convicted under Sections 420 and 406 IPC and directed attachment of all assets for homebuyer compensation."
+  },
+  {
+    "case_id": "HC_DEL_2019_017",
+    "case_name": "Amit Tandon v. State (NCT of Delhi)",
+    "year": 2019,
+    "court": "Delhi High Court",
+    "facts": "Amit Tandon was charged under Section 307 IPC for attempted murder. During a road rage incident, the accused allegedly rammed his SUV into the victim's motorcycle, causing the victim to fall and be dragged for 50 meters. The victim suffered multiple fractures, a punctured lung, and was in ICU for three weeks. Dashboard camera footage from a following vehicle captured the entire incident showing the accused deliberately swerving into the motorcycle. The accused's blood alcohol level was found to be twice the legal limit. The accused claimed it was an accident caused by a steering malfunction, but vehicle inspection found no mechanical defect.",
+    "sections": [
+      "307",
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the dashboard camera footage conclusively proved the deliberate nature of the act, transforming what might have been negligence into attempted murder. The accused's intoxication, deliberate swerving, and absence of any mechanical defect established intent to cause death or knowledge that the act was likely to cause death. The severity of injuries — punctured lung and multiple fractures — confirmed the life-threatening nature of the attack. The court convicted under Section 307 IPC."
+  },
+  {
+    "case_id": "SC_2018_015",
+    "case_name": "Ram Prasad Gupta v. State of Jharkhand",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "Ram Prasad Gupta was charged under Section 302 IPC for murdering a tribal rights activist. The prosecution's case was entirely circumstantial — the accused had publicly threatened the deceased at a panchayat meeting, the deceased was found murdered near the accused's agricultural land, and the accused could not satisfactorily explain his whereabouts on the night of the murder. However, no murder weapon was recovered, no forensic evidence linked the accused to the crime scene, and the only evidence of motive was the public threat which the accused explained as a heated exchange during a land dispute meeting. Multiple other persons also had disputes with the deceased over land rights.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that in cases of circumstantial evidence, the chain must be complete and conclusive, pointing only to the guilt of the accused. While the threat established motive, multiple other persons also had similar motives. The absence of forensic evidence, non-recovery of weapon, and the accused's explanation for his whereabouts created gaps in the circumstantial chain. The court applied the principle that when two views are possible on the evidence, the one favorable to the accused must be adopted. The appellant was acquitted."
+  },
+  {
+    "case_id": "HC_PNJ_2020_018",
+    "case_name": "Sukhwinder Singh v. State of Punjab",
+    "year": 2020,
+    "court": "Punjab and Haryana High Court",
+    "facts": "Sukhwinder Singh was charged under Section 392 IPC for robbing a petrol pump at gunpoint. The prosecution alleged that the accused, along with two unknown accomplices, robbed the petrol pump of Rs. 4.5 lakhs cash at night. The attendant identified the accused during a test identification parade conducted 45 days after the incident. The getaway motorcycle was found abandoned near the accused's village. The accused presented evidence of being hospitalized in a different city for a knee surgery on the night of the robbery. Hospital records and treating doctor confirmed the surgery and hospitalization dates. The prosecution claimed the hospital records were fabricated.",
+    "sections": [
+      "392"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found the alibi defense compelling. Hospital records, supported by the treating surgeon's testimony, conclusively placed the accused in a different city undergoing surgery on the night of the robbery. The delayed identification parade after 45 days reduced its evidentiary value. The proximity of the abandoned motorcycle to the accused's village was insufficient to establish his involvement. The prosecution's allegation of fabricated hospital records was not supported by any evidence. The court acquitted the accused."
+  },
+  {
+    "case_id": "HC_TEL_2021_019",
+    "case_name": "State of Telangana v. Bala Krishna",
+    "year": 2021,
+    "court": "Telangana High Court",
+    "facts": "Bala Krishna was charged under Section 306 IPC for abetting the suicide of his employee. The deceased, a 28-year-old accountant, died by suicide leaving a detailed note naming the accused and describing persistent workplace harassment, unpaid wages for 8 months, threats of criminal cases, and confiscation of original certificates. Co-workers corroborated the hostile work environment and unpaid wages. Bank records confirmed no salary credits for 8 months. The accused admitted to withholding salary citing business losses but denied harassment. The deceased had sought psychiatric help for depression attributed to workplace issues, documented in hospital records.",
+    "sections": [
+      "306"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the suicide note, corroborated by independent evidence of unpaid wages, hostile work environment, and psychiatric treatment records, established a direct nexus between the accused's conduct and the deceased's suicide. Withholding wages for 8 months while confiscating original certificates amounted to economic bondage creating conditions for the deceased's mental deterioration. The court found that the accused's persistent conduct created circumstances that left the deceased with no option, constituting abetment. The conviction was upheld."
+  },
+  {
+    "case_id": "SC_2019_016",
+    "case_name": "Geeta Rani v. State of Haryana",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Geeta Rani was charged under Section 302 IPC for murdering her mother-in-law by setting her on fire. The prosecution alleged that the accused poured kerosene and ignited the deceased during a quarrel about household expenses. The deceased suffered 80% burns and died after 5 days of hospitalization. The dying declaration recorded by a magistrate named the accused. A second dying declaration recorded by a doctor named unknown persons. The accused claimed the deceased accidentally caught fire while cooking. Neighbors heard screams but did not witness the actual incident. The accused had burn injuries on her hands which she claimed were from trying to save the deceased.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that two contradictory dying declarations created serious doubt. The first declaration naming the accused was contradicted by the second naming unknown persons. When multiple dying declarations are inconsistent, the court must scrutinize them carefully and cannot base conviction on the one favorable to the prosecution alone. The burn injuries on the accused's hands were consistent with both versions. The absence of direct eyewitness testimony and the cooking accident theory could not be ruled out. The court acquitted the accused on the benefit of doubt."
+  },
+  {
+    "case_id": "HC_BOM_2021_020",
+    "case_name": "State of Maharashtra v. Nitin Jadhav",
+    "year": 2021,
+    "court": "Bombay High Court",
+    "facts": "Nitin Jadhav was charged under Section 420 IPC for a job fraud scheme. The accused posed as a senior government official and collected Rs. 50 lakhs from 30 job aspirants promising government positions. He created fake appointment letters, conducted sham interviews at rented office spaces, and issued fraudulent joining letters. Multiple victims reported when their joining dates passed without any actual positions. Investigation revealed the accused had no government connections. The rented offices were abandoned. The accused's social media showed a lavish lifestyle funded by the defrauded amounts. He claimed he was a genuine recruitment consultant and was duped by his contacts who promised government job allocations.",
+    "sections": [
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused's elaborate scheme of fake offices, forged appointment letters, and sham interviews demonstrated premeditated fraud. The claim of being a genuine consultant was contradicted by the complete absence of any legitimate government connections or authorization. The lavish lifestyle and multiple victims following the same modus operandi established a systematic fraudulent enterprise. The court convicted under Section 420 IPC and directed restitution to all victims."
+  },
+  {
+    "case_id": "SC_2020_017",
+    "case_name": "Arjun Reddy v. State of Karnataka",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Arjun Reddy was charged under Section 302 IPC for the murder of his former girlfriend who had ended their relationship. The prosecution alleged that the accused, unable to accept the breakup, stalked the victim for three months and then attacked her with acid outside her college, causing fatal burns. She died after 12 days of hospitalization. Her dying declaration named the accused. CCTV footage from the college captured the attack. The accused's phone contained threatening messages sent to the victim. The accused claimed temporary insanity caused by the breakup and submitted a psychiatric evaluation.",
+    "sections": [
+      "302",
+      "354"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the evidence was overwhelming — CCTV footage, dying declaration, threatening messages, and the three-month stalking pattern established premeditation. The defense of temporary insanity was rejected as the accused's methodical stalking and planned procurement of acid demonstrated rational, deliberate behavior. The court convicted under Section 302 and imposed maximum punishment, observing that crimes against women for rejecting romantic advances deserve strictest punishment to serve as deterrence."
+  },
+  {
+    "case_id": "HC_ALL_2018_021",
+    "case_name": "Mohammed Shahid v. State of Uttar Pradesh",
+    "year": 2018,
+    "court": "Allahabad High Court",
+    "facts": "Mohammed Shahid was charged under Sections 395 and 120B IPC for dacoity at a highway dhaba. The prosecution alleged that the accused led a gang of seven persons who robbed travelers at a roadside eatery at gunpoint. The case rested on the testimony of four victims and the dhaba owner. Two weapons were recovered from the accused's residence. However, the identification was based on a TIP conducted 60 days after the incident. The robbery occurred at night in a dimly lit area. The accused presented evidence of being a school teacher with a clean record and multiple character witnesses. Some recovered items were common household objects not uniquely identifiable as stolen.",
+    "sections": [
+      "395",
+      "120B"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found that the delayed TIP after 60 days significantly reduced its evidentiary value, especially for an incident at night in poor lighting conditions. The recovered weapons were country-made firearms commonly found in rural areas. The stolen items being generic household objects could not be conclusively linked to the crime. The accused's clean record and consistent alibi created reasonable doubt. The court emphasized that in cases relying primarily on identification evidence, prompt TIP is crucial."
+  },
+  {
+    "case_id": "HC_KAR_2020_022",
+    "case_name": "State of Karnataka v. Nagesh Shetty",
+    "year": 2020,
+    "court": "Karnataka High Court",
+    "facts": "Nagesh Shetty was charged under Sections 376 and 506 IPC for rape and criminal intimidation. The victim alleged that the accused, who was her landlord, entered her apartment using a spare key and raped her. He then threatened her with eviction and social humiliation if she reported the crime. She reported after two weeks when she confided in a colleague. Medical examination conducted late could not confirm recent intercourse. However, the victim's account was consistent throughout and her colleague testified to the complainant's distressed state. The spare key was recovered from the accused. A neighbor's CCTV captured the accused entering the building at the time stated by the victim. The accused claimed a consensual relationship.",
+    "sections": [
+      "376",
+      "506"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the delayed medical examination could not disprove the victim's allegation as biological evidence degrades over time. The CCTV evidence, recovery of spare key, and the victim's consistent account corroborated her version. The accused's position as landlord created an inherent power imbalance. The court emphasized that the testimony of a rape survivor, if found trustworthy, can form the sole basis of conviction even without medical corroboration. The delay in reporting was explained by the threats of eviction. The court convicted under Sections 376 and 506 IPC."
+  },
+  {
+    "case_id": "SC_2019_018",
+    "case_name": "State of Odisha v. Jayanta Das",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Jayanta Das was charged under Section 302 IPC for poisoning his elderly father to inherit property. The deceased, aged 75, was found dead with symptoms of pesticide poisoning. The toxicology report confirmed organophosphate poisoning. The accused was the sole heir and had recently been in a dispute with his father about selling ancestral property. The accused had purchased pesticide from a local shop three days before the death, confirmed by the shopkeeper. However, the deceased was a farmer who regularly used pesticides, and the accused also helped on the farm. The deceased had a history of depression and had previously expressed suicidal ideation to his neighbor. No suicide note was found.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that the circumstantial evidence did not form a complete chain excluding every hypothesis other than guilt. The purchase of pesticide was explained by agricultural use. The deceased's history of depression and suicidal ideation introduced the possibility of suicide. The absence of a suicide note could not be used against either party. The property dispute motive, while present, was insufficient without additional evidence. The court applied the settled principle that in poisoning cases, mere access to poison and motive are insufficient without evidence of administration."
+  },
+  {
+    "case_id": "HC_DEL_2020_023",
+    "case_name": "Arun Bhatia v. State (NCT of Delhi)",
+    "year": 2020,
+    "court": "Delhi High Court",
+    "facts": "Arun Bhatia was charged under Section 420 IPC for operating a fraudulent online education platform. The accused collected registration fees from 5,000 students promising internationally recognized degrees and certifications. Investigation revealed the certificates had no accreditation and the 'international university' partnership was fictitious. Total amount collected was Rs. 8 crores. The website used fake testimonials and fabricated university logos. Multiple students discovered the fraud when employers rejected their certificates. The accused claimed he was merely a marketing partner and the actual education was provided by a foreign entity that could not be traced.",
+    "sections": [
+      "420",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused was the sole proprietor and beneficiary of the fraudulent platform. The fake testimonials, fabricated university partnerships, and unaccredited certificates established dishonest intent. The claim of being a marketing partner was rejected as all revenue flowed directly to the accused's accounts. The scale of fraud affecting 5,000 students demonstrated a systematic criminal enterprise. The court convicted under Section 420 IPC and directed refund of all collected fees."
+  },
+  {
+    "case_id": "SC_2021_019",
+    "case_name": "State of Maharashtra v. Ashok Kamble",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Ashok Kamble was charged under Section 307 IPC for attempting to murder a rival gang member. The accused allegedly attacked the victim with a sword in a public market, causing a deep wound to the neck that narrowly missed the carotid artery. The victim survived after emergency surgery. Twelve market vendors witnessed the attack. The accused was apprehended by bystanders at the scene. The sword was recovered. The accused's defense was that the victim's gang had attacked his younger brother a week earlier and he acted in sudden provocation. Medical records confirmed the brother's hospitalization from a prior assault by the victim's associates.",
+    "sections": [
+      "307",
+      "326"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that while the prior attack on the accused's brother established a motive, it could not constitute sudden provocation as a week had elapsed, allowing time for the accused to cool down. The nature of the weapon (sword) and the target (neck) demonstrated clear intent to kill. The overwhelming eyewitness testimony and apprehension at the scene left no doubt about the accused's identity. The court convicted under Section 307 IPC but noted the prior provocation as a mitigating factor in sentencing."
+  },
+  {
+    "case_id": "HC_MAD_2019_024",
+    "case_name": "Selvam v. State of Tamil Nadu",
+    "year": 2019,
+    "court": "Madras High Court",
+    "facts": "Selvam was charged under Section 379 IPC for theft of temple jewelry worth Rs. 22 lakhs. The prosecution alleged the accused, who worked as a temple employee, stole gold ornaments from the sanctum during a renovation period when the deities were temporarily relocated. The theft was discovered after the renovation. Goldsmith records showed the accused sold gold items matching the description of stolen jewelry. CCTV at the goldsmith's shop confirmed the accused's visit. The accused claimed he sold his wife's inherited jewelry and the description match was coincidental. His wife's family disputed this claim, testifying she had no such inheritance.",
+    "sections": [
+      "379",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused's access to the temple during renovation, the matching description of sold gold with stolen temple jewelry, CCTV evidence at the goldsmith's shop, and the contradiction of his wife's inheritance claim by her own family established guilt. The defense of selling inherited jewelry was completely undermined by the wife's family testimony. The temporal correlation between the renovation period and the gold sales further strengthened the prosecution's case. The court convicted under Sections 379 and 406 IPC."
+  },
+  {
+    "case_id": "HC_PNJ_2021_025",
+    "case_name": "Jaspreet Kaur v. State of Punjab",
+    "year": 2021,
+    "court": "Punjab and Haryana High Court",
+    "facts": "Jaspreet Kaur filed a complaint under Section 498A IPC against her husband and in-laws. She alleged that her husband, an NRI based in Canada, married her and took Rs. 25 lakhs as dowry but never took her to Canada as promised. He visited India twice in four years and during visits subjected her to physical abuse. However, investigation revealed that the husband had applied for her immigration but it was rejected by Canadian authorities due to document issues. The husband showed money transfer records of Rs. 2 lakhs monthly to his wife. Video call records showed regular communication. The wife's complaint was filed immediately after she learned her husband had applied for divorce in Canada.",
+    "sections": [
+      "498A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found that the husband's efforts to bring his wife to Canada were genuine, as evidenced by immigration applications and the rejection being due to document issues beyond his control. The regular financial support and communication contradicted the allegation of cruelty and abandonment. The timing of the complaint immediately after learning of the divorce petition suggested it was motivated by matrimonial discord rather than genuine cruelty. The court acquitted the accused while noting the complaint appeared retaliatory."
+  },
+  {
+    "case_id": "SC_2020_020",
+    "case_name": "State of Kerala v. Thomas Kurian",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Thomas Kurian, a bank manager, was charged under Sections 420 and 406 IPC for sanctioning fraudulent loans totaling Rs. 35 crores to shell companies in exchange for kickbacks. Investigation by CBI revealed that the accused approved loans against fictitious collateral using forged property documents. The shell companies defaulted immediately after receiving funds. Bank audit trail showed the accused bypassed normal verification procedures. Rs. 2 crores in cash was recovered from the accused's residence. Benami properties worth Rs. 5 crores were traced to his relatives. The accused claimed he followed standard banking procedures and was not aware of the fraud perpetrated by the borrowers.",
+    "sections": [
+      "420",
+      "406",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused's role went beyond negligent banking to active participation in fraud. The bypassing of verification procedures, approval of loans against forged documents, recovery of cash from his residence, and benami properties collectively established criminal conspiracy. The defense of following standard procedures was contradicted by the bank's audit trail showing deliberate circumvention of due diligence. The court convicted under Sections 420, 406, and 120B IPC."
+  },
+  {
+    "case_id": "HC_GUJ_2018_026",
+    "case_name": "Hasmukh Patel v. State of Gujarat",
+    "year": 2018,
+    "court": "Gujarat High Court",
+    "facts": "Hasmukh Patel was charged under Section 304A IPC for death caused by negligence in a factory accident. A worker died when a faulty crane collapsed in the accused's chemical factory. The accused was the factory owner and managing director. Investigation revealed that the crane had not been inspected for 3 years despite mandatory annual inspections. Previous inspection reports had flagged the crane as requiring repairs. Safety officer position was vacant for 18 months. Worker safety training records were fabricated. The accused claimed the crane failure was due to a manufacturing defect and that he relied on his operations manager for safety compliance.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the factory owner cannot delegate statutory safety obligations and escape criminal liability. The non-inspection of the crane for 3 years, ignoring prior inspection warnings, vacant safety officer position, and fabricated training records demonstrated gross and criminal negligence. The defense of manufacturing defect was rejected as the crane's issues were known from prior inspections. As managing director with ultimate responsibility for factory safety, the accused was convicted under Section 304A IPC."
+  },
+  {
+    "case_id": "HC_CAL_2020_027",
+    "case_name": "Debashish Roy v. State of West Bengal",
+    "year": 2020,
+    "court": "Calcutta High Court",
+    "facts": "Debashish Roy was charged under Section 302 IPC for murdering his cousin during a property partition dispute. The prosecution's case was based on the testimony of the deceased's wife who claimed to be an eyewitness, and blood stains found on the accused's clothing. The accused admitted to being present at the scene but claimed his cousin attacked him first and he acted in self-defense, resulting in accidental death. The accused had injuries documented in the MLC report — a deep cut on the forearm and bruises on the chest. The weapon, a dao (curved knife), was found at the scene. The deceased had a criminal record including prior assault charges, while the accused had none.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court gave significant weight to the accused's documented injuries which were consistent with a defensive struggle. The deceased's prior criminal record for assault supported the possibility that the deceased was the aggressor. The right of private defense was found applicable as the accused faced a real and imminent threat. The prosecution's sole eyewitness being the deceased's wife was an interested party. The court held that the prosecution failed to disprove the self-defense claim beyond reasonable doubt and acquitted the accused, applying Exception 2 to Section 300 (right of private defense)."
+  },
+  {
+    "case_id": "SC_2019_021",
+    "case_name": "State of Tamil Nadu v. Saravanan",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Saravanan was charged under Sections 302 and 120B IPC for the contract killing of a real estate developer. The prosecution established that the accused hired two shooters through an intermediary to eliminate the victim who was a business rival. The shooters were arrested and turned approvers. Phone records showed extensive communication between the accused and the intermediary before and after the murder. Financial transactions traced Rs. 15 lakhs flowing from the accused to the intermediary and then to the shooters. The accused claimed the phone and financial communications were related to a legitimate land deal and the approvers were falsely implicating him under police pressure.",
+    "sections": [
+      "302",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the approver testimony reliable as it was corroborated by independent evidence — phone records, financial transactions, and the timing of communications matching the planning and execution of the murder. The accused's claim of legitimate land dealings was contradicted by the secretive nature of cash transactions and use of multiple phone numbers. The court held that when approver testimony is substantially corroborated by independent material evidence, it can form the basis of conviction. The accused was convicted under Sections 302 and 120B IPC."
+  },
+  {
+    "case_id": "HC_BOM_2018_028",
+    "case_name": "Rohit Deshmukh v. State of Maharashtra",
+    "year": 2018,
+    "court": "Bombay High Court",
+    "facts": "Rohit Deshmukh was charged under Section 376 IPC for rape. The complainant alleged that the accused, who was her boyfriend of two years, raped her after she refused to continue the relationship. Medical examination showed no injuries. The complainant filed the report 30 days after the alleged incident, after discovering she was pregnant. The accused produced extensive evidence of a consensual relationship including photographs, travel together, text messages expressing love, and testimony of mutual friends. The complainant acknowledged the relationship but claimed this specific instance was non-consensual. There were no witnesses to the alleged incident which occurred at the accused's apartment.",
+    "sections": [
+      "376"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court observed that while a sexual act within a relationship can still constitute rape if consent is absent on a specific occasion, the prosecution must provide evidence beyond reasonable doubt. The absence of any injury, 30-day delay in reporting coinciding with discovery of pregnancy, the established consensual relationship, and absence of any corroborating evidence of force on the specific occasion created reasonable doubt. The court cautioned that rape is a serious allegation requiring strict proof and acquitted the accused."
+  },
+  {
+    "case_id": "HC_KER_2021_029",
+    "case_name": "State of Kerala v. Suresh Menon",
+    "year": 2021,
+    "court": "Kerala High Court",
+    "facts": "Suresh Menon was charged under Section 420 IPC for cheating elderly investors in a gold investment scheme. The accused, a registered jeweler, offered a scheme where investors deposited money for one year and received gold at maturity. Over 200 elderly investors deposited Rs. 12 crores. Initially, returns were paid to early investors. When the scheme collapsed, investigation revealed the accused had purchased only a fraction of the gold claimed. Most funds were invested in volatile cryptocurrency markets and lost. The accused claimed the gold market crash and cryptocurrency losses were beyond his control and he intended to make investors whole through future profits.",
+    "sections": [
+      "420",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that collecting deposits for gold investment while secretly investing in cryptocurrency constituted breach of trust and cheating. The accused was not authorized to change the investment instrument without investor consent. The Ponzi-like structure of paying early investors with later investors' money established fraudulent intent. The targeting of elderly investors was considered an aggravating factor. The court convicted under Sections 420 and 406 IPC and directed maximum punishment given the vulnerability of the victims."
+  },
+  {
+    "case_id": "SC_2021_022",
+    "case_name": "Vikram Singh v. State of Uttar Pradesh",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Vikram Singh was convicted under Section 302 IPC for the murder of a Dalit community leader. The prosecution alleged the accused, a dominant caste landlord, murdered the victim who was leading a land rights movement. Three eyewitnesses, all from the Dalit community, identified the accused. The murder weapon (a country-made pistol) was recovered based on the accused's disclosure. Ballistic evidence matched the weapon to the crime. The accused claimed the eyewitnesses were biased political opponents and that the weapon was planted. He produced witnesses claiming he was at a religious ceremony in another district.",
+    "sections": [
+      "302",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that eyewitnesses cannot be discredited merely because they belong to a particular community. Their testimony was consistent, detailed, and withstood rigorous cross-examination. The ballistic evidence was independent and scientific, eliminating the possibility of weapon planting. The alibi witnesses were relatives of the accused and their testimony was vague about timings. The court convicted under Section 302 IPC and observed that caste-based violence undermines constitutional principles of equality and dignity."
+  },
+  {
+    "case_id": "HC_TEL_2019_030",
+    "case_name": "Radha Krishna v. State of Telangana",
+    "year": 2019,
+    "court": "Telangana High Court",
+    "facts": "Radha Krishna was charged under Section 363 IPC for kidnapping a 16-year-old girl. The accused, aged 22, and the girl had eloped. The girl's parents filed a kidnapping complaint. The girl gave a statement before the magistrate that she went willingly and was not coerced. However, the girl was below 18 and legally a minor. The accused argued that the girl appeared mature and showed him a college ID suggesting she was 19. Investigation revealed the college ID was genuine but had a wrong date of birth entered by the college administration. The girl and the accused had been in a relationship for two years with mutual social media posts.",
+    "sections": [
+      "363"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that under Section 363 IPC, the consent of a minor girl below 18 years is irrelevant for the offense of kidnapping. The accused's mistake about the girl's age, while understandable given the erroneous college ID, does not constitute a valid defense as kidnapping is a strict liability offense regarding the age of the victim. The court convicted under Section 363 IPC but imposed minimum punishment considering the genuine relationship, the administrative error in the college ID, and the girl's own statements supporting the accused."
+  },
+  {
+    "case_id": "SC_2020_023",
+    "case_name": "State of West Bengal v. Ananda Bhattacharya",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Ananda Bhattacharya, a school headmaster, was charged under Section 406 IPC for criminal breach of trust. He was entrusted with the school development fund of Rs. 30 lakhs collected from parents over 5 years. Audit revealed that Rs. 18 lakhs could not be accounted for. The accused maintained minimal records and produced some bills and receipts, but many were found to be duplicate or fabricated. The accused claimed the money was spent on school infrastructure and maintenance that was not properly documented. Physical verification showed some infrastructure improvements but not proportionate to the missing amount. Three teachers testified that the accused handled all finances personally without any committee oversight.",
+    "sections": [
+      "406",
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the accused's sole control over school funds without any oversight mechanism, combined with the inability to account for Rs. 18 lakhs, established criminal breach of trust. The fabricated bills demonstrated dishonest intent rather than mere negligence. While some infrastructure improvements were made, the vast gap between expenditure claims and verifiable improvements confirmed misappropriation. The court convicted under Section 406 IPC and directed repayment of the misappropriated amount."
+  },
+  {
+    "case_id": "HC_DEL_2021_031",
+    "case_name": "State (NCT of Delhi) v. Manish Aggarwal",
+    "year": 2021,
+    "court": "Delhi High Court",
+    "facts": "Manish Aggarwal was charged under Sections 307 and 34 IPC for attempted murder during a business dispute. The accused and two associates allegedly attacked the victim, a competing trader, with iron rods in a commercial market area. The victim suffered a fractured skull and was in a coma for two weeks. Five market traders witnessed the attack. CCTV from multiple shops captured different angles of the assault. The iron rods were recovered from a drain near the accused's shop. The accused's defense was that it was a mutual fight and the victim provoked the assault by making defamatory statements about the accused's business practices.",
+    "sections": [
+      "307",
+      "323",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the CCTV evidence from multiple angles conclusively showed a planned and unprovoked attack by three persons on a single victim, negating the defense of mutual fight. Five independent market trader witnesses corroborated the CCTV evidence. The severity of injury — fractured skull resulting in a two-week coma — demonstrated intent to cause death. The recovery of weapons from near the accused's shop further connected the accused. Defamatory statements, even if true, cannot justify an attempt to murder. All three accused were convicted under Section 307 read with 34 IPC."
+  },
+  {
+    "case_id": "HC_KAR_2019_032",
+    "case_name": "Rajappa v. State of Karnataka",
+    "year": 2019,
+    "court": "Karnataka High Court",
+    "facts": "Rajappa was charged under Section 304B for the dowry death of his wife Gowri who died under suspicious circumstances 18 months after marriage. The deceased was found dead with her wrists cut in the bathroom. The family alleged dowry demands and harassment. However, the wound pattern was consistent with self-infliction according to the forensic expert. The deceased had a documented history of clinical depression predating the marriage, with prescriptions from a psychiatrist. No suicide note was found. Neighbors described the couple as having a normal relationship. The deceased's college friend testified that Gowri had previously attempted self-harm during college. The accused had no prior criminal record.",
+    "sections": [
+      "304B",
+      "498A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that while the death occurred within seven years of marriage, the prosecution failed to establish cruelty or dowry demand 'soon before death' as required under Section 304B. The self-inflicted wound pattern, documented pre-existing depression, prior self-harm history, and normal marital relationship as observed by neighbors created reasonable doubt. The court observed that not every death within seven years of marriage automatically raises the presumption under Section 304B without evidence of the essential ingredients of cruelty and dowry demand. The accused was acquitted."
+  },
+  {
+    "case_id": "SC_2018_024",
+    "case_name": "State of Rajasthan v. Babu Lal Meena",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "Babu Lal Meena was charged under Section 302 IPC for the honor killing of his sister. The accused discovered his unmarried sister was pregnant and killed her by pushing her into a well. He initially reported it as an accidental drowning but inconsistencies in his statement led to investigation. Post-mortem revealed the victim was 4 months pregnant, had defensive injuries on her hands, and bruise marks on her arms consistent with being forcibly held before being pushed. The accused's mother testified that Babu Lal was enraged about the pregnancy and had threatened his sister. A neighbor overheard the accused confronting his sister about the pregnancy on the evening of the incident.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the post-mortem evidence of defensive injuries conclusively disproved the accidental drowning theory. The mother's testimony about threats and the neighbor's overhearing of the confrontation established motive and the accused's presence at the scene. The court reiterated its strong condemnation of honor killings, holding that no family member has the right to take the law into their own hands regardless of perceived social stigma. The court convicted under Section 302 IPC and imposed rigorous life imprisonment."
+  },
+  {
+    "case_id": "HC_BOM_2020_033",
+    "case_name": "Sachin Joshi v. State of Maharashtra",
+    "year": 2020,
+    "court": "Bombay High Court",
+    "facts": "Sachin Joshi was charged under Section 506 IPC for criminal intimidation of a whistleblower. The complainant, an RTI activist, alleged that the accused, a municipal corporator, threatened to kill him and his family after the complainant exposed corruption in municipal contracts. The complainant produced three audio recordings of threatening phone calls. The accused's assistant was captured on CCTV visiting the complainant's house and leaving a threatening letter. Handwriting analysis matched the letter to the assistant. Phone records confirmed calls from the accused's number. The accused denied all allegations and claimed a political conspiracy against him.",
+    "sections": [
+      "506",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that audio recordings, CCTV evidence of the assistant's visit, handwriting analysis of the threatening letter, and phone records collectively established the criminal intimidation and conspiracy. The defense of political conspiracy was not supported by any evidence. The court convicted under Sections 506 and 120B IPC, emphasizing the importance of protecting RTI activists and whistleblowers from intimidation by powerful persons."
+  },
+  {
+    "case_id": "SC_2021_025",
+    "case_name": "Sunil Verma v. State of Madhya Pradesh",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Sunil Verma was charged under Section 376 IPC for rape of his domestic worker. The victim, a 20-year-old tribal woman working as a maid, alleged that the accused raped her on multiple occasions over three months threatening to falsely implicate her in a theft case. She reported after escaping from the house. Medical examination showed healed injuries consistent with repeated sexual assault. DNA from samples matched the accused. The accused claimed a consensual relationship and produced gifts he had given her. The victim's low socioeconomic status, tribal background, and employment dependency on the accused were highlighted by the prosecution.",
+    "sections": [
+      "376"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that consent obtained through threats of false criminal implication and economic coercion cannot be considered free consent under Section 375 IPC. The DNA evidence conclusively established sexual intercourse. The power dynamics between employer and domestic worker, particularly given the victim's vulnerable socioeconomic background, negated any possibility of genuine consent. The medical evidence of healed injuries corroborated repeated non-consensual acts. The court convicted under Section 376 IPC and imposed enhanced punishment considering the abuse of the employer-employee relationship."
+  },
+  {
+    "case_id": "HC_ALL_2020_034",
+    "case_name": "State of Uttar Pradesh v. Dinesh Tiwari",
+    "year": 2020,
+    "court": "Allahabad High Court",
+    "facts": "Dinesh Tiwari was charged under Section 302 for the murder of his neighbor over a boundary wall dispute. The prosecution alleged that the accused demolished a portion of the shared boundary wall and when the deceased objected, the accused hit him on the head with a brick causing fatal injury. The deceased died en route to the hospital. Two witnesses, both neighboring residents, saw the accused holding a brick and the deceased lying on the ground. However, they did not witness the actual blow. The brick with blood stains was recovered. The accused claimed the deceased fell and hit his head on the wall debris during the argument and that he was trying to help when witnesses arrived.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that the prosecution failed to prove murder beyond reasonable doubt. No witness actually saw the accused strike the deceased. The witnesses only saw the aftermath — the accused holding a brick and the deceased on the ground — which was equally consistent with the defense version of the deceased falling. A single blow with a brick during a wall dispute, even if proved, might attract Section 304 but not necessarily Section 302 in the absence of premeditation. The court acquitted the accused noting that the prosecution should have pursued alternative charges."
+  },
+  {
+    "case_id": "HC_MAD_2021_035",
+    "case_name": "Palani v. State of Tamil Nadu",
+    "year": 2021,
+    "court": "Madras High Court",
+    "facts": "Palani was charged under Sections 392 and 506 IPC for robbery and criminal intimidation. The prosecution alleged the accused robbed a money exchange trader of Rs. 8 lakhs at knife-point. The trader identified the accused in a TIP conducted within 48 hours. The accused was arrested near the scene 2 hours after the robbery with Rs. 3 lakhs in his possession. A knife matching the victim's description was recovered from the accused. GPS tracking from the accused's phone placed him at the crime scene at the time of robbery. The accused claimed he was wrongly identified and the money was his savings withdrawn from a bank but could not produce any bank receipt.",
+    "sections": [
+      "392",
+      "506"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the evidence overwhelmingly probative. The prompt TIP within 48 hours, arrest near the scene with a large unexplained sum, recovery of the weapon matching the victim's description, and GPS evidence placing the accused at the crime scene formed a complete chain. The accused's failure to produce any bank receipt for the claimed withdrawal fatally weakened his defense. The court convicted under Sections 392 and 506 IPC."
+  },
+  {
+    "case_id": "SC_2019_026",
+    "case_name": "Meena Kumari v. State of Bihar",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Meena Kumari was convicted under Section 302 IPC for allegedly poisoning her husband. The prosecution's case was that the accused mixed rat poison in her husband's food. The deceased died after two days of hospitalization. The dying declaration named the accused. However, the chemical analysis report from the forensic laboratory tested positive for organophosphate compound but the quantification was below lethal limits. The deceased had pre-existing liver cirrhosis. A second medical opinion obtained by the defense suggested the death could have been caused by liver failure triggered by even sub-lethal doses of toxin in a compromised liver. The accused had no apparent motive as she was financially dependent on the deceased.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found that the forensic report showing sub-lethal levels of poison created doubt about whether the poison was the proximate cause of death. The deceased's pre-existing liver cirrhosis introduced an independent cause of death. The dying declaration, while naming the accused, was made 48 hours after the alleged poisoning during which period the deceased's mental faculties could have been compromised by liver failure. The absence of motive further weakened the prosecution's case. The court acquitted applying the principle that when the medical evidence is equivocal, the benefit must go to the accused."
+  },
+  {
+    "case_id": "HC_KER_2018_036",
+    "case_name": "State of Kerala v. Rajan Pillai",
+    "year": 2018,
+    "court": "Kerala High Court",
+    "facts": "Rajan Pillai was charged under Section 354 IPC for outraging the modesty of a woman in a crowded bus. The victim alleged the accused intentionally pressed against her and groped her during a rush-hour bus journey. She immediately shouted and other passengers restrained the accused until police arrived. Seven bus passengers provided statements supporting the victim's account. The bus conductor also confirmed the incident. The accused claimed the crowded conditions led to accidental contact and he was being falsely accused. He had no prior criminal record and was a respected school teacher.",
+    "sections": [
+      "354"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the victim's immediate outcry and the overwhelming corroboration from seven passengers and the bus conductor established the intentional nature of the accused's actions. The crowded bus conditions, while potentially causing some accidental contact, could not explain the specific and persistent nature of the touching described by multiple witnesses. The court emphasized that a victim's immediate and instinctive reaction is the most reliable indicator of the nature of contact. The accused's clean record, while a mitigating factor for sentencing, did not affect the finding of guilt."
+  },
+  {
+    "case_id": "HC_DEL_2019_037",
+    "case_name": "Rakesh Kapoor v. State (NCT of Delhi)",
+    "year": 2019,
+    "court": "Delhi High Court",
+    "facts": "Rakesh Kapoor was charged under Section 420 IPC for a matrimonial fraud. The accused married the complainant after falsely representing himself as a successful businessman with properties in Delhi and London. After marriage, the complainant discovered the accused had no business, was unemployed, and the properties were non-existent. The accused collected Rs. 20 lakhs as dowry and Rs. 15 lakhs as investment in his purported business. Bank records showed the accused used the money for personal expenses and gambling. The accused had been previously married twice and both wives had filed similar complaints. The accused claimed a temporary business downturn and genuine intention to repay.",
+    "sections": [
+      "420",
+      "498A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found a clear pattern of matrimonial fraud evidenced by two prior similar complaints from ex-wives. The false representations about business and property were designed to induce marriage and extraction of dowry. The use of collected funds for gambling further demonstrated dishonest intention. The court convicted under Section 420 IPC and observed that matrimonial fraud targeting women through false representations constitutes a serious offense deserving deterrent punishment."
+  },
+  {
+    "case_id": "SC_2020_027",
+    "case_name": "State of Assam v. Bhupen Bora",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Bhupen Bora was charged under Section 302 IPC for the murder of a forest ranger who had filed cases against his illegal logging operation. The prosecution relied on circumstantial evidence: the accused had motive (pending criminal cases), opportunity (he was in the area), and his truck was seen near the crime scene. The murder weapon, a machete, was found in a forest patch 2 km from the accused's house but bore no fingerprints. Soil samples from the accused's boots matched the crime scene soil. The accused admitted to being in the forest for logging but denied meeting the ranger. Cell phone data showed the accused's phone was near the crime scene but also covered his regular logging route.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the circumstantial evidence formed a complete chain. The motive was clear from the pending cases. The soil sample match provided scientific evidence placing the accused at the exact crime scene. The cell phone proximity corroborated his presence. The accused's admission of being in the forest and the truck sighting near the crime scene completed the chain. The court held that when each circumstance is independently proved and collectively points only to the guilt of the accused, the absence of direct evidence does not preclude conviction."
+  },
+  {
+    "case_id": "HC_PNJ_2019_038",
+    "case_name": "Gurpreet Singh v. State of Punjab",
+    "year": 2019,
+    "court": "Punjab and Haryana High Court",
+    "facts": "Gurpreet Singh was charged under Section 307 IPC for attempted murder of his father-in-law. The accused allegedly attacked the victim with a kirpan during a family gathering, causing injuries to the chest and arm. The victim was hospitalized for 3 weeks. Five family members witnessed the attack. However, all eyewitnesses were relatives of the victim. The accused claimed the father-in-law attacked him first with a bottle and the kirpan was drawn in self-defense. The accused had a bruise on his forehead consistent with a bottle strike. Two of the victim's own relatives admitted during cross-examination that the father-in-law had been drinking heavily and was verbally abusive towards the accused that evening.",
+    "sections": [
+      "307"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that while there was evidence of provocation and the father-in-law was drinking, the accused's response of attacking with a kirpan causing chest injuries was disproportionate to the provocation of a verbal altercation and a bottle hit. The right of private defense does not extend to causing injuries far in excess of what is necessary to repel the attack. The serious nature of chest injuries demonstrated intent to cause death. The court convicted under Section 307 IPC but imposed a reduced sentence considering the provocation and the victim's contributory behavior."
+  },
+  {
+    "case_id": "HC_GUJ_2020_039",
+    "case_name": "State of Gujarat v. Ketan Shah",
+    "year": 2020,
+    "court": "Gujarat High Court",
+    "facts": "Ketan Shah was charged under Sections 420 and 406 IPC for defrauding investors in a real estate project. The accused collected Rs. 75 crores from 350 investors for a luxury apartment project. While 40% of the project was completed, investigation revealed that Rs. 30 crores were diverted to the accused's other failing businesses. The project was stalled for 4 years. The accused showed genuine construction progress and land ownership. He claimed he would complete the project if given time and that the diversion was temporary to save his overall business empire which would have collapsed, affecting even more people. He proposed a completion plan with a new funding partner.",
+    "sections": [
+      "420",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the diversion of earmarked project funds to other businesses constituted criminal breach of trust regardless of the accused's intention to repay. The investors consented to their money being used for a specific project, not for rescuing the accused's other failing ventures. The 4-year stall caused immense financial hardship to 350 families. While partial construction showed some genuine intent, the scale of diversion demonstrated dishonest misappropriation. The court convicted and directed that the completion plan be implemented under court supervision."
+  },
+  {
+    "case_id": "SC_2018_028",
+    "case_name": "Ravi Teja v. State of Andhra Pradesh",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "Ravi Teja was convicted under Section 302 IPC for the murder of a liquor shop owner during a robbery. Two CCTV cameras captured the incident — the accused entering the shop with a companion, pulling out a knife, and stabbing the owner multiple times before fleeing with cash. The accused was identified from CCTV footage by his employer and two neighbors. The blood-stained clothing was recovered from a river near the accused's house. DNA from the blood matched the deceased. The accused had a prior conviction for robbery. The defense argued that the CCTV footage was blurry and identification unreliable, and that the stabbing was not premeditated but occurred during a struggle when the shop owner resisted.",
+    "sections": [
+      "302",
+      "392"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the CCTV footage, while not of the highest quality, was sufficiently clear for identification by persons who knew the accused. The identification by the employer and neighbors was reliable as they had regular interaction with the accused. DNA evidence from the blood-stained clothing provided conclusive scientific proof. The prior robbery conviction established a pattern of criminal behavior. Even if the stabbing was during a struggle, entering the shop armed with a knife showed preparedness to use lethal force. The court upheld the conviction under Section 302 read with 392 IPC."
+  },
+  {
+    "case_id": "HC_CAL_2019_040",
+    "case_name": "Tapan Sarkar v. State of West Bengal",
+    "year": 2019,
+    "court": "Calcutta High Court",
+    "facts": "Tapan Sarkar was charged under Section 306 IPC for abetting the suicide of a student. The accused, a college professor, allegedly failed the victim repeatedly despite adequate performance, demanding bribes for passing marks. The student left a suicide note naming the professor and detailing the harassment. Other students corroborated that the professor demanded money from students for passing. The university's internal inquiry found anomalies in the professor's grading records. However, the professor produced evidence that the student had genuinely poor academic records in other subjects and had failed in other professors' papers too. The student had a history of academic anxiety and family financial pressures.",
+    "sections": [
+      "306"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court gave significant weight to the suicide note specifically naming the professor and detailing the bribery demands. The corroboration by other students who faced similar demands and the university inquiry findings about grading anomalies established a pattern of corrupt behavior. While the student may have had other stressors, the suicide note clearly identified the professor's harassment as the proximate cause. The court held that when a person in a position of authority uses that power to harass a dependent person, driving them to suicide, it constitutes abetment. The professor was convicted under Section 306 IPC."
+  },
+  {
+    "case_id": "HC_BOM_2021_041",
+    "case_name": "Prakash Jain v. State of Maharashtra",
+    "year": 2021,
+    "court": "Bombay High Court",
+    "facts": "Prakash Jain was charged under Section 379 IPC for theft of intellectual property — specifically, stealing proprietary chemical formulations from his employer, a pharmaceutical company. The accused, a senior chemist, copied formulation data onto personal USB drives and resigned to join a competitor. Digital forensic analysis of his work computer showed bulk data transfers to external devices. The competitor launched a suspiciously similar product within 3 months of the accused joining. The accused claimed the formulations were developed by him personally and he had a right to use his own expertise. Employment records showed the company owned all intellectual property created during employment per the contract.",
+    "sections": [
+      "379",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the employment contract clearly vested ownership of all formulations in the employer. The bulk data transfer to personal devices, timed with his resignation, demonstrated intent to steal. The competitor's rapid product launch using similar formulations provided circumstantial corroboration. The defense of personal expertise was rejected as the specific formulations were corporate property. The court convicted under Section 379 IPC and issued an injunction against the competitor's product pending a separate civil suit."
+  },
+  {
+    "case_id": "SC_2019_029",
+    "case_name": "State of Uttarakhand v. Mahesh Rawat",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Mahesh Rawat was charged under Section 302 IPC for the murder of a tourist. The deceased, a solo trekker, was found dead on a mountain trail near the accused's village. The prosecution established that the deceased's wallet, camera, and trekking equipment were found in the accused's possession. The accused initially sold the camera at a shop where it was identified by the deceased's family through photographs on the memory card. The accused claimed he found the items near a cliff where the deceased had apparently fallen accidentally and he took the items thinking they were abandoned. GPS data from the camera showed photographs taken at various points on the trail on the day of the murder. Post-mortem showed blunt force trauma inconsistent with a fall.",
+    "sections": [
+      "302",
+      "392"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the accused's explanation of finding abandoned items near a cliff implausible given the post-mortem evidence of blunt force trauma inconsistent with an accidental fall. The possession of the deceased's belongings created a strong presumption under the last-seen theory. The attempt to sell the camera demonstrated consciousness of guilt. The GPS data from the camera established the deceased's trail and timing, placing the accused along the same route. The court convicted under Sections 302 and 392 IPC, holding that recent possession of a murder victim's belongings, combined with a false explanation, establishes guilt."
+  },
+  {
+    "case_id": "HC_KAR_2021_042",
+    "case_name": "Nagaraj v. State of Karnataka",
+    "year": 2021,
+    "court": "Karnataka High Court",
+    "facts": "Nagaraj was charged under Section 323 IPC for voluntarily causing hurt. During a neighborhood dispute about garbage dumping, the accused punched the victim in the face, causing a fractured nose and two broken teeth. The incident occurred in a common area and was witnessed by four residents. The victim produced medical bills for dental surgery and nasal reconstruction totaling Rs. 1.5 lakhs. The accused admitted to the altercation but claimed the victim pushed him first and he reacted instinctively. The victim denied pushing the accused first. No CCTV coverage existed for the common area.",
+    "sections": [
+      "323",
+      "325"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that four eyewitnesses consistently described the accused punching the victim without prior physical provocation. Even accepting the accused's version of being pushed, a punch causing a fractured nose and broken teeth was a disproportionate response to a push. The medical evidence confirmed significant hurt was caused. The court convicted under Section 323 IPC and directed the accused to compensate the victim's medical expenses in addition to the punishment."
+  },
+  {
+    "case_id": "SC_2020_030",
+    "case_name": "Anwar Hussain v. State of Jammu & Kashmir",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Anwar Hussain was charged under Section 302 IPC for the murder of his wife. The prosecution alleged the accused strangled his wife after discovering she had filed for divorce. The deceased's body was found at their home by the couple's teenage son who returned from school. The son testified that his parents were arguing when he left for school and only his father was present when he returned to find his mother dead. Post-mortem confirmed death by strangulation. The accused fled after the incident and was arrested in another state after 3 months. He claimed an intruder must have killed his wife after he left the house. However, there were no signs of forced entry and nothing was stolen.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court applied the last-seen theory — the accused was the last person seen with the deceased alive by their son. The absence of forced entry and nothing stolen eliminated the intruder theory. The accused's flight after the incident demonstrated consciousness of guilt. The motive of preventing divorce proceedings was established. Post-mortem evidence of strangulation was consistent with the prosecution's case. The court convicted under Section 302 IPC, noting that the combination of last-seen evidence, motive, flight, and absence of alternative explanation formed a complete chain of circumstances."
+  },
+  {
+    "case_id": "HC_MAD_2018_043",
+    "case_name": "State of Tamil Nadu v. Arun Raj",
+    "year": 2018,
+    "court": "Madras High Court",
+    "facts": "Arun Raj was charged under Section 420 IPC for cheating multiple banks through fake invoice financing. The accused submitted fictitious invoices from non-existent companies to obtain working capital loans from six banks simultaneously. Total loans obtained were Rs. 22 crores. Bank audits revealed the invoiced companies were registered shell entities with no real operations. The accused used the funds to purchase luxury real estate and vehicles. He maintained multiple sets of books and engaged a chartered accountant who prepared false audit reports. The accused claimed he was operating a genuine logistics business and the shell companies were used for legitimate tax planning.",
+    "sections": [
+      "420",
+      "120B",
+      "406"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that obtaining loans through fictitious invoices from non-existent companies constituted a clear case of cheating. The multiple sets of books, fake audit reports, and simultaneous borrowing from six banks demonstrated a sophisticated criminal scheme. The chartered accountant was held to be a co-conspirator. The defense of legitimate tax planning was absurd when the invoiced companies had no real operations. The court convicted under Sections 420 and 120B IPC and directed recovery of assets purchased with the defrauded amounts."
+  },
+  {
+    "case_id": "HC_ALL_2019_044",
+    "case_name": "Ram Naresh v. State of Uttar Pradesh",
+    "year": 2019,
+    "court": "Allahabad High Court",
+    "facts": "Ram Naresh was charged under Section 304A IPC for causing death by negligence. The accused was a truck driver who ran over a cyclist while driving on the wrong side of a village road to avoid a pothole. The cyclist died on the spot. Multiple villagers witnessed the incident. The accused was driving at moderate speed but was on the wrong side of the road. The truck's fitness certificate had expired 6 months ago. The accused claimed the pothole was large and dangerous, and he had no choice but to swerve, and the cyclist appeared suddenly. Road inspection confirmed a large pothole but also showed adequate space to navigate around it on the correct side.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that driving on the wrong side of the road, regardless of road conditions, constitutes a rash and negligent act. Road inspection revealed that the pothole could have been navigated without crossing to the wrong side. The expired fitness certificate added to the negligence. While the accused's speed was moderate, the wrong-side driving directly caused the fatal accident. The court convicted under Section 304A IPC but imposed a moderate sentence considering the road conditions and absence of any intent."
+  },
+  {
+    "case_id": "SC_2021_031",
+    "case_name": "State of Kerala v. Vijayan",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Vijayan was charged under Section 302 IPC for poisoning multiple dogs in his neighborhood, leading to the accidental death of a child who consumed poisoned food meant for the dogs. The accused had been laying out poisoned meat to kill stray dogs that he claimed were a nuisance. A 4-year-old child picked up and consumed one of the poisoned pieces. The child died within hours. The accused admitted to laying the poison but claimed he never intended to harm any human. Forensic analysis confirmed the same poison in both the meat samples and the child's system. Multiple neighbors had warned the accused about the danger of leaving poisoned food in public areas.",
+    "sections": [
+      "302",
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that while the accused did not intend to kill the child, his act of leaving poisoned food in a public area frequented by children demonstrated knowledge that such an act was likely to cause death (Section 300, fourthly). The repeated warnings by neighbors about the danger established that the accused was aware of the risk but proceeded regardless. The court modified the charge from Section 302 to Section 304 Part II (culpable homicide not amounting to murder) considering the absence of direct intent, and sentenced the accused to 7 years imprisonment."
+  },
+  {
+    "case_id": "HC_TEL_2020_045",
+    "case_name": "Srinivas Rao v. State of Telangana",
+    "year": 2020,
+    "court": "Telangana High Court",
+    "facts": "Srinivas Rao was charged under Sections 363 and 376 IPC for kidnapping and rape. The victim, a 17-year-old girl, was reported missing by her parents. She was found at the accused's friend's house after 10 days. The victim stated she went willingly as the accused promised to marry her but was then sexually assaulted. The accused claimed a consensual relationship and showed messages of the girl expressing love. The girl's birth certificate confirmed she was 17 years old. Medical examination confirmed sexual intercourse. The accused was 24 years old. The girl's statement before the magistrate was that she went willingly but was forced into sexual intercourse.",
+    "sections": [
+      "363",
+      "376"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that taking a minor girl from her parents' custody, even with her consent, constitutes kidnapping under Section 363. Sexual intercourse with a minor below 18 years constitutes rape regardless of consent under the amended Section 375 IPC read with POCSO Act. The magistrate statement clearly indicated forced intercourse. The accused's defense of consensual relationship was legally irrelevant given the victim's age. The court convicted under both Sections 363 and 376 IPC."
+  },
+  {
+    "case_id": "SC_2018_032",
+    "case_name": "Raghunath Singh v. State of Bihar",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "Raghunath Singh was convicted under Section 302 IPC by the trial court for the murder of a political rival during elections. The prosecution relied on two eyewitnesses who were political supporters of the deceased. The murder weapon was not recovered. The FIR was lodged 48 hours after the incident. The accused was not named in the initial complaint — his name was added in a supplementary statement. The post-mortem confirmed death by gunshot wound. Ballistic evidence was absent as the bullet was not recovered. The accused had a strong alibi supported by four independent witnesses placing him at a political rally 100 kilometers away, with photographs showing his presence.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found multiple infirmities in the prosecution's case. The 48-hour delay in FIR registration, the belated addition of the accused's name, reliance on politically motivated witnesses, non-recovery of the weapon, and absence of ballistic evidence created serious doubts. The accused's alibi supported by photographic evidence and independent witnesses was compelling. The court held that the prosecution's case was an afterthought and the accused was falsely implicated due to political rivalry. The court acquitted the appellant."
+  },
+  {
+    "case_id": "HC_PNJ_2021_046",
+    "case_name": "State of Punjab v. Kulbir Singh",
+    "year": 2021,
+    "court": "Punjab and Haryana High Court",
+    "facts": "Kulbir Singh was charged under Sections 392 and 34 IPC for robbing a jewelry shop. The prosecution case was that the accused and two others entered the shop posing as customers and then robbed gold jewelry worth Rs. 40 lakhs at gunpoint. The shop owner identified the accused from CCTV footage. A portion of the stolen jewelry was recovered from a melting unit that confirmed receiving gold from the accused. Cell site analysis placed all three accused in the vicinity of the shop during the robbery. The accused was arrested within 72 hours. The accused claimed mistaken identity and produced witnesses stating he was at a wedding in another city.",
+    "sections": [
+      "392",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the evidence compelling. The CCTV identification was clear and confirmed by the shop owner. The recovery trail from the melting unit linked the accused to the stolen jewelry. Cell site analysis provided scientific corroboration of presence at the scene. The alibi of attending a wedding was contradicted by the cell tower data. The court convicted all three accused under Section 392 read with 34 IPC, noting the combination of electronic, documentary, and recovery evidence formed an unimpeachable chain."
+  },
+  {
+    "case_id": "HC_GUJ_2019_047",
+    "case_name": "Mehmood Ansari v. State of Gujarat",
+    "year": 2019,
+    "court": "Gujarat High Court",
+    "facts": "Mehmood Ansari was charged under Section 506 IPC for criminal intimidation of a government surveyor who was conducting land measurement in a disputed area. The accused allegedly threatened to kill the surveyor if he entered his claimed territory. The surveyor produced his official field notes documenting the threats. Two police constables who accompanied the surveyor corroborated the threats. The surveyor's mobile phone was snatched and broken by the accused. The accused claimed the surveyor was conducting an unauthorized survey to help a rival claimant and he was protecting his legitimate property rights.",
+    "sections": [
+      "506"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that threatening a government official during the discharge of official duties constitutes criminal intimidation under Section 506, regardless of the merits of the underlying land dispute. The corroboration by two police constables and the documented field notes proved the threats. The snatching and breaking of the phone demonstrated the aggressive and intimidating nature of the encounter. The accused's property rights dispute should be pursued through legal channels, not through threats of violence. The court convicted under Section 506 IPC."
+  },
+  {
+    "case_id": "SC_2020_033",
+    "case_name": "State of Maharashtra v. Dilip Kamble",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Dilip Kamble was charged under Sections 302 and 120B IPC for being part of a conspiracy to murder a witness in a previous criminal case. The deceased had testified against the accused's brother in a murder trial. The prosecution showed that the accused hired two men to kill the witness. Phone records established communication between the accused and the hired killers. Financial transactions showed payment of Rs. 3 lakhs to the killers. The killers were caught and confessed, naming the accused as the mastermind. The accused's brother's case was pending appeal. The accused denied involvement and claimed the killers were settling a personal score with the deceased.",
+    "sections": [
+      "302",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the evidence of conspiracy compelling. Phone records showed extensive and suspicious communication patterns between the accused and the killers before and after the murder. Financial transactions traced through bank records established the payment chain. The motive of eliminating a witness in the brother's case was clear and strong. The killers' confession, while requiring corroboration, was amply corroborated by the phone and financial records. The court convicted under Sections 302 and 120B IPC, observing that witness intimidation and elimination strikes at the very heart of the justice system."
+  },
+  {
+    "case_id": "HC_KER_2020_048",
+    "case_name": "Subramaniam v. State of Kerala",
+    "year": 2020,
+    "court": "Kerala High Court",
+    "facts": "Subramaniam was charged under Section 420 IPC for cheating pilgrims at a famous temple. The accused operated a fraudulent 'VIP darshan' service, collecting Rs. 2,000 per person promising priority access. Over 6 months, approximately 3,000 pilgrims paid the accused through UPI transactions. The temple authorities confirmed no such VIP service existed and the accused had no authorization. Pilgrims who paid reported being denied entry or directed to regular queues. The accused was a former temple committee member whose membership had been revoked two years earlier. He used his former position's knowledge to appear legitimate. He claimed he was providing legitimate guide services and the VIP darshan was a misunderstanding.",
+    "sections": [
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the accused deliberately exploited his former committee membership to appear authorized. The scale of fraud affecting 3,000 pilgrims and the systematic collection through UPI demonstrated a well-organized criminal enterprise. The temple's categorical denial of any VIP service demolished the defense. The UPI transaction trail provided irrefutable evidence of the amounts collected. The court convicted under Section 420 IPC and directed restitution to traceable victims through the UPI records."
+  },
+  {
+    "case_id": "SC_2019_034",
+    "case_name": "Nirmala Devi v. State of Himachal Pradesh",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Nirmala Devi was convicted under Section 302 IPC for the murder of her step-daughter. The 12-year-old girl died from blunt force trauma to the head. The prosecution alleged the accused regularly beat the child and the fatal blow was inflicted during a beating episode. The deceased's biological mother, who was separated from the father, testified about the child's complaints of abuse during phone calls. School records showed frequent absences explained by 'illness' but teachers noted visible bruises on the child. The accused's biological son, aged 14, was the only eyewitness and testified against his mother. The accused claimed the child fell from stairs and that her biological son was coached by the deceased's maternal family.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the pattern of abuse documented through school records, teachers' observations of bruises, and the biological mother's testimony about the child's complaints established consistent mistreatment. The testimony of the accused's own biological son was given significant weight as he had no reason to falsely implicate his mother. The medical evidence of blunt force trauma was inconsistent with a fall from stairs. The court convicted under Section 302 IPC and strongly condemned violence against step-children, imposing life imprisonment."
+  },
+  {
+    "case_id": "HC_BOM_2019_049",
+    "case_name": "Ajay Desai v. State of Maharashtra",
+    "year": 2019,
+    "court": "Bombay High Court",
+    "facts": "Ajay Desai was charged under Section 304A IPC for causing death by negligence. The accused, a building contractor, was responsible for a building collapse that killed three workers. Investigation revealed the accused used substandard materials, deviated from approved structural plans, and continued construction despite a stop-work notice from the municipal corporation. The structural engineer's report confirmed the collapse was due to inadequate foundation and poor-quality concrete. The accused claimed the materials were procured from certified suppliers and blamed unusual heavy rainfall for the collapse. However, weather records showed no unusual rainfall during the period.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the contractor's use of substandard materials, deviation from approved plans, and continuation despite a stop-work notice constituted criminal negligence. The structural engineer's conclusive report about inadequate foundation and poor concrete quality directly linked the deaths to the accused's negligent acts. The rainfall defense was factually disproven by meteorological records. The court convicted under Section 304A IPC and recommended strengthening of construction safety regulations and enforcement."
+  },
+  {
+    "case_id": "HC_DEL_2020_050",
+    "case_name": "Mohit Sharma v. State (NCT of Delhi)",
+    "year": 2020,
+    "court": "Delhi High Court",
+    "facts": "Mohit Sharma was charged under Sections 354 and 509 IPC for outraging the modesty of women in a co-working space. Three women independently filed complaints alleging the accused sent unsolicited explicit photographs and made sexually suggestive comments through the co-working space's internal messaging platform. Digital forensic examination confirmed the messages originated from the accused's account. The accused claimed his account was hacked and someone else sent the messages. However, IP address logs showed the messages were sent from his registered devices. The accused had been warned twice before by the co-working space management about inappropriate behavior.",
+    "sections": [
+      "354",
+      "506"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that three independent complaints following the same pattern provided mutual corroboration. The digital forensic evidence conclusively linked the messages to the accused's devices through IP address verification. The hacking defense was rejected as no evidence of unauthorized access was presented. The prior warnings from management established a pattern of inappropriate behavior. The court convicted under Section 354 IPC and observed that online sexual harassment in professional spaces deserves the same gravity as physical harassment."
+  },
+  {
+    "case_id": "SC_2021_035",
+    "case_name": "State of Chhattisgarh v. Rajkumar Sahu",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Rajkumar Sahu was charged under Section 302 for the murder of three members of a tribal family over a land encroachment dispute. The prosecution established that the accused, accompanied by hired laborers, demolished the victims' hut and attacked them with axes when they resisted. Three victims including a woman and a child died. Multiple village witnesses testified. The weapons were recovered. The accused claimed the tribal family was illegally encroaching on his registered land and that violence was initiated by the tribal family members. Revenue records showed the land was indeed registered in the accused's name, though the tribal family claimed traditional occupancy rights.",
+    "sections": [
+      "302",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that property disputes, regardless of their legitimacy, must be resolved through legal channels. The use of lethal force resulting in three deaths including a woman and child was grossly disproportionate and constituted murder. The accused had legal remedies available including eviction proceedings. The overwhelming witness testimony and recovery of weapons established guilt. The court convicted under Section 302 read with 34 IPC and imposed life imprisonment for all accused, noting that taking the law into one's own hands over property disputes has reached alarming proportions."
+  },
+  {
+    "case_id": "HC_CAL_2018_051",
+    "case_name": "Amit Banerjee v. State of West Bengal",
+    "year": 2018,
+    "court": "Calcutta High Court",
+    "facts": "Amit Banerjee was charged under Section 306 IPC for abetting the suicide of his colleague. The deceased, a junior employee at a software company, committed suicide leaving a note describing workplace bullying by the accused including public humiliation, unreasonable work targets, and threatening emails. HR records showed three complaints by the deceased against the accused that went unaddressed. However, the accused presented evidence that the work targets set were standard across the team. Performance reviews showed the deceased consistently underperformed. The accused's emails, while firm, were found to be within professional communication norms by an independent HR consultant. The deceased had personal debts and a troubled relationship which were also mentioned in the suicide note.",
+    "sections": [
+      "306"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court held that to constitute abetment of suicide, the accused's actions must be the proximate and direct cause. While the HR complaints showed workplace friction, the independent review found the emails within professional norms. The standard work targets applicable to all team members could not be classified as targeted harassment. The suicide note itself mentioned multiple causes including personal debts and relationship issues. The court held that workplace strictness, even if perceived as bullying, does not constitute abetment in the absence of evidence of deliberate instigation. The accused was acquitted."
+  },
+  {
+    "case_id": "HC_KAR_2020_052",
+    "case_name": "State of Karnataka v. Shankar Gowda",
+    "year": 2020,
+    "court": "Karnataka High Court",
+    "facts": "Shankar Gowda was charged under Section 379 IPC for cattle theft. The prosecution alleged the accused stole 8 cows worth Rs. 6 lakhs from a dairy farmer's shed at night. The farmer identified his cattle through ear tags and branding marks at a cattle market 50 km away where the accused was attempting to sell them. The farmer had filed a police complaint the previous day. The accused was caught with the cattle and had no documentation of ownership or purchase. The accused claimed he bought the cattle from an unknown person at a lower price and was reselling them. He could not identify the seller or provide any receipt.",
+    "sections": [
+      "379"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the cattle were positively identified through ear tags and branding marks that matched the farmer's complaint. The accused's inability to explain legitimate possession or identify the alleged seller, combined with the attempt to sell shortly after the theft, established guilt. The court applied the presumption under Section 114(a) of the Indian Evidence Act — recent unexplained possession of stolen property raises a presumption of theft. The court convicted under Section 379 IPC."
+  },
+  {
+    "case_id": "SC_2020_036",
+    "case_name": "Naveen Kumar v. State of Haryana",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Naveen Kumar was convicted under Section 302 IPC for killing his wife and staging it as an accident. The deceased was found dead at the bottom of a staircase. Initially treated as accidental, the case was reopened when the deceased's parents pointed out suspicious circumstances — a large life insurance policy recently taken by the husband, the couple's known marital discord, and the husband's relationship with another woman. The re-investigation found that the head injuries were inconsistent with a fall from the height of the staircase. No defensive injuries suggested the deceased was unconscious when she fell. A toxicology test found traces of sedatives in her system that the deceased was not prescribed.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the circumstantial evidence compelling. The recent life insurance policy provided strong financial motive. The sedatives found in the deceased's system explained the absence of defensive injuries and suggested she was incapacitated before the fall. The medical finding that head injuries were inconsistent with the staircase height ruled out accident. The husband's relationship with another woman provided additional motive. The court held that the chain of circumstances was complete and convicted under Section 302 IPC."
+  },
+  {
+    "case_id": "HC_MAD_2020_053",
+    "case_name": "Shanmugam v. State of Tamil Nadu",
+    "year": 2020,
+    "court": "Madras High Court",
+    "facts": "Shanmugam was charged under Section 326 IPC for throwing acid on a woman who rejected his marriage proposal. The victim suffered 40% burns on her face and upper body. She identified the accused during investigation and in court. CCTV from a nearby shop captured a person matching the accused's description fleeing from the scene. Acid procurement records from a battery shop showed the accused purchased acid two days before the attack. The accused denied the attack claiming he was at his workplace and produced a colleague who confirmed his presence. However, the colleague's testimony was contradicted by workplace CCTV which showed the accused leaving the premises an hour before the attack.",
+    "sections": [
+      "326"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that the victim's consistent identification, acid procurement records, and the destruction of the false alibi by workplace CCTV conclusively proved guilt. The colleague who provided the false alibi was directed to be prosecuted for perjury. The court convicted under Section 326 IPC and imposed maximum punishment, observing that acid attacks are one of the most heinous forms of gender-based violence, causing lifelong disfigurement and psychological trauma. The court also directed compensation to the victim under the state victim compensation scheme."
+  },
+  {
+    "case_id": "HC_ALL_2021_054",
+    "case_name": "State of Uttar Pradesh v. Harish Chandra",
+    "year": 2021,
+    "court": "Allahabad High Court",
+    "facts": "Harish Chandra was charged under Section 420 IPC for operating a fake employment agency. The accused rented an office, created a website mimicking a government recruitment portal, and collected processing fees ranging from Rs. 5,000 to Rs. 50,000 from 150 job seekers promising government positions. The fake website was identified through domain registration traced to the accused. Victims received fabricated admit cards and appeared at non-existent examination centers. The accused had prior convictions for fraud in two other states. He was arrested at an airport attempting to flee the country. The accused claimed he was a legitimate placement consultant and blamed a web developer for creating the misleading website.",
+    "sections": [
+      "420",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the fraud elaborate and premeditated. The fake government website, fabricated admit cards, and non-existent examination centers demonstrated sophisticated criminal planning. The accused's prior fraud convictions in other states established a pattern of criminal behavior. His attempt to flee the country showed consciousness of guilt. The domain registration conclusively linked him to the website. The defense of blaming a web developer was rejected as the accused controlled the entire operation. The court convicted under Section 420 IPC and imposed enhanced punishment considering the prior convictions."
+  },
+  {
+    "case_id": "SC_2019_037",
+    "case_name": "State of Gujarat v. Deepak Rawal",
+    "year": 2019,
+    "court": "Supreme Court of India",
+    "facts": "Deepak Rawal was charged under Sections 302 and 120B IPC for commissioning the murder of his business partner. Insurance investigation into a Rs. 1 crore policy on the deceased led to the discovery that the accused was the sole beneficiary and had taken the policy without the deceased's knowledge using forged signatures. The hit-man was arrested and cooperated with investigation. He produced the weapon and led police to the burial site of evidence. Phone tower analysis placed the accused in the area of the hit-man's hideout the night before the murder. Financial forensics showed the accused's company was insolvent and the insurance money was his only way out. The accused claimed total ignorance and said the policy was the deceased's own initiative.",
+    "sections": [
+      "302",
+      "120B"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found overwhelming evidence. The forged insurance policy taken without the deceased's knowledge, the accused being sole beneficiary, phone tower evidence, the company's insolvency providing motive, and the hit-man's cooperation all formed an unbroken chain. The defense claim that the deceased took the policy himself was disproven by handwriting expert analysis of the forged signatures. The court convicted under Sections 302 and 120B IPC, observing that murder for insurance proceeds represents premeditation of the coldest kind."
+  },
+  {
+    "case_id": "HC_DEL_2018_055",
+    "case_name": "Neha Singh v. State (NCT of Delhi)",
+    "year": 2018,
+    "court": "Delhi High Court",
+    "facts": "Neha Singh filed a complaint under Section 498A IPC against her husband and in-laws alleging cruelty and dowry harassment. She alleged that immediately after marriage, her husband and mother-in-law demanded Rs. 10 lakhs and a car, and when her family could not pay, she was subjected to physical and mental cruelty. She presented medical records showing treatment for a broken arm and depression. Her parents testified to receiving demand calls from the in-laws. Phone records confirmed calls from the mother-in-law to the complainant's parents. The husband's WhatsApp messages to a friend discussed his frustration about not receiving the 'promised' dowry. The defense claimed the marriage was love marriage with no dowry demands.",
+    "sections": [
+      "498A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found strong corroborative evidence supporting the complaint. Medical records documented physical abuse. The husband's own WhatsApp messages discussing unmet dowry expectations contradicted the defense of no dowry demands. Phone records confirmed the mother-in-law's demand calls to the complainant's parents. The court convicted under Section 498A IPC and observed that in the digital age, electronic evidence like WhatsApp messages provides valuable corroboration that was previously difficult to obtain in cruelty cases."
+  },
+  {
+    "case_id": "SC_2021_038",
+    "case_name": "State of Orissa v. Prakash Behera",
+    "year": 2021,
+    "court": "Supreme Court of India",
+    "facts": "Prakash Behera was charged under Section 392 IPC for armed robbery of a cooperative bank. The prosecution case was that the accused, wearing a motorcycle helmet as disguise, entered the bank with a handgun, threatened the cashier, and fled with Rs. 7 lakhs. The accused was identified when a bank customer recognized his distinctive tattoo visible below the helmet. The motorcycle used was traced to the accused. Dye-pack in the stolen cash exploded, staining the accused's clothing which was recovered during search. CCTV showed the tattooed arm. The accused claimed his motorcycle was borrowed by an acquaintance that day but could not identify the acquaintance.",
+    "sections": [
+      "392"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that the distinctive tattoo identification, corroborated by CCTV footage showing the same tattoo, provided reliable identification despite the helmet disguise. The motorcycle tracing and the dye-stained clothing provided conclusive forensic evidence. The accused's vague claim of lending the motorcycle to an unidentifiable acquaintance was treated as a false defense. The court convicted under Section 392 IPC and observed that modern forensic techniques including dye-packs serve as effective tools in combating bank robberies."
+  },
+  {
+    "case_id": "HC_BOM_2020_056",
+    "case_name": "State of Maharashtra v. Vijay Patil",
+    "year": 2020,
+    "court": "Bombay High Court",
+    "facts": "Vijay Patil was charged under Section 304B IPC for the dowry death of his wife Anita who died by burns within one year of marriage. The deceased was found with 90% burns in the kitchen. The accused called the fire brigade after a delay of 30 minutes. The deceased was alive when taken to hospital and gave a dying declaration to the duty doctor stating her husband poured kerosene and set her on fire after a dowry argument. She died within 8 hours. The accused claimed she accidentally caught fire while cooking. However, the nature of burns (predominantly on front of body) was inconsistent with a cooking accident according to the forensic expert. Kerosene storage in the kitchen was in an unusual elevated location according to police inspection.",
+    "sections": [
+      "304B",
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court gave primacy to the dying declaration as the deceased had no reason to falsely implicate her husband in her final moments. The forensic finding that burns were predominantly on the front of the body was consistent with kerosene being poured and lit, not with a cooking accident. The 30-minute delay in calling fire brigade suggested the accused was not trying to save the deceased. The unusual placement of kerosene contradicted the cooking accident theory. The court convicted under Section 302 IPC, the more serious charge, and sentenced the accused to life imprisonment."
+  },
+  {
+    "case_id": "HC_PNJ_2018_057",
+    "case_name": "Manjit Kaur v. State of Punjab",
+    "year": 2018,
+    "court": "Punjab and Haryana High Court",
+    "facts": "Manjit Kaur filed a complaint under Section 498A against her husband Paramjit Singh and his parents alleging cruelty and dowry demands. She alleged being forced to do all household work while being denied food, being locked in a room, and her gold jewelry being taken away. She produced photographs showing a bruised face. Her husband's social media posts showed a lavish lifestyle while she was allegedly being starved. However, investigation revealed the photographs were taken from a road accident that the complainant was involved in. The gold jewelry was found in a bank locker jointly held by the couple. Neighbors testified that the complainant was rarely seen doing household work and frequently went shopping. The husband's social media posts included the complainant in many photographs showing them together.",
+    "sections": [
+      "498A"
+    ],
+    "outcome": "acquittal",
+    "outcome_label": 0,
+    "reasoning_excerpt": "The court found that the complainant's evidence was contradicted by independent evidence. The bruise photographs were from a road accident, not domestic violence. The jewelry was safe in a joint bank locker. Neighbor testimony about the complainant's lifestyle contradicted claims of forced labor and starvation. Social media evidence showed the couple together in multiple outings. The court acquitted all accused and warned against misuse of Section 498A as a tool for matrimonial revenge, while emphasizing that genuine cases must be vigorously prosecuted."
+  },
+  {
+    "case_id": "SC_2020_039",
+    "case_name": "State of Tamil Nadu v. Kathiresan",
+    "year": 2020,
+    "court": "Supreme Court of India",
+    "facts": "Kathiresan and three others were charged under Sections 302 and 34 IPC for the lynching of a man suspected of theft. The accused, along with a mob, caught the deceased allegedly stealing from a shop and beat him to death. Multiple villagers witnessed the beating. The incident was partially filmed on a mobile phone by a bystander and went viral on social media. Post-mortem showed multiple blunt force injuries all over the body. The accused claimed they only detained the suspected thief and the mob violence was by unknown persons. However, the mobile video clearly showed the accused actively participating in the beating.",
+    "sections": [
+      "302",
+      "34"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court relied heavily on the mobile phone video which clearly showed the accused actively participating in the fatal beating. The court emphatically condemned mob justice and lynching, holding that no person has the right to be judge, jury, and executioner. Even if the deceased was a thief, the appropriate response was to hand him over to police. The video evidence, corroborated by eyewitness testimony and post-mortem findings, conclusively proved the accused's participation. All four accused were convicted under Section 302 read with 34 IPC. The court called for a comprehensive anti-lynching law."
+  },
+  {
+    "case_id": "HC_TEL_2019_058",
+    "case_name": "Padma Rao v. State of Telangana",
+    "year": 2019,
+    "court": "Telangana High Court",
+    "facts": "Padma Rao was charged under Section 420 IPC for land fraud. The accused sold the same plot of government land to five different buyers using forged documents, collecting approximately Rs. 2 crores. Each buyer received separately forged sale deeds with different fabricated survey numbers. When multiple buyers attempted to register the property simultaneously, the fraud was discovered. Investigation revealed the land was government property and the accused had no title to sell. The registration sub-office flagged the discrepancies. The accused fled but was arrested after 6 months. He claimed he was a legitimate broker and the property was assured to him by a government official who later reneged.",
+    "sections": [
+      "420"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found that selling government land to multiple buyers using five separate sets of forged documents demonstrated elaborate and premeditated fraud. The accused could not identify the alleged government official who supposedly assured him the property. His flight after discovery confirmed guilt consciousness. The forgery of multiple sale deeds required deliberate effort negating any claim of innocent brokerage. The court convicted under Section 420 IPC and directed attachment of the accused's properties for compensating the victims."
+  },
+  {
+    "case_id": "HC_KER_2021_059",
+    "case_name": "Rajeev Nair v. State of Kerala",
+    "year": 2021,
+    "court": "Kerala High Court",
+    "facts": "Rajeev Nair was charged under Section 306 IPC for abetting the suicide of his business debtor. The deceased owed Rs. 15 lakhs to the accused and was unable to repay due to business failure. The accused publicly humiliated the deceased at a market, physically assaulted him, and threatened to seize his house. The deceased committed suicide the same night leaving a note naming the accused and describing the public humiliation and threats. Multiple market witnesses confirmed the public confrontation. However, the accused had a legitimate debt claim and the public confrontation, while aggressive, involved the accused demanding his rightfully owed money. The accused had also filed a civil suit for recovery of the debt.",
+    "sections": [
+      "306"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that while the accused had a legitimate debt claim, the manner of enforcement through public humiliation, physical assault, and threats to seize the debtor's house went far beyond lawful debt recovery. Having already filed a civil suit, resorting to public humiliation and threats was unnecessary and malicious. The proximity between the public confrontation and the suicide, combined with the suicide note's specific mention of the humiliation, established a direct causal link. The court convicted under Section 306 IPC but imposed a moderate sentence considering the accused's legitimate grievance of unpaid debt."
+  },
+  {
+    "case_id": "SC_2018_040",
+    "case_name": "State of Madhya Pradesh v. Ghanshyam Patel",
+    "year": 2018,
+    "court": "Supreme Court of India",
+    "facts": "Ghanshyam Patel was charged under Section 302 IPC for murdering a witness who was set to testify against him in a narcotics case. The prosecution alleged that the accused abducted the witness and killed him, burying the body in a forest. The body was found based on a tip from an informer. The accused was identified by a passerby who saw him forcing someone into his car near the witness's home. Phone records showed the accused's phone near the witness's residence and then moving towards the forest area. DNA from soil samples at the burial site matched mud found in the accused's car. The accused denied involvement and claimed the phone was not in his possession that day.",
+    "sections": [
+      "302"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court found the evidence chain complete. The passerby's identification was corroborated by phone tower data tracking the accused's movement from the witness's home to the forest. DNA matching of soil from the burial site and the accused's car provided strong forensic evidence. The motive of eliminating a prosecution witness was clear and strong. The accused's claim about the phone not being in his possession was uncorroborated and appeared to be a desperate defense. The court convicted under Section 302 and imposed the maximum sentence, condemning witness elimination as an attack on the justice system itself."
+  },
+  {
+    "case_id": "HC_GUJ_2021_060",
+    "case_name": "Kamlesh Modi v. State of Gujarat",
+    "year": 2021,
+    "court": "Gujarat High Court",
+    "facts": "Kamlesh Modi was charged under Section 304A IPC for causing death by negligence in a fire at his illegal firecracker storage facility in a residential area. The explosion and fire killed two neighbors including a child. The accused was storing industrial quantities of firecrackers without any license, safety measures, or fire-fighting equipment. Municipal records showed the building was zoned residential and the accused had no commercial license. Neighbors had previously complained about the storage to local authorities without action. The accused claimed he was only storing a small quantity for the upcoming festival season and the fire was caused by an electrical short circuit in the neighbor's property.",
+    "sections": [
+      "304A"
+    ],
+    "outcome": "conviction",
+    "outcome_label": 1,
+    "reasoning_excerpt": "The court held that storing industrial quantities of explosives in a residential area without license, safety measures, or fire-fighting equipment constituted criminal negligence of the highest degree. The cause of the initial fire was irrelevant when the accused's unlicensed explosive storage turned what might have been a minor fire into a deadly explosion. The prior complaints by neighbors showed the accused was aware of the risk he was creating. The court convicted under Section 304A IPC and imposed maximum punishment, also directing investigation into the local authorities who failed to act on the neighbors' complaints."
+  },
+  {
+    "case_id": "2024INSC735",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language10' name='language' onchange=\"javascript:get_pdf_lang('10','2024_10_108_125','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='HIN'>हिन्दी - Hindi</option><option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='"
+  },
+  {
+    "case_id": "2024INSC748",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language2' name='language' onchange=\"javascript:get_pdf_lang('2','2024_10_126_149','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  },
+  {
+    "case_id": "2024INSC755",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_204' aria-label=\" Rama Devi versus The State of Bihar and Others pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('204','2024','2024_10_1313_1343','2024INSC755'); ><font size='4'> <strong>RAMA DEVI<span class='fst-italic'> versus </span>THE STATE OF BIHAR AND OTHERS </strong>- <span class='escrText'>[2024] 10 S.C.R. 1313</span><span class='ncDisplay'>2024 INSC 755</span><input type='hidden' id='cnr' value=ES"
+  },
+  {
+    "case_id": "2024INSC763",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_200' aria-label=\" Shashi Bhushan Prasad Singh versus The State of Bihar and Others pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('200','2024','2024_10_1344_1358','2024INSC763'); ><font size='4'> <strong>SHASHI BHUSHAN PRASAD SINGH<span class='fst-italic'> versus </span>THE STATE OF BIHAR AND OTHERS </strong>- <span class='escrText'>[2024] 10 S.C.R. 1344</span><span class='ncDisplay'>2024 INSC 763</span><i"
+  },
+  {
+    "case_id": "2024INSC773",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_197' aria-label=\" Renjith K.G. & Others versus Sheeba pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('197','2024','2024_10_1359_1370','2024INSC773'); ><font size='4'> <strong>RENJITH K.G. & OTHERS<span class='fst-italic'> versus </span>SHEEBA </strong>- <span class='escrText'>[2024] 10 S.C.R. 1359</span><span class='ncDisplay'>2024 INSC 773</span><input type='hidden' id='cnr' value=ESCR010006372024></butto"
+  },
+  {
+    "case_id": "2024INSC780",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_191' aria-label=\" IDBI Bank Ltd. versus Ramswaroop Daliya and Ors.  pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('191','2024','2024_10_1371_1380','2024INSC780'); ><font size='4'> <strong>IDBI BANK LTD.<span class='fst-italic'> versus </span>RAMSWAROOP DALIYA AND ORS.  </strong>- <span class='escrText'>[2024] 10 S.C.R. 1371</span><span class='ncDisplay'>2024 INSC 780</span><input type='hidden' id='cnr' va"
+  },
+  {
+    "case_id": "2024INSC784",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_190' aria-label=\" The Patna Municipal Corporation & Ors. versus M/s Tribro Ad Bureau & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('190','2024','2024_10_1381_1403','2024INSC784'); ><font size='4'> <strong>THE PATNA MUNICIPAL CORPORATION & ORS.<span class='fst-italic'> versus </span>M/S TRIBRO AD BUREAU & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1381</span><span class='ncDisplay'>2024"
+  },
+  {
+    "case_id": "2024INSC791",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_181' aria-label=\" Airports Economic Regulatory Authority of India versus Delhi International Airport Ltd. & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('181','2024','2024_10_1404_1447','2024INSC791'); ><font size='4'> <strong>AIRPORTS ECONOMIC REGULATORY AUTHORITY OF INDIA<span class='fst-italic'> versus </span>DELHI INTERNATIONAL AIRPORT LTD. & ORS. </strong>- <span class='escrText'>[2024] 10 S.C."
+  },
+  {
+    "case_id": "2024INSC806",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_18' aria-label=\" Mafabhai Motibhai Sagar versus State of Gujarat & Ors.  pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('18','2024','2024_10_1448_1461','2024INSC806'); ><font size='4'> <strong>MAFABHAI MOTIBHAI SAGAR<span class='fst-italic'> versus </span>STATE OF GUJARAT & ORS.  </strong>- <span class='escrText'>[2024] 10 S.C.R. 1448</span><span class='ncDisplay'>2024 INSC 806</span><input type='hidden' i"
+  },
+  {
+    "case_id": "2024INSC810",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_15' aria-label=\" Vidyasagar Prasad versus UCO Bank & Anr. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('15','2024','2024_10_1462_1474','2024INSC810'); ><font size='4'> <strong>VIDYASAGAR PRASAD<span class='fst-italic'> versus </span>UCO BANK & ANR. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1462</span><span class='ncDisplay'>2024 INSC 810</span><input type='hidden' id='cnr' value=ESCR010006412024"
+  },
+  {
+    "case_id": "2024INSC825",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_1' aria-label=\" Neeraj Sud and Anr.  versus Jaswinder Singh (Minor) and Anr. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('1','2024','2024_10_1475_1482','2024INSC825'); ><font size='4'> <strong>NEERAJ SUD AND ANR. <span class='fst-italic'> versus </span>JASWINDER SINGH (MINOR) AND ANR. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1475</span><span class='ncDisplay'>2024 INSC 825</span><input type='h"
+  },
+  {
+    "case_id": "2024INSC767",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_202' aria-label=\" Nipun Aneja and Others versus State of Uttar Pradesh pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('202','2024','2024_10_1483_1502','2024INSC767'); ><font size='4'> <strong>NIPUN ANEJA AND OTHERS<span class='fst-italic'> versus </span>STATE OF UTTAR PRADESH </strong>- <span class='escrText'>[2024] 10 S.C.R. 1483</span><span class='ncDisplay'>2024 INSC 767</span><input type='hidden' id='c"
+  },
+  {
+    "case_id": "2024INSC827",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_3' aria-label=\" International Seaport Dredging Pvt Ltd versus Kamarajar Port Limited pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('3','2024','2024_10_1503_1512','2024INSC827'); ><font size='4'> <strong>INTERNATIONAL SEAPORT DREDGING PVT LTD<span class='fst-italic'> versus </span>KAMARAJAR PORT LIMITED </strong>- <span class='escrText'>[2024] 10 S.C.R. 1503</span><span class='ncDisplay'>2024 INSC 827</spa"
+  },
+  {
+    "case_id": "2024INSC749",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language0' name='language' onchange=\"javascript:get_pdf_lang('0','2024_10_150_153','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  },
+  {
+    "case_id": "2024INSC790",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_180' aria-label=\" Society for Enlightenment and Voluntary Action & Anr. versus Union of India & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('180','2024','2024_10_1513_1632','2024INSC790'); ><font size='4'> <strong>SOCIETY FOR ENLIGHTENMENT AND VOLUNTARY ACTION & ANR.<span class='fst-italic'> versus </span>UNION OF INDIA & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1513</span><span clas"
+  },
+  {
+    "case_id": "2024INSC716",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language21' name='language' onchange=\"javascript:get_pdf_lang('21','2024_10_154_314','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t"
+  },
+  {
+    "case_id": "2024INSC754",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_206' aria-label=\" Union of India & Ors. versus Rajeev Bansal pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('206','2024','2024_10_1633_1708','2024INSC754'); ><font size='4'> <strong>UNION OF INDIA & ORS.<span class='fst-italic'> versus </span>RAJEEV BANSAL </strong>- <span class='escrText'>[2024] 10 S.C.R. 1633</span><span class='ncDisplay'>2024 INSC 754</span><input type='hidden' id='cnr' value=ESCR010006"
+  },
+  {
+    "case_id": "2024INSC797",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_16' aria-label=\" Horrmal (Deceased) Through His LRs & Ors. versus State of Haryana & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('16','2024','2024_10_1709_1725','2024INSC797'); ><font size='4'> <strong>HORRMAL (DECEASED) THROUGH HIS LRS & ORS.<span class='fst-italic'> versus </span>STATE OF HARYANA & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1709</span><span class='ncDisplay'>2024 INS"
+  },
+  {
+    "case_id": "2024INSC800",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_174' aria-label=\" Shyam Narayan Ram versus State of Uttar Pradesh & Anr. Etc. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('174','2024','2024_10_1726_1735','2024INSC800'); ><font size='4'> <strong>SHYAM NARAYAN RAM<span class='fst-italic'> versus </span>STATE OF UTTAR PRADESH & ANR. ETC. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1726</span><span class='ncDisplay'>2024 INSC 800</span><input type="
+  },
+  {
+    "case_id": "2024INSC803",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_179' aria-label=\" K.C. Kaushik and Others versus State of Haryana and Others pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('179','2024','2024_10_1736_1747','2024INSC803'); ><font size='4'> <strong>K.C. KAUSHIK AND OTHERS<span class='fst-italic'> versus </span>STATE OF HARYANA AND OTHERS </strong>- <span class='escrText'>[2024] 10 S.C.R. 1736</span><span class='ncDisplay'>2024 INSC 803</span><input type='h"
+  },
+  {
+    "case_id": "2024INSC805",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_178' aria-label=\" Central Warehousing Corporation & Anr. versus M/s Sidhartha Tiles & Sanitary Pvt. Ltd. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('178','2024','2024_10_1748_1756','2024INSC805'); ><font size='4'> <strong>CENTRAL WAREHOUSING CORPORATION & ANR.<span class='fst-italic'> versus </span>M/S SIDHARTHA TILES & SANITARY PVT. LTD. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1748</span><s"
+  },
+  {
+    "case_id": "2024INSC809",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_14' aria-label=\" Uma & Anr. versus The State Rep. by the Deputy Superintendent of Police pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('14','2024','2024_10_1757_1768','2024INSC809'); ><font size='4'> <strong>UMA & ANR.<span class='fst-italic'> versus </span>THE STATE REP. BY THE DEPUTY SUPERINTENDENT OF POLICE </strong>- <span class='escrText'>[2024] 10 S.C.R. 1757</span><span class='ncDisplay'>2024 INSC "
+  },
+  {
+    "case_id": "2024INSC813",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_11' aria-label=\" Suhas Chakma versus Union of India & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('11','2024','2024_10_1769_1801','2024INSC813'); ><font size='4'> <strong>SUHAS CHAKMA<span class='fst-italic'> versus </span>UNION OF INDIA & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1769</span><span class='ncDisplay'>2024 INSC 813</span><input type='hidden' id='cnr' value=ESCR0100065420"
+  },
+  {
+    "case_id": "2024INSC811",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_10' aria-label=\" GLAS Trust Company LLC  versus BYJU Raveendran & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('10','2024','2024_10_1802_1854','2024INSC811'); ><font size='4'> <strong>GLAS TRUST COMPANY LLC <span class='fst-italic'> versus </span>BYJU RAVEENDRAN & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1802</span><span class='ncDisplay'>2024 INSC 811</span><input type='hidden' id='c"
+  },
+  {
+    "case_id": "2024INSC820",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_6' aria-label=\" Nisar Ahmad & Ors. versus Sami Ullah (Dead) Through Lrs. & Anr. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('6','2024','2024_10_1855_1875','2024INSC820'); ><font size='4'> <strong>NISAR AHMAD & ORS.<span class='fst-italic'> versus </span>SAMI ULLAH (DEAD) THROUGH LRS. & ANR. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1855</span><span class='ncDisplay'>2024 INSC 820</span><input t"
+  },
+  {
+    "case_id": "2024INSC823",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_0' aria-label=\" The State of Madhya Pradesh versus Ramjan Khan & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('0','2024','2024_10_1876_1889','2024INSC823'); ><font size='4'> <strong>THE STATE OF MADHYA PRADESH<span class='fst-italic'> versus </span>RAMJAN KHAN & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1876</span><span class='ncDisplay'>2024 INSC 823</span><input type='hidden' id='cnr"
+  },
+  {
+    "case_id": "2024INSC918",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_19' aria-label=\" Bijay Agarwal versus M/s Medilines  pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('19','2024','2024_10_1890_1901','2024INSC918'); ><font size='4'> <strong>BIJAY AGARWAL<span class='fst-italic'> versus </span>M/S MEDILINES  </strong>- <span class='escrText'>[2024] 10 S.C.R. 1890</span><span class='ncDisplay'>2024 INSC 918</span><input type='hidden' id='cnr' value=ESCR010006582024></button>"
+  },
+  {
+    "case_id": "2024INSC733",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language8' name='language' onchange=\"javascript:get_pdf_lang('8','2024_10_18_36','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t\t\t"
+  },
+  {
+    "case_id": "2024INSC807",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_13' aria-label=\" HDFC Bank Ltd. versus The State of Bihar & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('13','2024','2024_10_1902_1917','2024INSC807'); ><font size='4'> <strong>HDFC BANK LTD.<span class='fst-italic'> versus </span>THE STATE OF BIHAR & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 1902</span><span class='ncDisplay'>2024 INSC 807</span><input type='hidden' id='cnr' value=ES"
+  },
+  {
+    "case_id": "2024INSC948",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_203' aria-label=\" State of U.P. & Anr.  versus Northern Coal Fields pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('203','2024','2024_10_1918_1930','2024INSC948'); ><font size='4'> <strong>STATE OF U.P. & ANR. <span class='fst-italic'> versus </span>NORTHERN COAL FIELDS </strong>- <span class='escrText'>[2024] 10 S.C.R. 1918</span><span class='ncDisplay'>2024 INSC 948</span><input type='hidden' id='cnr' va"
+  },
+  {
+    "case_id": "2024INSC812",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_9' aria-label=\" State of U.P. & Ors versus M/s Lalta Prasad Vaish and sons pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('9','2024','2024_10_1931_2182','2024INSC812'); ><font size='4'> <strong>STATE OF U.P. & ORS<span class='fst-italic'> versus </span>M/S LALTA PRASAD VAISH AND SONS </strong>- <span class='escrText'>[2024] 10 S.C.R. 1931</span><span class='ncDisplay'>2024 INSC 812</span><input type='hidde"
+  },
+  {
+    "case_id": "2024INSC746",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language1' name='language' onchange=\"javascript:get_pdf_lang('1','2024_10_1_17','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t\t\t\t"
+  },
+  {
+    "case_id": "2024INSC799",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_184' aria-label=\" Union of India & Anr versus M/s Ganpati Dealcom Pvt. Ltd. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('184','2024','2024_10_2183_2186','2024INSC799'); ><font size='4'> <strong>UNION OF INDIA & ANR<span class='fst-italic'> versus </span>M/S GANPATI DEALCOM PVT. LTD. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2183</span><span class='ncDisplay'>2024 INSC 799</span><input type='hid"
+  },
+  {
+    "case_id": "2024INSC836",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_2' aria-label=\" Om Rathod versus The Director General of Health Services & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('2','2024','2024_10_2187_2226','2024INSC836'); ><font size='4'> <strong>OM RATHOD<span class='fst-italic'> versus </span>THE DIRECTOR GENERAL OF HEALTH SERVICES & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2187</span><span class='ncDisplay'>2024 INSC 836</span><input t"
+  },
+  {
+    "case_id": "2024INSC801",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_175' aria-label=\" Ratilal Jhaverbhai Parmar and Ors. versus State of Gujarat and Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('175','2024','2024_10_2227_2239','2024INSC801'); ><font size='4'> <strong>RATILAL JHAVERBHAI PARMAR AND ORS.<span class='fst-italic'> versus </span>STATE OF GUJARAT AND ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2227</span><span class='ncDisplay'>2024 INSC 801</s"
+  },
+  {
+    "case_id": "2024INSC830",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language8' name='language' onchange=\"javascript:get_pdf_lang('8','2024_10_2240_2247','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='HIN'>हिन्दी - Hindi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  },
+  {
+    "case_id": "2024INSC1059",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_211' aria-label=\" M/s S.S. Production and Anr. P1: M/s S. S. Production P2: TR. S. Subbiah versus TR. Pavithran Prasanth pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('211','2024','2024_10_2248_2264','2024INSC1059'); ><font size='4'> <strong>M/S S.S. PRODUCTION AND ANR. P1: M/S S. S. PRODUCTION P2: TR. S. SUBBIAH<span class='fst-italic'> versus </span>TR. PAVITHRAN PRASANTH </strong>- <span class='escrTex"
+  },
+  {
+    "case_id": "2024INSC1060",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_12' aria-label=\" V.D. Raveesha versus The State of Karnataka pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('12','2024','2024_10_2265_2277','2024INSC1060'); ><font size='4'> <strong>V.D. RAVEESHA<span class='fst-italic'> versus </span>THE STATE OF KARNATAKA </strong>- <span class='escrText'>[2024] 10 S.C.R. 2265</span><span class='ncDisplay'>2024 INSC 1060</span><input type='hidden' id='cnr' value=ESCR0100"
+  },
+  {
+    "case_id": "2024INSC796",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_177' aria-label=\" Haryana Urban Development Authority versus Abhishek Gupta etc. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('177','2024','2024_10_2278_2302','2024INSC796'); ><font size='4'> <strong>HARYANA URBAN DEVELOPMENT AUTHORITY<span class='fst-italic'> versus </span>ABHISHEK GUPTA ETC. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2278</span><span class='ncDisplay'>2024 INSC 796</span><input"
+  },
+  {
+    "case_id": "2024INSC802",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_17' aria-label=\" Lenin Kumar Ray versus M/s Express Publications (Madurai) Ltd. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('17','2024','2024_10_2303_2313','2024INSC802'); ><font size='4'> <strong>LENIN KUMAR RAY<span class='fst-italic'> versus </span>M/S EXPRESS PUBLICATIONS (MADURAI) LTD. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2303</span><span class='ncDisplay'>2024 INSC 802</span><input t"
+  },
+  {
+    "case_id": "2024INSC804",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<button type='button' role='link' class='btn btn-link p-0 text-start' id='link_176' aria-label=\" S.P. Pandey versus Union of India & Ors. pdf\"  class='noToken' href='#' onclick=javascript:open_pdf('176','2024','2024_10_2314_2322','2024INSC804'); ><font size='4'> <strong>S.P. PANDEY<span class='fst-italic'> versus </span>UNION OF INDIA & ORS. </strong>- <span class='escrText'>[2024] 10 S.C.R. 2314</span><span class='ncDisplay'>2024 INSC 804</span><input type='hidden' id='cnr' value=ESCR0100072120"
+  },
+  {
+    "case_id": "2024INSC718",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language17' name='language' onchange=\"javascript:get_pdf_lang('17','2024_10_315_383','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='MAR'>मराठी - Marathi</option><option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby="
+  },
+  {
+    "case_id": "2024INSC720",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language39' name='language' onchange=\"javascript:get_pdf_lang('39','2024_10_37_44','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='HIN'>हिन्दी - Hindi</option><option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='Di"
+  },
+  {
+    "case_id": "2024INSC774",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language4' name='language' onchange=\"javascript:get_pdf_lang('4','2024_10_384_392','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  },
+  {
+    "case_id": "2024INSC739",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language7' name='language' onchange=\"javascript:get_pdf_lang('7','2024_10_393_410','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  },
+  {
+    "case_id": "2024INSC747",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language19' name='language' onchange=\"javascript:get_pdf_lang('19','2024_10_411_416','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t"
+  },
+  {
+    "case_id": "2024INSC752",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language201' name='language' onchange=\"javascript:get_pdf_lang('201','2024_10_417_424','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='ORI'>ଓଡ଼ିଆ - Odia</option><option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='"
+  },
+  {
+    "case_id": "2024INSC757",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language199' name='language' onchange=\"javascript:get_pdf_lang('199','2024_10_425_444','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>"
+  },
+  {
+    "case_id": "2024INSC751",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language205' name='language' onchange=\"javascript:get_pdf_lang('205','2024_10_445_492','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>"
+  },
+  {
+    "case_id": "2024INSC732",
+    "case_name": "Unknown Title",
+    "year": 2024,
+    "court": "Supreme Court of India",
+    "facts": "Facts not explicitly detailed in metadata.",
+    "sections": [],
+    "outcome": "Unknown",
+    "outcome_label": 0,
+    "reasoning_excerpt": "<select class='form-select form-select-sm me-2' id='language42' name='language' onchange=\"javascript:get_pdf_lang('42','2024_10_45_53','2024');\" style='display: inline; width: 90px !important;background-color: #89c8bd;'>\n\t\t\t\t\t\t\t<option value=''>English</option>\t<option value='PUN'>ਪੰਜਾਬੀ - Punjabi</option></select> <br>\n\t\t\t\t\t\t<div class='modal fade' id='DisclaimerModal' data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='DisclaimerModalLabel' aria-hidden='true'>\n\t\t\t"
+  }
+]
