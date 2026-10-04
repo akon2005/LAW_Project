@@ -2,12 +2,15 @@
 
 **Live VIDHIVEDA Application:** [Open Application](https://frontend-akon2005s-projects.vercel.app)
 
-| Environment | URL |
+| Environment / Resource | URL |
 |---|---|
+| Primary Repository | https://github.com/akon2005/VIDHIVEDA |
+| Backup Repository | https://github.com/akon2005/LAW_Project |
 | Frontend (Vercel, production) | https://frontend-akon2005s-projects.vercel.app |
 | Backend API (Render, production) | https://vidhiveda-backend.onrender.com |
 | API documentation (Swagger) | https://vidhiveda-backend.onrender.com/docs |
 | Health check | https://vidhiveda-backend.onrender.com/health |
+
 
 > These URLs are defined in [`render.yaml`](render.yaml) and the Vercel project.
 > If a host issues a different URL, update this table and redeploy.
