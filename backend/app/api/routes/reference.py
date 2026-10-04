@@ -4,7 +4,7 @@ GET /api/reference-data — Returns contents of reference JSONs for the Statutes
 """
 import json
 from fastapi import APIRouter
-from app.config import DATA_DIR
+from app.core.config import DATA_DIR
 from typing import Dict, Any
 
 router = APIRouter()

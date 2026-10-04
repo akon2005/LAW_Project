@@ -3,6 +3,8 @@ venv
 backend/.venv
 frontend/node_modules
 frontend/dist
+frontend-legacy/node_modules
+frontend-legacy/dist
 __pycache__
 *.pyc
 *.pyo

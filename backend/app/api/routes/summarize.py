@@ -6,8 +6,8 @@ import time
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 
-from app.models.schemas import SummarizeRequest, SummarizeResponse
-from app.models.database import get_db, Case
+from app.schemas.schemas import SummarizeRequest, SummarizeResponse
+from app.db.database import get_db, Case
 
 router = APIRouter()
 

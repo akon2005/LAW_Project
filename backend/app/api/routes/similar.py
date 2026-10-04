@@ -5,8 +5,8 @@ POST /api/similar — Find analogous cases via vector similarity.
 import time
 from fastapi import APIRouter, HTTPException
 
-from app.models.schemas import SimilarRequest, SimilarResponse, SourceDocument
-from app.services.pipeline import retrieve, get_embedding_model, get_collection
+from app.schemas.schemas import SimilarRequest, SimilarResponse, SourceDocument
+from app.rag.pipeline import retrieve, get_embedding_model, get_collection
 
 router = APIRouter()
 

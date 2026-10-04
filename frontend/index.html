@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIDHIVEDA — AI-Powered Legal Research Engine</title>
-    <meta name="description" content="VIDHIVEDA uses Retrieval-Augmented Generation (RAG) with ChromaDB to provide citation-backed legal research for Indian Commercial Courts. SIH1701." />
+    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="description" content="VIDHIVEDA — a research-first legal knowledge interface." />
+    <title>VIDHIVEDA — Legal Research</title>
+    <!--
+      Applied before first paint so a returning user never sees a flash of the
+      default palette. Mirrors ThemeProvider's resolution logic (mode + palette,
+      including a cached custom palette); the React provider takes over
+      immediately afterwards and is the single source of truth.
+    -->
+    <script>
+      (function () {
+        var root = document.documentElement
+        try {
+          var stored = window.localStorage.getItem('vidhiveda.theme')
+          var mode = stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system'
+          var prefersDark =
+            typeof window.matchMedia === 'function' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches
+          var resolved = mode === 'system' ? (prefersDark ? 'dark' : 'light') : mode
+
+          var PALETTES = ['ivory', 'midnight', 'slate', 'lavender', 'purple', 'royal-purple', 'yellow', 'cream', 'ocean', 'sage', 'rose', 'peach']
+          var palette = window.localStorage.getItem('vidhiveda.palette')
+          if (palette !== 'custom' && PALETTES.indexOf(palette) === -1) palette = 'ivory'
+
+          root.setAttribute('data-mode', resolved)
+          root.setAttribute('data-palette', palette)
+          root.style.colorScheme = resolved
+
+          if (palette === 'custom') {
+            var painted = JSON.parse(window.localStorage.getItem('vidhiveda.custom.painted') || '{}')
+            var primitives = painted[resolved] || null
+            var keys = ['bg', 'surface', 'text', 'primary', 'accent', 'border', 'panel', 'panelText']
+            if (primitives) {
+              for (var i = 0; i < keys.length; i += 1) {
+                if (primitives[keys[i]]) root.style.setProperty('--p-' + keys[i], primitives[keys[i]])
+              }
+            }
+          }
+        } catch (error) {
+          root.setAttribute('data-mode', 'light')
+          root.setAttribute('data-palette', 'ivory')
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -10,8 +10,8 @@ from sqlalchemy import func
 from typing import Optional, Dict, List, Any
 import math
 
-from app.models.schemas import DocumentResult, DocumentListResponse
-from app.models.database import get_db, Case
+from app.schemas.schemas import DocumentResult, DocumentListResponse
+from app.db.database import get_db, Case
 
 router = APIRouter()
 

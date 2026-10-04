@@ -6,8 +6,8 @@ import json
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
-from app.models.schemas import SectionInfo
-from app.models.database import get_db, Case
+from app.schemas.schemas import SectionInfo
+from app.db.database import get_db, Case
 
 router = APIRouter()
 

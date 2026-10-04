@@ -1,0 +1,937 @@
+/* ──────────────────────────────────────────────────────────────────────
+   VIDHIVEDA — sign-in experience
+   Built on the existing tokens in styles.css. Only two additions are
+   introduced here, both as tokens rather than a parallel design system:
+     --login-gold   a lighter brass for text on the navy panel
+     --ease-premium the shared "quiet, deliberate" curve for auth motion
+   ────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --login-gold: #d9ba72;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Shell ───────────────────────────────────────────────────────────── */
+.login-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--paper);
+}
+
+/* ── Editorial panel ─────────────────────────────────────────────────── */
+.login-editorial {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 46px 52px;
+  color: #fff;
+  background:
+    radial-gradient(120% 80% at 14% 4%, #1e3950 0%, #14283b 46%, #0d1e2c 100%);
+}
+
+.login-editorial__inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 34px;
+  width: 100%;
+}
+
+.login-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  animation: loginFade 0.5s var(--ease-premium) 0.1s both;
+}
+
+.login-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #f4dfac;
+  border: 1px solid rgba(244, 223, 172, 0.28);
+  box-shadow: none;
+}
+
+.login-brand .brand-name {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+
+.login-brand .brand-sub {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.login-editorial__copy {
+  max-width: 30ch;
+}
+
+.login-editorial .eyebrow {
+  color: var(--login-gold);
+}
+
+.login-headline {
+  margin: 14px 0 0;
+  font: 600 clamp(33px, 3.3vw, 49px)/1.1 Georgia, "Times New Roman", serif;
+  letter-spacing: -1.1px;
+  color: #fff;
+  animation: loginRise 0.62s var(--ease-premium) 0.16s both;
+}
+
+.login-headline em {
+  font-style: normal;
+  color: var(--login-gold);
+}
+
+.login-statement {
+  max-width: 44ch;
+  margin: 17px 0 0;
+  color: #b9c6d1;
+  font-size: 14.5px;
+  animation: loginRise 0.62s var(--ease-premium) 0.26s both;
+}
+
+.login-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  animation: loginFade 0.6s var(--ease-premium) 0.38s both;
+}
+
+.login-facts li {
+  position: relative;
+  padding: 11px 0 11px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  color: #9fb0bd;
+  font-size: 12.5px;
+}
+
+.login-facts li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 19px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--login-gold);
+  opacity: 0.75;
+}
+
+/* ── Editorial visual ────────────────────────────────────────────────── */
+.login-visual {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  animation: loginFade 0.7s var(--ease-premium) both;
+}
+
+.login-visual__art,
+.login-visual__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-visual__drift {
+  animation: loginDrift 24s ease-in-out infinite alternate;
+}
+
+.login-visual__vignette {
+  animation: loginVignette 28s ease-in-out infinite alternate;
+}
+
+/* Keeps the headline and facts legible over the artwork. */
+.login-visual__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    104deg,
+    rgba(10, 22, 33, 0.84) 0%,
+    rgba(10, 22, 33, 0.64) 44%,
+    rgba(10, 22, 33, 0.44) 100%
+  );
+}
+
+.login-mobile-visual {
+  display: none;
+}
+
+/* ── Form panel ──────────────────────────────────────────────────────── */
+.login-panel {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  place-items: center;
+  padding: 56px 40px;
+  overflow-y: auto;
+  background:
+    radial-gradient(circle at 76% 10%, rgba(179, 139, 62, 0.07), transparent 42%),
+    linear-gradient(180deg, var(--surface-2) 0%, var(--bg-2) 100%);
+}
+
+.login-card {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  max-width: 428px;
+  padding: 34px 34px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow), 0 1px 2px rgba(20, 40, 59, 0.03);
+  animation: loginRise 0.56s var(--ease-premium) 0.2s both;
+}
+
+/* Subtle stagger across the card's contents. */
+.login-card > * {
+  animation: loginFade 0.5s var(--ease-premium) both;
+}
+.login-card > *:nth-child(1) { animation-delay: 0.26s; }
+.login-card > *:nth-child(2) { animation-delay: 0.3s; }
+.login-card > *:nth-child(3) { animation-delay: 0.34s; }
+.login-card > *:nth-child(4) { animation-delay: 0.38s; }
+.login-card > *:nth-child(5) { animation-delay: 0.42s; }
+.login-card > *:nth-child(6) { animation-delay: 0.46s; }
+.login-card > *:nth-child(7) { animation-delay: 0.5s; }
+.login-card > *:nth-child(n + 8) { animation-delay: 0.54s; }
+
+.login-card__head h1 {
+  margin: 0;
+  font: 600 30px/1.15 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.4px;
+}
+
+.login-card__head p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+/* ── Role selector ───────────────────────────────────────────────────── */
+.login-role {
+  display: grid;
+  gap: 7px;
+}
+
+.login-role__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  color: var(--muted-2);
+}
+
+.login-role__options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface-2);
+}
+
+.login-role__option {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  padding: 8px 6px;
+  color: var(--text-3);
+  font-size: 11.5px;
+  line-height: 1.25;
+  transition: background 0.25s var(--ease-premium), color 0.25s var(--ease-premium),
+    border-color 0.25s var(--ease-premium), box-shadow 0.25s var(--ease-premium);
+}
+
+.login-role__option:hover:not(.is-selected) {
+  background: var(--hover-bg);
+  color: var(--ink);
+}
+
+.login-role__option.is-selected {
+  background: var(--surface);
+  border-color: var(--line-2);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: 0 1px 0 rgba(20, 40, 59, 0.05), 0 2px 8px rgba(20, 40, 59, 0.07);
+}
+
+.login-role__option:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.login-role.is-disabled {
+  opacity: 0.6;
+}
+
+/* ── Fields ──────────────────────────────────────────────────────────── */
+.login-field {
+  display: grid;
+  gap: 6px;
+}
+
+.login-field > label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-2);
+  transition: color 0.25s var(--ease-premium);
+}
+
+.login-field:focus-within > label {
+  color: var(--ink);
+}
+
+.login-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--input-border);
+  border-radius: 11px;
+  background: var(--input-bg);
+  transition: border-color 0.28s var(--ease-premium), box-shadow 0.28s var(--ease-premium),
+    background 0.28s var(--ease-premium);
+}
+
+.login-input-wrap:hover {
+  border-color: var(--border-hover);
+}
+
+.login-input-wrap:focus-within {
+  border-color: var(--border-strong);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--focus-ring), 0 1px 2px rgba(20, 40, 59, 0.04);
+}
+
+.login-input-icon {
+  display: flex;
+  padding: 0 10px 0 13px;
+  color: var(--icon-muted);
+  transition: color 0.28s var(--ease-premium);
+}
+
+.login-input-wrap:focus-within .login-input-icon {
+  color: var(--ink-2);
+}
+
+.login-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 13px 12px 13px 0;
+  color: var(--ink);
+  font-size: 14.5px;
+}
+
+.login-input-wrap input::placeholder {
+  color: var(--placeholder);
+}
+
+.login-password-toggle {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: var(--muted-2);
+  transition: color 0.25s var(--ease-premium);
+}
+
+.login-password-toggle:hover:not(:disabled) {
+  color: var(--ink);
+}
+
+.login-password-toggle:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -3px;
+}
+
+.login-toggle-icons {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.login-toggle-icons svg {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.3s var(--ease-premium), transform 0.3s var(--ease-premium);
+}
+
+.login-toggle-eye {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.login-toggle-eye-off {
+  opacity: 0;
+  transform: scale(0.82) rotate(-10deg);
+}
+
+.login-toggle-icons[data-visible='true'] .login-toggle-eye {
+  opacity: 0;
+  transform: scale(0.82) rotate(10deg);
+}
+
+.login-toggle-icons[data-visible='true'] .login-toggle-eye-off {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.login-field.has-error .login-input-wrap {
+  border-color: var(--error);
+  background: var(--error-soft);
+}
+
+.login-field.has-error .login-input-wrap:focus-within {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px var(--error-border);
+}
+
+.login-error {
+  margin: 0;
+  color: var(--error);
+  font-size: 12px;
+  animation: loginRise 0.28s var(--ease-premium) both;
+}
+
+.login-banner {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 11px 13px;
+  border: 1px solid var(--error-border);
+  border-radius: 11px;
+  background: var(--error-soft);
+  color: var(--error);
+  font-size: 12.5px;
+  animation: loginRise 0.28s var(--ease-premium) both;
+}
+
+.login-banner svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+/* ── Remember me / forgot password ───────────────────────────────────── */
+.login-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.login-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-2);
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.login-checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.login-checkbox__box {
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  background: var(--surface);
+  color: transparent;
+  transition: background 0.25s var(--ease-premium), border-color 0.25s var(--ease-premium),
+    color 0.25s var(--ease-premium);
+}
+
+.login-checkbox:hover .login-checkbox__box {
+  border-color: var(--border-strong);
+}
+
+.login-checkbox input:checked + .login-checkbox__box {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
+
+.login-checkbox input:focus-visible + .login-checkbox__box {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ── Primary action ──────────────────────────────────────────────────── */
+.login-submit {
+  padding: 14px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 11px;
+  background: var(--ink);
+  color: var(--on-ink);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: background 0.28s var(--ease-premium), border-color 0.28s var(--ease-premium),
+    transform 0.28s var(--ease-premium), box-shadow 0.28s var(--ease-premium);
+}
+
+.login-submit__content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.login-submit:hover:not(:disabled) {
+  background: var(--ink-2);
+  border-color: var(--ink-2);
+  transform: translateY(-1.5px);
+  box-shadow: 0 12px 26px rgba(20, 40, 59, 0.18);
+}
+
+.login-submit:active:not(:disabled) {
+  transform: translateY(0) scale(0.995);
+  box-shadow: none;
+}
+
+.login-submit:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.login-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.login-submit[data-leaving='true'] {
+  background: var(--green);
+  border-color: var(--green);
+  opacity: 1;
+}
+
+.auth-spinner {
+  animation: loginSpin 0.9s linear infinite;
+}
+
+/* ── Trust and demo notes ────────────────────────────────────────────── */
+.login-security {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--text-4);
+  font-size: 11.5px;
+}
+
+.login-security svg {
+  flex: 0 0 auto;
+  color: var(--green);
+}
+
+.login-demo {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--warning);
+  font-size: 11.5px;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────── */
+.login-footer {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 40px;
+  border-top: 1px solid var(--line);
+  background: var(--footer-bg);
+  color: var(--text-4);
+  font-size: 11.5px;
+}
+
+.login-footer__brand {
+  color: var(--text-3);
+  letter-spacing: 0.2px;
+}
+
+.login-footer__links {
+  display: flex;
+  gap: 18px;
+}
+
+.login-footer__disclaimer {
+  color: var(--warning);
+}
+
+.login-link {
+  padding: 2px 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  color: var(--icon-muted);
+  font-size: 11.5px;
+  transition: color 0.22s var(--ease-premium), border-color 0.22s var(--ease-premium);
+}
+
+.login-link:hover {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+.login-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Inline notice (privacy / terms / help) ──────────────────────────── */
+.login-notice {
+  position: fixed;
+  z-index: 40;
+  left: 24px;
+  bottom: 82px;
+  width: min(430px, calc(100vw - 48px));
+  padding: 16px 18px;
+  border: 1px solid var(--notice-border);
+  border-radius: 12px;
+  background: var(--notice-bg);
+  box-shadow: var(--shadow);
+  animation: loginRise 0.35s var(--ease-premium) both;
+}
+
+.login-notice strong {
+  display: block;
+  margin-bottom: 5px;
+  font: 600 15px Georgia, "Times New Roman", serif;
+}
+
+.login-notice p {
+  margin: 0 0 10px;
+  color: var(--text-2);
+  font-size: 12px;
+}
+
+/* ── Sign-out control in the workspace top bar ───────────────────────── */
+.topbar-actions {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 6px 5px 5px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-translucent);
+}
+
+.user-chip__initial {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--brand-bg);
+  color: var(--brand-fg);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.user-chip__meta {
+  display: flex;
+  flex-direction: column;
+  max-width: 190px;
+  line-height: 1.2;
+}
+
+.user-chip__meta strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 12.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-chip__meta small {
+  color: var(--muted-2);
+  font-size: 10px;
+}
+
+.user-chip__signout {
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--gold);
+  font-size: 11.5px;
+  transition: background 0.2s var(--ease-premium), color 0.2s var(--ease-premium);
+}
+
+.user-chip__signout:hover {
+  background: var(--hover-bg);
+  color: var(--ink);
+}
+
+.user-chip__signout:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* ── Sign-in → workspace transition ──────────────────────────────────── */
+.login-shell.is-leaving .login-card {
+  animation: loginCardOut 0.32s var(--ease-premium) forwards;
+}
+
+.login-shell.is-leaving .login-editorial,
+.login-shell.is-leaving .login-mobile-visual,
+.login-shell.is-leaving .login-footer {
+  animation: loginFadeOut 0.32s var(--ease-premium) forwards;
+}
+
+.login-shell.is-leaving {
+  pointer-events: none;
+}
+
+/* Rendered only after sign-in, so the animation plays at the hand-off. */
+.app-shell.app-shell--enter {
+  animation: bgPan 20s ease-in-out infinite alternate,
+    loginWorkspaceIn 0.55s var(--ease-premium) both;
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────────── */
+@keyframes loginFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes loginRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes loginFadeOut {
+  to { opacity: 0.5; }
+}
+
+@keyframes loginCardOut {
+  to { opacity: 0; transform: translateY(-10px) scale(0.995); }
+}
+
+@keyframes loginWorkspaceIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes loginDrift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-10px, -16px, 0); }
+}
+
+@keyframes loginVignette {
+  from { opacity: 0.92; }
+  to { opacity: 1; }
+}
+
+@keyframes loginSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────── */
+@media (max-width: 1120px) {
+  .login-editorial {
+    padding: 40px 40px;
+  }
+  .login-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  }
+}
+
+/* Tablet and below: single column, brand → form → small visual. */
+@media (max-width: 900px) {
+  .login-shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .login-editorial {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 34px 24px 30px;
+  }
+
+  /* The full-bleed artwork is dropped; a compact strip appears after the form. */
+  .login-editorial .login-visual {
+    display: none;
+  }
+
+  .login-editorial__inner {
+    gap: 22px;
+  }
+
+  .login-headline {
+    font-size: clamp(28px, 7vw, 34px);
+    letter-spacing: -0.8px;
+  }
+
+  .login-statement {
+    font-size: 13.5px;
+  }
+
+  .login-panel {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 28px 24px 10px;
+    background: linear-gradient(180deg, var(--surface-2) 0%, var(--bg-2) 100%);
+  }
+
+  .login-mobile-visual {
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+    padding: 14px 24px 24px;
+    background: var(--bg-2);
+  }
+
+  .login-mobile-visual .login-visual {
+    position: relative;
+    inset: auto;
+    height: 168px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+
+  .login-footer {
+    grid-row: 4;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .login-card {
+    padding: 26px 20px 22px;
+    gap: 14px;
+  }
+
+  .login-card__head h1 {
+    font-size: 26px;
+  }
+
+  .login-role__option {
+    font-size: 11px;
+    padding: 8px 4px;
+  }
+}
+
+/* Very narrow phones: the three role labels stop fitting side by side, so the
+   selector stacks instead of squeezing them into unreadable columns. */
+@media (max-width: 480px) {
+  .login-role__options {
+    grid-template-columns: 1fr;
+  }
+
+  .login-role__option {
+    padding: 9px 11px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .login-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .login-footer {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .login-footer__links {
+    gap: 14px;
+  }
+
+  .login-notice {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+  }
+
+  /* The sign-out control stays reachable; the identity block is dropped. */
+  .user-chip__meta {
+    display: none;
+  }
+}
+
+/* Color-only transition when the theme switches (elements with their own
+   transition keep it; this covers the surfaces that had none). */
+.login-panel, .login-card, .login-footer, .login-notice, .user-chip, .login-demo,
+.login-mobile-visual, .login-editorial {
+  transition: var(--trans-theme);
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .login-visual,
+  .login-brand,
+  .login-headline,
+  .login-statement,
+  .login-facts,
+  .login-card,
+  .login-card > *,
+  .login-notice {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* The ambient background treatment is decorative — switch it off entirely. */
+  .login-visual__drift,
+  .login-visual__vignette,
+  .auth-spinner {
+    animation: none !important;
+  }
+
+  .login-shell.is-leaving .login-card {
+    animation: loginFadeOut 0.16s linear forwards !important;
+    opacity: 0;
+  }
+
+  .app-shell.app-shell--enter {
+    animation: loginFade 0.16s linear both !important;
+  }
+}

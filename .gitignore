@@ -2,6 +2,10 @@
 .env
 .env.local
 .env.*.local
+# Keep the templates, never the real files.
+!.env.example
+!backend/.env.example
+!frontend/.env.example
 
 # ---- Python ----
 __pycache__/
@@ -33,6 +37,16 @@ backend/errors.log
 *.db
 !backend/data/metadata.db
 !backend/data/chroma_store/**
+
+# ---- Generated vector stores & runtime ingestion state ----
+# The live corpus is rebuilt by scripts/ingest.py, not committed as a binary
+# blob. Preserve it on the host's persistent volume instead (see docs/deployment.md).
+backend/chroma_db/
+backend/data/checkpoints/
+backend/data/ingestion_status.json
+
+# ---- Scratch / generated reports ----
+final.json
 
 # ---- Datasets / large data ----
 indian-supreme-court-judgments/

@@ -5,8 +5,8 @@ POST /api/trends — Fetch historical legal trend analysis.
 import time
 from fastapi import APIRouter, HTTPException
 
-from app.models.schemas import TrendRequest, TrendResponse, SourceDocument
-from app.services.pipeline import retrieve
+from app.schemas.schemas import TrendRequest, TrendResponse, SourceDocument
+from app.rag.pipeline import retrieve
 
 router = APIRouter()
 

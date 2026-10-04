@@ -10,9 +10,9 @@ from fastapi.responses import JSONResponse
 import traceback
 import sys
 
-from app.config import CORS_ORIGINS, API_HOST, API_PORT
-from app.models.database import init_db
-from app.api.routes import search, reference, documents, sections, similar, trends, summarize
+from app.core.config import CORS_ORIGINS, API_HOST, API_PORT, CASE_LAW_COLLECTION
+from app.db.database import init_db
+from app.api.routes import search, reference, documents, sections, similar, trends, summarize, research, pipeline, knowledge
 
 
 @asynccontextmanager
@@ -26,12 +26,23 @@ async def lifespan(app: FastAPI):
     init_db()
     print("[Startup] Database initialized.")
 
-    # Pre-load embedding model for faster first query
+    # Pre-load the embedding model and report the real corpus behind /api/research.
     try:
-        from app.services.pipeline import get_embedding_model, get_collection
-        get_embedding_model()
-        col = get_collection()
-        print(f"[Startup] ChromaDB collection ready. Documents: {col.count()}")
+        from app.core.config import CASE_LAW_COLLECTION
+        from app.db.vector_store import legal_cases_store
+        from app.rag.embedding_service import embedding_service
+
+        embedding_service.warm_up()
+        count = legal_cases_store.get_count()
+        print(
+            f"[Startup] ChromaDB collection '{CASE_LAW_COLLECTION}' ready. "
+            f"Indexed chunks: {count}"
+        )
+        if count == 0:
+            print(
+                "[Startup] WARNING: corpus is empty. Run "
+                "`python scripts/ingest_legal_data.py` from backend/."
+            )
     except Exception as e:
         print(f"[Startup] Pipeline init warning: {e}")
 
@@ -57,22 +68,30 @@ async def global_exception_handler(request, exc):
     return JSONResponse(status_code=500, content={"detail": str(exc)})
 
 is_wildcard = "*" in CORS_ORIGINS
+# Local dev is allowed on any port (5173, 5178, preview builds, ...) so the UI
+# can call the API without editing CORS_ORIGINS for every Vite port.
+LOCAL_DEV_ORIGIN_REGEX = r"http://(localhost|127\.0\.0\.1)(:\d+)?"
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"] if is_wildcard else CORS_ORIGINS,
-    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_origin_regex=rf"({LOCAL_DEV_ORIGIN_REGEX})|https://.*\.vercel\.app",
     allow_credentials=not is_wildcard,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(search.router, prefix="/api", tags=["Search & Research"])
+# NOTE: /api/search is the legacy endpoint backed by the bundled sample-CSV
+# collection. The real corpus pipeline lives at POST /api/research.
+app.include_router(search.router, prefix="/api", tags=["Legacy Search"], deprecated=True)
+app.include_router(research.router, prefix="/api", tags=["Research"])
+app.include_router(pipeline.router, prefix="/api", tags=["Pipeline"])
 app.include_router(reference.router, prefix="/api", tags=["Reference Data"])
 app.include_router(documents.router, prefix="/api", tags=["Documents"])
 app.include_router(sections.router, prefix="/api", tags=["Sections"])
 app.include_router(similar.router, prefix="/api", tags=["Similar Documents"])
 app.include_router(trends.router, prefix="/api", tags=["Trend Analysis"])
 app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
+app.include_router(knowledge.router, prefix="/api", tags=["Knowledge (OKF)"])
 
 
 @app.get("/")
@@ -89,18 +108,21 @@ async def root():
 @app.get("/api/health")
 async def health_check():
     doc_count = 0
+    collection = CASE_LAW_COLLECTION
     try:
-        from app.services.pipeline import get_collection
-        doc_count = get_collection().count()
+        from app.db.vector_store import legal_cases_store
+
+        doc_count = legal_cases_store.get_count()
     except Exception:
-        pass
+        collection = "unavailable"
     return {
         "status": "healthy",
         "version": "1.0.0",
         "components": {
             "document_count": doc_count,
-            "chromadb": "connected"
-        }
+            "collection": collection,
+            "chromadb": "connected" if collection != "unavailable" else "unavailable",
+        },
     }
 
 

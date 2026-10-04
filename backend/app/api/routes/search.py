@@ -2,8 +2,8 @@ import time
 from fastapi import APIRouter, HTTPException
 from typing import Dict, Any
 
-from app.models.schemas import SearchRequest, SearchResponse
-from app.services.pipeline import retrieve, generate_explanation
+from app.schemas.schemas import SearchRequest, SearchResponse
+from app.rag.pipeline import retrieve, generate_explanation
 
 router = APIRouter()
 
@@ -21,6 +21,8 @@ def legal_search(request: SearchRequest):
     filters = request.filters or {}
     if request.document_type and "document_type" not in filters:
         filters["document_type"] = request.document_type
+    if request.jurisdiction and "jurisdiction" not in filters:
+        filters["jurisdiction"] = request.jurisdiction
     if request.court and "court" not in filters:
         filters["court"] = request.court
     if request.year_from and "year_from" not in filters:
