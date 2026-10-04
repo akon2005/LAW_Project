@@ -64,32 +64,21 @@ uvicorn app.main:app --reload --port 8000
 ```
 Access the API at: `http://localhost:8000/docs`
 
-## 5. Vercel Deployment
+## 5. Production Architecture & Deployment
 
-This project is configured for a single, unified Vercel deployment:
-- **Frontend:** Vite React static build
-- **Backend:** FastAPI via Vercel Python Serverless Functions
+VIDHIVEDA uses a decoupled, high-performance production architecture:
+- **Frontend (Vercel):** High-speed static delivery of the Vite React single-page app at [`https://frontend-akon2005s-projects.vercel.app`](https://frontend-akon2005s-projects.vercel.app).
+- **Backend + RAG (Render Docker):** Full FastAPI server containerized with PyTorch, SentenceTransformers, and ChromaDB at [`https://vidhiveda-backend.onrender.com`](https://vidhiveda-backend.onrender.com).
+- **Vector Store:** 9,375 pre-indexed chunks committed at `backend/chroma_db/` and baked directly into the Docker image, eliminating re-ingestion delays and persistent disk costs.
+- **API Routing:** `vercel.json` provides an edge rewrite proxying `/api/(.*)` directly to Render, preventing CORS issues and enabling same-origin requests. Alternatively, `VITE_API_BASE` directly targets the Render origin.
 
-**Deployment Steps:**
-1. Import the repository into Vercel.
-2. Set **Root Directory** to `./` (the repository root).
-3. Set **Framework Preset** to Vite.
-4. Set **Build Command** to `cd frontend && npm install && npm run build`.
-5. Set **Output Directory** to `frontend/dist`.
-6. Configure the necessary environment variables in the Vercel dashboard (see `.env.example`).
-7. Deploy Preview and verify functionality, then promote to Production.
+### 5.1. CI/CD Deployment Workflows
 
-**Environment Variables:**
-- `VITE_API_URL`: `/api` (for the frontend to route requests to the same origin).
-- `LLM_PROVIDER`, `OPENAI_API_KEY`, etc. for server-side generation.
-- `REMOTE_EMBEDDING_PROVIDER`: set to `openai` to use remote embeddings (bypasses heavy local ML dependencies).
+Production deploys are automated via GitHub Actions:
+1. **Frontend:** Push to `main` touching `frontend/**` or `vercel.json` triggers `.github/workflows/deploy-frontend.yml`. Verifies the build, pulls Vercel settings, builds the production bundle with `VITE_API_BASE`, and deploys via Vercel CLI.
+2. **Backend:** Push to `main` touching `backend/**` or `render.yaml` triggers `.github/workflows/deploy-backend.yml`. Runs all 118 unit tests, triggers the Render deploy hook via `RENDER_DEPLOY_HOOK_URL`, and polls `/health` until the new revision is live.
+3. **Corpus Ingestion:** Controlled manually via `.github/workflows/ingest.yml`. Guarded to prevent accidental re-indexing.
 
-## 5.1. AI/RAG Production Architecture
-
-In production (Vercel Serverless), the application operates in a lightweight mode to comply with size limits (250MB):
-- The massive `sentence-transformers` and `chromadb` libraries are omitted from the root `requirements.txt`.
-- Vector storage must be provided via a remote database (e.g., Pinecone or a managed Chroma service). If unconfigured, the API safely reports it as unavailable.
-- Large legal corpora are externalized. Run ingestion separately using `backend/scripts/ingest_legal_data.py` on a persistent machine, targeting your remote vector database.
 
 ## 6. Where the AI/RAG Components Are Located
 The AI and RAG components are entirely isolated within `backend/app/rag/`.

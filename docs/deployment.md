@@ -76,11 +76,15 @@ No credential is ever stored in the repository. `render.yaml` marks every secret
 1. **Vercel** — confirm the project's Root Directory is the repo root and the
    framework preset is Vite (the root `vercel.json` drives the build). Add
    `VITE_API_BASE` in Vercel env vars too, so dashboard/preview builds match CI.
+   Under **Project Settings → Deployment Protection**, ensure **Vercel Authentication**
+   is **Disabled** (or disabled for production) so public users can access the app
+   without an SSO redirect.
 2. **Render** — create the service from `render.yaml` (`Blueprint`). Set
    `HF_API_TOKEN` (and `OPENAI_API_KEY` if used) in the dashboard. Copy the
    **Deploy Hook URL** into the `RENDER_DEPLOY_HOOK_URL` GitHub secret.
 3. **GitHub** — add the secrets/variables above. Optionally protect `main` and
    require the **CI** workflow to pass before merge.
+
 
 > **Paid-service note:** the current setup deliberately avoids paid services by
 > committing the corpus and using the free Render web plan. If you later want the

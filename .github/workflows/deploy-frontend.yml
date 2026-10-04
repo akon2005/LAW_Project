@@ -19,8 +19,27 @@ permissions:
   contents: read
 
 jobs:
+  check:
+    name: Frontend build check
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Verify production build
+        run: npm run build
+
   deploy:
     name: Build and deploy to Vercel
+    needs: check
     runs-on: ubuntu-latest
     env:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
@@ -53,3 +72,22 @@ jobs:
           url="$(vercel deploy --prebuilt --prod --token="${{ secrets.VERCEL_TOKEN }}")"
           echo "Deployed to: $url"
           echo "### Frontend deployed: $url" >> "$GITHUB_STEP_SUMMARY"
+
+  verify:
+    name: Verify production frontend
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check frontend availability
+        run: |
+          url="https://frontend-akon2005s-projects.vercel.app"
+          echo "Checking $url ..."
+          code="$(curl -s -o /dev/null -w "%{http_code}" -L "$url" || true)"
+          echo "HTTP status code: $code"
+          if [ "$code" = "200" ] || [ "$code" = "302" ]; then
+            echo "Frontend is accessible (HTTP $code)"
+            echo "### Frontend accessible: $url (HTTP $code)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::warning::Frontend returned HTTP $code"
+          fi
+

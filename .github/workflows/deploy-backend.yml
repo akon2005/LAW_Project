@@ -66,11 +66,12 @@ jobs:
         run: |
           base="${{ vars.BACKEND_URL }}"
           if [ -z "$base" ]; then
-            echo "::warning::BACKEND_URL variable is not set; skipping live health check"
-            exit 0
+            echo "BACKEND_URL variable is not set; falling back to https://vidhiveda-backend.onrender.com"
+            base="https://vidhiveda-backend.onrender.com"
           fi
           base="${base%/}"
           echo "Waiting for $base/health ..."
+
           for attempt in $(seq 1 40); do
             body="$(curl -fsS --max-time 10 "$base/health" || true)"
             if echo "$body" | grep -q '"status":"healthy"'; then

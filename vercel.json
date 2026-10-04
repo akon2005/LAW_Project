@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/api/index.py"
+      "destination": "https://vidhiveda-backend.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
@@ -13,3 +13,4 @@
     }
   ]
 }
+
