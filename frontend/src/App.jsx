@@ -10,6 +10,7 @@ import { roleLabel } from './services/authService.js'
 import { writeClipboard, recordToText } from './utils/clipboard.js'
 import Icon from './components/Icon.jsx'
 import AppearancePanel from './components/settings/AppearancePanel.jsx'
+import AssistantBubble from './components/assistant/AssistantBubble.jsx'
 
 /** Results rendered before the "show more" control appears. */
 const RESULTS_PAGE_SIZE = 8
@@ -106,30 +107,39 @@ function OkfBody({ text, onOpenConcept }) {
     }
   }
 
-  String(text || '').split('\n').forEach((line) => {
-    const trimmed = line.trim()
-    if (!trimmed) { flushList(); flushTable(); return }
-    if (trimmed.startsWith('|')) { flushList(); table.push(trimmed); return }
-    flushTable()
-    if (trimmed.startsWith('# ')) {
+  if (!text) {
+    nodes.push(<p key={key++} style={{ color: 'var(--muted)' }}>No body content for this concept.</p>)
+    return <div className="okf-body">{nodes}</div>
+  }
+
+  try {
+    String(text).split('\n').forEach((line) => {
+      const trimmed = line.trim()
+      if (!trimmed) { flushList(); flushTable(); return }
+      if (trimmed.startsWith('|')) { flushList(); table.push(trimmed); return }
+      flushTable()
+      if (trimmed.startsWith('# ')) {
+        flushList()
+        nodes.push(<h3 key={`okf-h-${key++}`}>{trimmed.slice(2)}</h3>)
+        return
+      }
+      if (trimmed.startsWith('* ')) {
+        list.push(<li key={`okf-li-${key++}`}>{renderOkfInline(trimmed.slice(2), onOpenConcept)}</li>)
+        return
+      }
+      if (trimmed.startsWith('> ')) {
+        flushList()
+        nodes.push(<blockquote key={`okf-q-${key++}`}>{trimmed.slice(2)}</blockquote>)
+        return
+      }
       flushList()
-      nodes.push(<h3 key={`okf-h-${key++}`}>{trimmed.slice(2)}</h3>)
-      return
-    }
-    if (trimmed.startsWith('* ')) {
-      list.push(<li key={`okf-li-${key++}`}>{renderOkfInline(trimmed.slice(2), onOpenConcept)}</li>)
-      return
-    }
-    if (trimmed.startsWith('> ')) {
-      flushList()
-      nodes.push(<blockquote key={`okf-q-${key++}`}>{trimmed.slice(2)}</blockquote>)
-      return
-    }
+      nodes.push(<p key={`okf-p-${key++}`}>{renderOkfInline(trimmed, onOpenConcept)}</p>)
+    })
     flushList()
-    nodes.push(<p key={`okf-p-${key++}`}>{renderOkfInline(trimmed, onOpenConcept)}</p>)
-  })
-  flushList()
-  flushTable()
+    flushTable()
+  } catch (err) {
+    nodes.push(<p key={key++} style={{ color: 'var(--muted)' }}>Content unavailable.</p>)
+  }
   return <div className="okf-body">{nodes}</div>
 }
 
@@ -267,6 +277,7 @@ function App() {
   const [knowledgeConcept, setKnowledgeConcept] = useState(null)
   const [knowledgeError, setKnowledgeError] = useState('')
   const [knowledgeLoading, setKnowledgeLoading] = useState(false)
+  const [knowledgeLoadingConcept, setKnowledgeLoadingConcept] = useState(false)
 
   // Which corpus is actually behind the search box (read from ChromaDB).
   useEffect(() => {
@@ -520,13 +531,20 @@ function App() {
   const openConcept = (conceptId) => {
     if (!conceptId) return
     setKnowledgeError('')
+    setKnowledgeLoadingConcept(true)
     fetch(`${API_BASE}/api/knowledge/${conceptId}`)
       .then(async (res) => {
         if (!res.ok) throw new Error(`Concept '${conceptId}' is not in the bundle.`)
         return res.json()
       })
-      .then((data) => setKnowledgeConcept(data))
-      .catch((err) => setKnowledgeError(err.message))
+      .then((data) => {
+        setKnowledgeConcept(data)
+        setKnowledgeLoadingConcept(false)
+      })
+      .catch((err) => {
+        setKnowledgeError(err.message)
+        setKnowledgeLoadingConcept(false)
+      })
   }
 
   // Signed out (or session expired): only the sign-in experience is rendered.
@@ -1117,81 +1135,101 @@ function App() {
 
       {knowledgeConcept && (
         <div className="okf-backdrop" onClick={() => setKnowledgeConcept(null)}>
-          <div
-            className="okf-panel"
-            role="dialog"
-            aria-modal="true"
-            aria-label={`OKF concept: ${knowledgeConcept.title}`}
-            onClick={(event) => event.stopPropagation()}
-          >
-            <header className="okf-panel__head">
-              <div>
-                <span className="eyebrow">{knowledgeConcept.type} · OKF v0.2</span>
-                <h2>{knowledgeConcept.title}</h2>
+          {knowledgeLoadingConcept ? (
+            <div className="okf-panel okf-panel--loading">
+              <div className="okf-panel__head">
+                <div>
+                  <span className="eyebrow">Loading…</span>
+                </div>
+                <button type="button" className="reader-close" onClick={() => setKnowledgeConcept(null)} aria-label="Close concept">
+                  <Icon name="close" size={18} />
+                </button>
               </div>
-              <button type="button" className="reader-close" onClick={() => setKnowledgeConcept(null)} aria-label="Close concept">
-                <Icon name="close" size={18} />
-              </button>
-            </header>
-            <div className="okf-panel__body">
-              <div className="okf-meta">
-                <div><span>Concept id</span><strong>{knowledgeConcept.concept_id}</strong></div>
-                <div><span>Trust tier</span><strong>{knowledgeConcept.trust_tier}</strong></div>
-                <div><span>Status</span><strong>{knowledgeConcept.status}{knowledgeConcept.stale ? ' · stale' : ''}</strong></div>
+              <div className="okf-panel__body" style={{ textAlign: 'center', paddingTop: '40px' }}>
+                <div className="spinner" style={{ margin: '0 auto' }}></div>
+                <p style={{ marginTop: '16px', color: 'var(--muted)' }}>Loading concept…</p>
               </div>
-
-              <OkfBody text={knowledgeConcept.body} onOpenConcept={openConcept} />
-
-              {knowledgeConcept.sources?.length > 0 && (
-                <>
-                  <h3>Sources</h3>
-                  <div className="okf-sources">
-                    {knowledgeConcept.sources.map((source, index) => (
-                      <div className="okf-source" key={`${source.resource}-${index}`}>
-                        <strong>{source.title || source.id || 'Source'}</strong>
-                        <div>
-                          {/^https?:/.test(source.resource || '')
-                            ? <a href={source.resource} target="_blank" rel="noreferrer">{source.resource}</a>
-                            : source.resource}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {knowledgeConcept.outgoing?.length > 0 && (
-                <>
-                  <h3>Related concepts</h3>
-                  <div className="okf-link-list">
-                    {knowledgeConcept.outgoing.map((link) => (
-                      <button type="button" className="okf-link-btn" key={link.concept_id} onClick={() => openConcept(link.concept_id)}>
-                        {link.title}
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              {knowledgeConcept.backlinks?.length > 0 && (
-                <>
-                  <h3>Referenced by</h3>
-                  <div className="okf-link-list">
-                    {knowledgeConcept.backlinks.map((link) => (
-                      <button type="button" className="okf-link-btn" key={link.concept_id} onClick={() => openConcept(link.concept_id)}>
-                        {link.title}
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
             </div>
-          </div>
+          ) : (
+            <div
+              className="okf-panel"
+              role="dialog"
+              aria-modal="true"
+              aria-label={`OKF concept: ${knowledgeConcept.title}`}
+              onClick={(event) => event.stopPropagation()}
+            >
+              <header className="okf-panel__head">
+                <div>
+                  <span className="eyebrow">{knowledgeConcept.type} · OKF v0.2</span>
+                  <h2>{knowledgeConcept.title}</h2>
+                </div>
+                <button type="button" className="reader-close" onClick={() => setKnowledgeConcept(null)} aria-label="Close concept">
+                  <Icon name="close" size={18} />
+                </button>
+              </header>
+              <div className="okf-panel__body">
+                <div className="okf-meta">
+                  <div><span>Concept id</span><strong>{knowledgeConcept.concept_id}</strong></div>
+                  <div><span>Trust tier</span><strong>{knowledgeConcept.trust_tier}</strong></div>
+                  <div><span>Status</span><strong>{knowledgeConcept.status}{knowledgeConcept.stale ? ' · stale' : ''}</strong></div>
+                </div>
+
+                <OkfBody text={knowledgeConcept.body} onOpenConcept={openConcept} />
+
+                {knowledgeConcept.sources?.length > 0 && (
+                  <>
+                    <h3>Sources</h3>
+                    <div className="okf-sources">
+                      {knowledgeConcept.sources.map((source, index) => (
+                        <div className="okf-source" key={`${source.resource}-${index}`}>
+                          <strong>{source.title || source.id || 'Source'}</strong>
+                          <div>
+                            {/^https?:/.test(source.resource || '')
+                              ? <a href={source.resource} target="_blank" rel="noreferrer">{source.resource}</a>
+                              : source.resource}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {knowledgeConcept.outgoing?.length > 0 && (
+                  <>
+                    <h3>Related concepts</h3>
+                    <div className="okf-link-list">
+                      {knowledgeConcept.outgoing.map((link) => (
+                        <button type="button" className="okf-link-btn" key={link.concept_id} onClick={() => openConcept(link.concept_id)}>
+                          {link.title}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+                {knowledgeConcept.backlinks?.length > 0 && (
+                  <>
+                    <h3>Referenced by</h3>
+                    <div className="okf-link-list">
+                      {knowledgeConcept.backlinks.map((link) => (
+                        <button type="button" className="okf-link-btn" key={link.concept_id} onClick={() => openConcept(link.concept_id)}>
+                          {link.title}
+                        </button>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       )}
+
+      <AssistantBubble />
     </div>
   )
 }
+
 
 /**
  * Dropdown whose options may be plain strings or { value, label } pairs, so

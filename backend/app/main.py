@@ -12,7 +12,7 @@ import sys
 
 from app.core.config import CORS_ORIGINS, API_HOST, API_PORT, CASE_LAW_COLLECTION
 from app.db.database import init_db
-from app.api.routes import search, reference, documents, sections, similar, trends, summarize, research, pipeline, knowledge
+from app.api.routes import search, reference, documents, sections, similar, trends, summarize, research, pipeline, knowledge, chat
 
 
 @asynccontextmanager
@@ -92,6 +92,7 @@ app.include_router(similar.router, prefix="/api", tags=["Similar Documents"])
 app.include_router(trends.router, prefix="/api", tags=["Trend Analysis"])
 app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
 app.include_router(knowledge.router, prefix="/api", tags=["Knowledge (OKF)"])
+app.include_router(chat.router, prefix="/api", tags=["Chat"])
 
 
 @app.get("/")
