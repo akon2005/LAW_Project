@@ -26,4 +26,6 @@ anthropic==0.34.0
 httpx==0.27.0
 
 # Utilities
-tqdm==4.66.0
+# Must stay >=4.66.3: datasets>=2.20.0 requires it, and an exact 4.66.0 pin
+# makes pip resolution fail on a clean machine (and in the Docker build).
+tqdm>=4.66.3
