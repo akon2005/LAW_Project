@@ -1,5 +1,20 @@
 # VIDHIVEDA — AI-Powered Legal Research Engine
 
+**Live VIDHIVEDA Application:** [Open Application](https://frontend-akon2005s-projects.vercel.app)
+
+| Environment | URL |
+|---|---|
+| Frontend (Vercel, production) | https://frontend-akon2005s-projects.vercel.app |
+| Backend API (Render, production) | https://vidhiveda-backend.onrender.com |
+| API documentation (Swagger) | https://vidhiveda-backend.onrender.com/docs |
+| Health check | https://vidhiveda-backend.onrender.com/health |
+
+> These URLs are defined in [`render.yaml`](render.yaml) and the Vercel project.
+> If a host issues a different URL, update this table and redeploy.
+>
+> Deployment, CI/CD, required secrets and rollback are documented in
+> [docs/deployment.md](docs/deployment.md).
+
 ## 1. What VIDHIVEDA Does
 VIDHIVEDA is a sophisticated AI-powered legal research and judicial knowledge discovery system. It allows users to input natural language queries regarding legal matters, retrieves relevant Indian case-law precedents from a vector database (ChromaDB), and synthesizes a well-structured, citation-backed response using Large Language Models (LLMs). The frontend provides a professional legal-research interface that highlights case citations and displays exact matched precedents.
 

@@ -37,11 +37,12 @@ backend/errors.log
 *.db
 !backend/data/metadata.db
 !backend/data/chroma_store/**
+# The production vector store is committed on purpose (see docs/deployment.md):
+# it carries the 9,375 indexed legal chunks from dedol-hf/india-case-legal-rag,
+# so no host has to re-embed the corpus just to deploy code.
+!backend/chroma_db/**
 
-# ---- Generated vector stores & runtime ingestion state ----
-# The live corpus is rebuilt by scripts/ingest.py, not committed as a binary
-# blob. Preserve it on the host's persistent volume instead (see docs/deployment.md).
-backend/chroma_db/
+# ---- Generated runtime ingestion state ----
 backend/data/checkpoints/
 backend/data/ingestion_status.json
 
