@@ -25,6 +25,13 @@ openai==1.50.0
 anthropic==0.34.0
 httpx==0.27.0
 
+# TLS trust store. The outbound calls this service makes (Hugging Face, OpenAI,
+# Anthropic, dataset download) are verified against certifi's bundled CA file, not
+# against the OS store, so the two have to be updated together. This floor keeps
+# every image rebuild on a bundle at least as recent as the 2026-10-19 eMudhra
+# certificate-authority disclosure; rebuild the Docker image to pick it up.
+certifi>=2026.10.23
+
 # Utilities
 # Must stay >=4.66.3: datasets>=2.20.0 requires it, and an exact 4.66.0 pin
 # makes pip resolution fail on a clean machine (and in the Docker build).

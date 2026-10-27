@@ -6,13 +6,24 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Install lightweight system dependencies
+# Install lightweight system dependencies, and refresh the image's trust store.
+# The base image ships a ca-certificates snapshot from its build date; installing
+# the current package and rebuilding /etc/ssl/certs with --fresh is what makes the
+# rebuilt image distrust revoked/hijacked issuers (see the eMudhra advisory note in
+# backend/requirements.txt). This is the Docker step the Render advisory asks for:
+# update the certificate store inside the image, then redeploy.
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    openssl \
     build-essential \
     curl \
+    && update-ca-certificates --fresh \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install CPU-only torch and python dependencies
+# Copy requirements and install CPU-only torch and python dependencies.
+# certifi is pinned to a floor version in requirements.txt: httpx / requests /
+# huggingface_hub verify HTTPS against certifi's bundled bundle, not against the
+# Debian store updated above, so both have to be current after a rebuild.
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt

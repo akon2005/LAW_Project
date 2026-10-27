@@ -144,3 +144,21 @@ no workflow runs destructive migrations.
 - `backend/chroma_db` is never reset by a code deploy; ingestion upserts by
   deterministic id.
 - No automatic destructive database migration exists in the pipeline.
+
+## 9. Runtime and certificate currency
+
+Security advisories (for example Render's October 2026 eMudhra / Node.js / PHP
+notice) are fixed by **rebuilding**, not by editing an environment variable. Three
+things in this project carry their own trust decisions:
+
+| Trust store | Where it is set | How it is refreshed |
+|---|---|---|
+| Debian system CA store in the backend image | `backend/Dockerfile` installs `ca-certificates` and `openssl`, then runs `update-ca-certificates --fresh` | Any push under `backend/**` or `render.yaml` rebuilds the image; the deploy workflow's `verify` job polls `/health` on the new revision |
+| Python's bundled CA file (`certifi`) | `certifi>=2026.10.23` in `backend/requirements.txt` and root `requirements.txt` | Installed during the same image rebuild; `httpx`, `requests` and `huggingface_hub` verify against this file, **not** the system store |
+| Node.js runtime (CI + Vercel build) | `node-version` in `ci.yml` and `deploy-frontend.yml`; `engines.node` in `frontend/package.json`; `frontend/.nvmrc` for local dev | A new push (or workflow_dispatch) to a deploy workflow. Vercel reads `engines.node` at build time, so the frontend must be **rebuilt**, not just re-promoted |
+
+Because the Dockerfile's trust-store step is the first `RUN`, changing it
+invalidates the build cache for every later layer, so a rebuild also re-resolves
+pip and re-downloads the SentenceTransformer model.
+
+This repository contains **no PHP**, so the PHP2Shell advisory does not apply here.
