@@ -4,8 +4,8 @@
 
 | Environment / Resource | URL |
 |---|---|
-| Primary Repository | https://github.com/akon2005/LAW_Project |
-| Backup Repository | https://github.com/akon2005/VIDHIVEDA |
+| Frontend repository (Vercel) | https://github.com/akon2005/LAW_Project |
+| Backend repository (Render) | https://github.com/akon2005/VIDHIVEDA |
 | Frontend (Vercel, production) | https://frontend-akon2005s-projects.vercel.app |
 | Backend API (Render, production) | https://vidhiveda-backend.onrender.com |
 | API documentation (Swagger) | https://vidhiveda-backend.onrender.com/docs |

@@ -11,7 +11,9 @@ reference for the "make a change → test → push → deploy → verify" loop.
 | Backend + RAG | **Render** (`vidhiveda-backend`, Docker) | FastAPI, sentence-transformers, ChromaDB | `render.yaml` blueprint, `backend/Dockerfile`. Full `backend/requirements.txt`. |
 | Vector store | **Committed in `backend/chroma_db/`** | 9,375 chunks in `vidhiveda_legal_cases` | Baked into the Docker image, so no host re-embeds on deploy. |
 | Metadata DB | SQLite (`backend/data/metadata.db`, committed) | SQLAlchemy `cases` table | Created via `init_db()`; no destructive migrations run automatically. |
-| Source of truth | **GitHub `main`** (`https://github.com/akon2005/LAW_Project`, backup: `https://github.com/akon2005/VIDHIVEDA`) | All of the above | Every deploy is a response to a commit on `main`. |
+| Source of truth | **GitHub `main`** (frontend: `https://github.com/akon2005/LAW_Project`; backend: `https://github.com/akon2005/VIDHIVEDA`) | All of the above | Every deploy is a response to a commit on `main`. |
+
+> The hosts are connected to different repositories: Vercel builds the frontend from `LAW_Project`, while the Render service follows `VIDHIVEDA`. A backend release needs a Render deploy (dashboard or `RENDER_DEPLOY_HOOK_URL`); a frontend-only push does not update the API.
 
 
 **Why the backend is on Render, not Vercel serverless.** The unified Vercel
