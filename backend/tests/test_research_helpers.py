@@ -80,12 +80,14 @@ class PredictionTests(unittest.TestCase):
         self.assertIsNone(prediction["label"])
         self.assertIn("Insufficient", prediction["reason"])
 
-    def test_prediction_unavailable_without_model(self):
+    def test_prediction_reports_the_trained_model(self):
         analysis = legal_query_analyzer.analyze("Will the accused be convicted?")
         prediction = _build_prediction(analysis, evidence_sufficient=True)
-        # No trained model exists in this repository, so it must say so.
-        self.assertFalse(prediction["available"])
-        self.assertIsNotNone(prediction["reason"])
+        # The trained model ships with the repository, so this path must return a
+        # real prediction rather than the "no model" abstention.
+        self.assertTrue(prediction["available"])
+        self.assertIn(prediction["label"], ("convicted", "acquitted"))
+        self.assertIsNone(prediction["reason"])
 
 
 class LimitationTests(unittest.TestCase):

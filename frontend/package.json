@@ -15,6 +15,9 @@
     "build:dataset": "node scripts/build-dataset.js",
     "verify:search": "node scripts/verify-search.js",
     "verify:themes": "node scripts/verify-themes.js",
+    "verify:speech": "node scripts/verify-speech.js",
+    "verify:support": "node scripts/verify-support.js",
+    "verify:examples": "node scripts/verify-legal-examples.js",
     "preview": "vite preview"
   },
   "dependencies": {

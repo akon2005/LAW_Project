@@ -7,10 +7,15 @@ import LoginPage from './components/auth/LoginPage.jsx'
 import ReaderView, { DEFAULT_READER_PREFS, loadReaderPrefs, saveReaderPrefs, SCALE_MIN, SCALE_MAX, SCALE_STEP } from './components/ReaderView.jsx'
 import { API_BASE } from './services/apiBase.js'
 import { roleLabel } from './services/authService.js'
+import { mergeTranscript, SPEECH_LANGUAGES } from './utils/speech.js'
+import { useSpeechRecognition } from './utils/useSpeechRecognition.js'
 import { writeClipboard, recordToText } from './utils/clipboard.js'
 import Icon from './components/Icon.jsx'
 import AppearancePanel from './components/settings/AppearancePanel.jsx'
 import AssistantBubble from './components/assistant/AssistantBubble.jsx'
+import ComparePanel from './components/comparison/ComparePanel.jsx'
+import GuidesPanel from './components/support/GuidesPanel.jsx'
+import MicButton from './components/MicButton.jsx'
 
 /** Results rendered before the "show more" control appears. */
 const RESULTS_PAGE_SIZE = 8
@@ -237,7 +242,20 @@ function App() {
       .join('') || 'V'
 
   const [activeTab, setActiveTab] = useState('research')
+  // Support assistant bridge: the Guides tab and the chat panel can hand each
+  // other prompts and navigation. `openRequest.id` changes per request so the
+  // panel only reacts once per click.
+  const [assistantRequest, setAssistantRequest] = useState(null)
+  const requestAssistant = (prompt, mode = 'load') =>
+    setAssistantRequest({ id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, prompt, mode })
   const [query, setQuery] = useState('')
+  const [speechLang, setSpeechLang] = useState('en-IN')
+  // Voice-to-text: recognized speech fills the SAME search input and is never
+  // auto-submitted — the user reviews and edits it, then submits normally.
+  const speech = useSpeechRecognition({
+    lang: speechLang,
+    onFinal: (text) => setQuery((current) => mergeTranscript(current, text)),
+  })
   const [submitted, setSubmitted] = useState('')
   const [court, setCourt] = useState(ALL_COURTS)
   const [year, setYear] = useState(ANY_YEAR)
@@ -561,7 +579,9 @@ function App() {
             <NavButton active={activeTab === 'research'} icon="search" onClick={() => setActiveTab('research')}>Research</NavButton>
             <NavButton active={activeTab === 'statutes'} icon="book" onClick={() => setActiveTab('statutes')}>Statutes & Articles</NavButton>
             <NavButton active={activeTab === 'documents'} icon="file" onClick={() => setActiveTab('documents')}>Documents</NavButton>
+            <NavButton active={activeTab === 'comparison'} icon="compare" onClick={() => setActiveTab('comparison')}>Compare</NavButton>
             <NavButton active={activeTab === 'knowledge'} icon="knowledge" onClick={() => setActiveTab('knowledge')}>Knowledge</NavButton>
+            <NavButton active={activeTab === 'guide'} icon="sparkles" onClick={() => setActiveTab('guide')}>Guides</NavButton>
             <NavButton active={activeTab === 'settings'} icon="settings" onClick={() => setActiveTab('settings')}>Settings</NavButton>
           </nav>
           <div className="topbar-actions">
@@ -599,13 +619,32 @@ function App() {
                 <form className="searchbar" onSubmit={submitSearch}>
                   <Icon name="search" size={19}/>
                   <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Describe the legal issue or facts you are researching…" aria-label="Legal research query" />
+                  <button
+                    type="button"
+                    className={`mic-button ${speech.listening ? 'mic-button--listening' : ''}`}
+                    onClick={speech.toggle}
+                    aria-pressed={speech.listening}
+                    aria-label={speech.listening ? 'Stop voice input' : `Dictate your query${speech.supported ? '' : ' (not supported in this browser)'}`}
+                    title={speech.supported ? (speech.listening ? 'Stop dictation' : 'Dictate your query') : 'Speech recognition is not supported in this browser'}
+                  >
+                    <Icon name={speech.listening ? 'micOff' : 'mic'} size={18}/>
+                  </button>
                   <button className="filter-button" type="button" onClick={() => setShowFilters((v) => !v)} aria-label="Open filters"><Icon name="filter" size={18}/></button>
                   <button className="search-submit" type="submit" aria-label="Search"><Icon name="arrow" size={18}/></button>
                 </form>
+                {(speech.listening || speech.interim || speech.error) && (
+                  <div className="mic-status" role="status" aria-live="polite">
+                    {speech.listening && (
+                      <span className="mic-status__live"><span className="mic-dot"/> Listening… {speech.interim}</span>
+                    )}
+                    {speech.error && <span className="mic-status__error">{speech.error}</span>}
+                  </div>
+                )}
                 {showFilters && (
-                  <div className="filter-panel">
+                  <div className="filter-panel filter-panel--speech">
                     <Select label="Court (indexed corpus)" value={court} options={courtOptions} onChange={setCourt}/>
                     <Select label="Year (indexed corpus)" value={year} options={yearOptions} onChange={setYear}/>
+                    <Select label="Dictation language" value={speechLang} options={SPEECH_LANGUAGES} onChange={setSpeechLang}/>
                     <button type="button" className="filter-reset" onClick={resetFilters}>Clear filters</button>
                   </div>
                 )}
@@ -816,7 +855,7 @@ function App() {
                         <strong>{corpus ? `${corpus.collection} · ${corpus.chunk_count.toLocaleString()}` : 'indexed legal corpus'}</strong>
                       </div>
 
-                      {answerWarning && <div className="answer-warning">⚠️ {answerWarning}</div>}
+                      {answerWarning && <div className="answer-warning">Warning: {answerWarning}</div>}
 
                       {prediction?.available ? (
                         <div className="answer-block">
@@ -970,6 +1009,10 @@ function App() {
           </section>
         )}
 
+        {activeTab === 'comparison' && <ComparePanel />}
+
+        {activeTab === 'guide' && <GuidesPanel onLoadPrompt={requestAssistant} />}
+
         {activeTab === 'knowledge' && (
           <section className="page-section section-container okf-page">
             <SectionLabel
@@ -1002,6 +1045,13 @@ function App() {
                       onChange={(event) => setKnowledgeQuery(event.target.value)}
                       placeholder="Filter concepts by title, tag or body text…"
                       aria-label="Filter OKF concepts"
+                    />
+                    <MicButton
+                      value={knowledgeQuery}
+                      onChange={setKnowledgeQuery}
+                      variant="bar"
+                      size={18}
+                      title="Dictate concept filter"
                     />
                     {knowledgeQuery && (
                       <button className="filter-button" type="button" onClick={() => setKnowledgeQuery('')} aria-label="Clear filter"><Icon name="close" size={16} /></button>
@@ -1225,7 +1275,12 @@ function App() {
         </div>
       )}
 
-      <AssistantBubble />
+      <AssistantBubble
+        page={activeTab}
+        onNavigate={setActiveTab}
+        onOpenGuides={() => setActiveTab('guide')}
+        openRequest={assistantRequest}
+      />
     </div>
   )
 }

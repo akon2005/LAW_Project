@@ -802,3 +802,155 @@ button { cursor: pointer; }
 @media (max-width: 640px) {
   .theme-toast { left: 16px; right: 16px; transform: none; justify-content: center; }
 }
+
+/* ── Voice search ──────────────────────────────────────────────────────
+   The microphone sits inside the existing search bar; recognized text lands
+   in the same input and is never auto-submitted. */
+.mic-button { width: 40px; height: 40px; flex: 0 0 auto; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink-2); border-radius: 9px; display: grid; place-items: center; transition: all var(--trans-fast); }
+.mic-button:hover { background: var(--surface); border-color: var(--border-hover); }
+.mic-button--listening { color: var(--white); background: var(--error-soft, var(--gold-soft)); border-color: var(--gold); animation: micPulse 1.4s ease-in-out infinite; }
+@keyframes micPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(179,139,62,.0); }
+  50% { box-shadow: 0 0 0 5px rgba(179,139,62,.16); }
+}
+.mic-status { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 12px; }
+.mic-status__live { display: inline-flex; align-items: center; gap: 8px; color: var(--text-2); }
+.mic-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); animation: micPulse 1.4s ease-in-out infinite; }
+.mic-status__error { color: var(--warning); }
+.filter-panel--speech { grid-template-columns: repeat(3, minmax(0,1fr)) auto; }
+@media (max-width: 760px) {
+  .filter-panel, .filter-panel--speech { grid-template-columns: minmax(0,1fr); }
+}
+
+/* ── Universal Voice Dictation Controls (MicButton) ─────────────────── */
+.mic-ctrl {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.mic-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--trans-fast);
+}
+
+.mic-btn:hover:not(:disabled) {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--border-hover);
+}
+
+.mic-btn--listening {
+  color: var(--gold);
+  background: var(--gold-soft);
+  border-color: var(--gold);
+  animation: micPulse 1.4s ease-in-out infinite;
+}
+
+.mic-btn--unsupported {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Variant: field (sits neatly in field header row) */
+.mic-ctrl--field .mic-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+}
+
+/* Variant: bar (inside search bars) */
+.mic-ctrl--bar .mic-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+}
+
+/* Variant: chat (inside assistant bubble) */
+.mic-ctrl--chat .mic-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+/* Variant: compact */
+.mic-ctrl--compact .mic-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+}
+
+/* Live pill indicators */
+.mic-pill-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  line-height: 1.3;
+  animation: toastIn 0.2s ease-out;
+}
+
+.mic-pill--live {
+  background: var(--gold-soft);
+  color: var(--ink);
+  border: 1px solid var(--gold);
+}
+
+.mic-pill-label {
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.mic-pill-text {
+  font-style: italic;
+  color: var(--ink-2);
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mic-pill--error {
+  background: var(--error-soft, rgba(239, 68, 68, 0.1));
+  color: var(--warning, #ef4444);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-size: 11px;
+}
+
+/* Field Header container for label + mic button */
+.cmp-field-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.cmp-field-header > span,
+.cmp-field-header > label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: var(--muted-2);
+  font-weight: 600;
+}

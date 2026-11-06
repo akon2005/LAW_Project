@@ -28,8 +28,12 @@ class StatusEndpointTests(unittest.TestCase):
         response = client.get("/api/model/status")
         self.assertEqual(response.status_code, 200)
         body = response.json()
-        # No model is trained in this repository, so the API must say so.
-        self.assertFalse(body["outcome_model"]["available"])
+        # The trained outcome model is committed at backend/data/models/outcome,
+        # so the API must report it — with its classes and recorded metrics.
+        outcome = body["outcome_model"]
+        self.assertTrue(outcome["available"])
+        self.assertEqual(sorted(outcome["classes"]), ["acquitted", "convicted"])
+        self.assertIn("accuracy", outcome["metrics"])
         self.assertIn("versions", body)
         self.assertIn("embedding_model", body)
 
@@ -56,17 +60,22 @@ class ValidationTests(unittest.TestCase):
 
 
 class PredictionTests(unittest.TestCase):
-    def test_predict_is_honest_when_untrained(self):
+    def test_predict_reports_the_trained_model_without_claiming_certainty(self):
         response = client.post(
             "/api/predict",
             json={"query": "A person is charged under Section 302 IPC and claims self-defence."},
         )
         self.assertEqual(response.status_code, 200)
         body = response.json()
-        self.assertFalse(body["available"])
-        self.assertIsNone(body["label"])
-        self.assertIsNone(body["confidence"])
-        self.assertIsNotNone(body["reason"])
+        # A prediction is returned, but always as a calibrated probability plus a
+        # low-confidence flag — never as a bare verdict.
+        self.assertTrue(body["available"])
+        self.assertIn(body["label"], ("convicted", "acquitted"))
+        self.assertGreaterEqual(body["confidence"], 0.0)
+        self.assertLessEqual(body["confidence"], 1.0)
+        self.assertIsInstance(body["low_confidence"], bool)
+        self.assertAlmostEqual(sum(body["probabilities"].values()), 1.0, places=3)
+        self.assertIsNone(body["reason"])
         self.assertEqual(body["features_used"], "query_facts_and_sections")
 
 

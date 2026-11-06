@@ -111,7 +111,7 @@
   --panel-ink-text: var(--p-panelText);
   --panel-ink-text-2: color-mix(in srgb, var(--p-panelText) 78%, var(--p-panel));
   --panel-ink-text-3: color-mix(in srgb, var(--p-panelText) 64%, var(--p-panel));
-  --panel-ink-accent: color-mix(in srgb, var(--p-accent) 86%, var(--p-panelText));
+  --panel-ink-accent: color-mix(in srgb, var(--p-accent) 72%, var(--p-panelText));
   --panel-ink-border: color-mix(in srgb, var(--p-panelText) 18%, transparent);
   --panel-ink-surface: color-mix(in srgb, var(--p-panelText) 7%, transparent);
   --panel-ink-hover: color-mix(in srgb, var(--p-panelText) 11%, transparent);
@@ -227,7 +227,7 @@
   --panel-ink-text: var(--p-panelText);
   --panel-ink-text-2: color-mix(in srgb, var(--p-panelText) 78%, var(--p-panel));
   --panel-ink-text-3: color-mix(in srgb, var(--p-panelText) 64%, var(--p-panel));
-  --panel-ink-accent: color-mix(in srgb, var(--p-accent) 86%, var(--p-panelText));
+  --panel-ink-accent: color-mix(in srgb, var(--p-accent) 72%, var(--p-panelText));
   --panel-ink-border: color-mix(in srgb, var(--p-panelText) 18%, transparent);
   --panel-ink-surface: color-mix(in srgb, var(--p-panelText) 7%, transparent);
   --panel-ink-hover: color-mix(in srgb, var(--p-panelText) 11%, transparent);

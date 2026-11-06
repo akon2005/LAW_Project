@@ -1,0 +1,198 @@
+{
+  "version": "1",
+  "updated": "2026-10-16",
+  "note": "Status labels are deliberately literal. 'implemented' means the capability exists in this repository and is reachable from the UI or API; 'partial' means it works but with a documented gap; 'experimental' means it exists but is off by default or unvalidated; 'not_available' means it is deliberately absent. Verified against the code and README at the date above.",
+  "status_legend": {
+    "implemented": "Works today, reachable from the UI or the API.",
+    "partial": "Works today with a documented limitation.",
+    "experimental": "Present but off by default or not validated.",
+    "planned": "Declared in the project but not built.",
+    "not_available": "Deliberately absent; the system says so instead of guessing."
+  },
+  "features": [
+    {
+      "id": "research",
+      "name": "Legal research workspace",
+      "status": "implemented",
+      "summary": "Ask a legal question in plain language and get retrieved passages from the indexed corpus plus a grounded answer, with each citation checked against the retrieved chunks.",
+      "how_to": "legal-research-guide",
+      "endpoint": "POST /api/research",
+      "evidence": "backend/app/api/routes/research.py, frontend/src/App.jsx (Research tab)"
+    },
+    {
+      "id": "citations",
+      "name": "Verified citations and source trail",
+      "status": "implemented",
+      "summary": "Every citation carries the stored chunk id, source filename and similarity, and can be fetched back with GET /api/research/chunk/{chunk_id}.",
+      "how_to": "citations-and-sources",
+      "endpoint": "GET /api/research/chunk/{chunk_id}",
+      "evidence": "backend/app/rag/citation_service.py"
+    },
+    {
+      "id": "reader",
+      "name": "Reading view",
+      "status": "implemented",
+      "summary": "Full-screen reading of a stored chunk with text size, spacing, column width, typeface and its own light/sepia/dark theme, plus copy and print.",
+      "how_to": "reading-a-result",
+      "endpoint": null,
+      "evidence": "frontend/src/components/ReaderView.jsx"
+    },
+    {
+      "id": "comparison",
+      "name": "Two-scenario comparison",
+      "status": "implemented",
+      "summary": "Compare two competing accounts of one dispute: one retrieval pass per account, precedents grouped by source document, and strengths/weaknesses/missing evidence derived only from what was retrieved.",
+      "how_to": "comparison-guide",
+      "endpoint": "POST /api/comparison",
+      "evidence": "backend/app/services/comparison_service.py, frontend/src/components/comparison/ComparePanel.jsx"
+    },
+    {
+      "id": "knowledge",
+      "name": "Open Knowledge Format bundle",
+      "status": "implemented",
+      "summary": "A generated OKF v0.2 bundle of judgments, courts, provisions and dataset/model/evaluation concepts, browsable with type filters, search, sources and backlinks. Concepts are machine-confirmed, not human-reviewed.",
+      "how_to": "knowledge-bundle",
+      "endpoint": "GET /api/knowledge",
+      "evidence": "backend/app/okf/, backend/knowledge/"
+    },
+    {
+      "id": "settings",
+      "name": "Appearance and theme settings",
+      "status": "implemented",
+      "summary": "Interface mode (light / dark / system default), a palette gallery in two groups, and a custom three-colour palette.",
+      "how_to": "appearance-and-theme",
+      "endpoint": null,
+      "evidence": "frontend/src/components/settings/AppearancePanel.jsx, frontend/src/theme/"
+    },
+    {
+      "id": "voice",
+      "name": "Voice input (browser speech-to-text)",
+      "status": "implemented",
+      "summary": "A microphone control fills the same input box with recognised speech; nothing is auto-submitted. Requires a browser that exposes the Web Speech API and microphone permission.",
+      "how_to": "voice-input",
+      "endpoint": null,
+      "evidence": "frontend/src/utils/speech.js, frontend/src/utils/useSpeechRecognition.js, frontend/src/components/MicButton.jsx",
+      "notes": "Browser speech recognition may use the browser vendor's cloud service; it is not guaranteed to be local or private."
+    },
+    {
+      "id": "support_assistant",
+      "name": "User Guide & Support Assistant",
+      "status": "implemented",
+      "summary": "Answers questions about how VIDHIVEDA works from a project-owned support knowledge base, with page context, follow-up memory within the session, structured troubleshooting, honest feature status, quick actions and an example gallery.",
+      "how_to": "support-assistant",
+      "endpoint": "POST /api/support/chat",
+      "evidence": "backend/app/support/, backend/app/api/routes/support.py, frontend/src/components/assistant/AssistantBubble.jsx"
+    },
+    {
+      "id": "examples",
+      "name": "Example gallery / demo mode",
+      "status": "implemented",
+      "summary": "Approved demonstration prompts grouped by category, each labelled live-verified or illustrative, with the learning objective and expected response characteristics. Reachable from the site (Guides) and from the assistant.",
+      "how_to": "examples-and-demos",
+      "endpoint": "GET /api/support/examples",
+      "evidence": "backend/support/examples.json, frontend/src/components/support/"
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Structured troubleshooting",
+      "status": "implemented",
+      "summary": "Twelve recognised problems, each returning what the problem means, likely causes, safe steps, whether retrying helps, and when to escalate.",
+      "how_to": "troubleshooting-overview",
+      "endpoint": "POST /api/support/chat",
+      "evidence": "backend/support/troubleshooting.json"
+    },
+    {
+      "id": "system_status",
+      "name": "Support system status",
+      "status": "implemented",
+      "summary": "Reports the API process, the support knowledge base, the LLM provider configuration, the vector store and dependencies truthfully and separately. Provider reachability is only claimed when a real probe was run.",
+      "how_to": "troubleshooting-overview",
+      "endpoint": "GET /api/support/health",
+      "evidence": "backend/app/support/status.py, backend/app/api/routes/support.py"
+    },
+    {
+      "id": "feedback",
+      "name": "Response feedback",
+      "status": "implemented",
+      "summary": "Optional helpful / not-helpful rating with an optional short comment, validated and rate-limited, appended to a local JSONL file.",
+      "how_to": "privacy-and-data",
+      "endpoint": "POST /api/support/feedback",
+      "evidence": "backend/app/support/feedback.py"
+    },
+    {
+      "id": "statutes",
+      "name": "Statutes & Articles browser",
+      "status": "partial",
+      "summary": "The tab lists instruments from the bundled frontend dataset and runs prepared searches for them, but it does not open statute full text and the separate statute collection is not ingested.",
+      "how_to": "statutes-and-articles",
+      "endpoint": null,
+      "evidence": "frontend/src/data/data.js, backend/app/services/dataset_service.py",
+      "notes": "The vidhiveda_statutes collection is declared but marked inactive until the dataset's field names are verified."
+    },
+    {
+      "id": "documents",
+      "name": "Document browsing",
+      "status": "partial",
+      "summary": "Lists the 25 most recent records of the bundled frontend dataset with a preview action. It browses the bundled sample, not the indexed corpus, and badges which kind of record it is.",
+      "how_to": "documents-tab",
+      "endpoint": null,
+      "evidence": "frontend/src/data/dataset.js, frontend/src/App.jsx (Documents tab)"
+    },
+    {
+      "id": "authentication",
+      "name": "Sign-in and session handling",
+      "status": "partial",
+      "summary": "A sign-in screen gates the workspace. With no authentication endpoint configured the app validates locally and labels the session as demo mode instead of implying a server check.",
+      "how_to": "faq",
+      "endpoint": null,
+      "evidence": "frontend/src/services/authService.js, frontend/src/auth/AuthProvider.jsx",
+      "notes": "There is no backend authentication system in this repository."
+    },
+    {
+      "id": "reranker",
+      "name": "Hybrid reranking",
+      "status": "experimental",
+      "summary": "Dense retrieval is the default. Setting USE_RERANKER=true adds lexical (BM25) and cross-encoder scoring; it is off by default and not validated in the committed configuration.",
+      "how_to": "rag-explained",
+      "endpoint": null,
+      "evidence": "backend/app/rag/reranker.py, backend/app/core/config.py (USE_RERANKER)"
+    },
+    {
+      "id": "prediction",
+      "name": "Case-outcome prediction",
+      "status": "not_available",
+      "summary": "No trained model artifact is committed, so a clean checkout reports available: false with a reason instead of inventing a classifier. Where an experimental classifier has been trained locally (separate curated dataset with pre-judgment features, sigmoid-calibrated), the API reports available: true with a small held-out test partition. The support assistant reads the live model status and quotes it rather than assuming either state.",
+      "how_to": "outcome-estimate",
+      "endpoint": "POST /api/predict",
+      "evidence": "docs/model.md, backend/app/ml/outcome_model.py",
+      "notes": "This entry is overridden at runtime by the live outcome-model status: see app/support/features.py:live_overrides."
+    },
+    {
+      "id": "area_filter",
+      "name": "Area-of-law filter",
+      "status": "not_available",
+      "summary": "The corpus metadata records no area field, so no area filter is offered — rather than one that would silently return nothing.",
+      "how_to": "legal-research-guide",
+      "endpoint": null,
+      "evidence": "backend/app/api/routes/research.py (corpus facets)"
+    },
+    {
+      "id": "persistent_history",
+      "name": "Persistent support conversation history",
+      "status": "not_available",
+      "summary": "Support conversations are held in memory for the current session only and are dropped when the session expires. They are deliberately not written to disk.",
+      "how_to": "privacy-and-data",
+      "endpoint": null,
+      "evidence": "backend/app/support/sessions.py"
+    },
+    {
+      "id": "statute_fulltext",
+      "name": "Statute full text and search",
+      "status": "planned",
+      "summary": "A statute collection is declared in the dataset registry but not ingested, so statute text cannot be searched yet.",
+      "how_to": "statutes-and-articles",
+      "endpoint": null,
+      "evidence": "backend/app/services/dataset_service.py"
+    }
+  ]
+}

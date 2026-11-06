@@ -83,8 +83,11 @@ Observed on a live query ("breach of contract damages"): 5 citations, 5 verified
 ## 5. Outcome metrics
 
 Read from the trained model's recorded metrics (`/api/model/status` →
-`outcome_model.metrics`). No model is trained in this repository, so outcome
-metrics are **UNAVAILABLE** (no labels; see [model.md](model.md)).
+`outcome_model.metrics`). A classifier is trained and committed at
+`backend/data/models/outcome/`, so the metrics exist — and they are weak: accuracy
+**0.9375** against a macro F1 of **0.4839**, on a held-out partition of 16 records
+of which 15 are convictions. Quote both numbers together, or the accuracy
+misleads. See [model.md](model.md).
 
 ## 6. Tests
 
@@ -94,7 +97,7 @@ python -m unittest discover -s tests -t .
 ```
 
 Covers data/ids/chunking, retrieval filtering, query analysis, citation metrics,
-gold-set parsing, ML label handling and the outcome-model unavailability path,
-and the API surface.
+gold-set parsing, ML label handling, the outcome-model available **and**
+unavailable paths, and the API surface.
 
-Not claimed: outcome-model accuracy/F1, generation-quality scores.
+Not claimed: generation-quality scores.

@@ -1,0 +1,241 @@
+{
+  "version": "1",
+  "updated": "2026-10-16",
+  "entries": [
+    {
+      "id": "chatbot-not-responding",
+      "title": "The support assistant is not responding",
+      "keywords": ["chatbot not responding", "assistant not responding", "chatbot stuck", "no reply", "assistant frozen", "spinning", "nothing happens", "no response"],
+      "meaning": "The assistant panel accepted your message but no answer came back. This is a transport or backend problem, not a problem with the wording of your question.",
+      "likely_causes": [
+        "The backend API is not running (or was restarted) at the address the frontend is configured with.",
+        "The request is taking longer than the client waits — for example a first request that is still warming the embedding model.",
+        "The browser blocked the request (network, extension, or mixed content), so nothing reached the server."
+      ],
+      "steps": [
+        "Check the assistant's own error line — it distinguishes a network failure from a server error.",
+        "Open GET /api/support/health in a browser tab. It reports whether the API process and the support knowledge base are actually available.",
+        "If the API is not reachable, start it from backend/ with: uvicorn app.main:app --port 8000",
+        "Press Retry on the failed message rather than retyping it.",
+        "If health is fine but the assistant still fails, copy the exact error text and report it."
+      ],
+      "retry": "Yes — retry is appropriate here, and the message keeps its place in the conversation when you press Retry.",
+      "escalate": "Report the support health payload (GET /api/support/health) and the exact error text from the panel. Do not paste API keys or tokens."
+    },
+    {
+      "id": "backend-unavailable",
+      "title": "The backend is unavailable",
+      "keywords": ["backend unavailable", "api unavailable", "server down", "cannot reach backend", "backend not running", "connection refused", "service unavailable", "503"],
+      "meaning": "The frontend could not get a usable response from the FastAPI backend, so it has no data to show. Nothing is wrong with the legal corpus itself.",
+      "likely_causes": [
+        "The API process is not running, or is listening on a different port than the frontend expects.",
+        "VITE_API_BASE points somewhere the browser cannot reach.",
+        "A deployment is mid-restart, or a hosted instance is waking from idle."
+      ],
+      "steps": [
+        "Check GET /api/health on the same origin the frontend uses. A JSON payload with a document count means the API is alive.",
+        "Locally, confirm the API is running: uvicorn app.main:app --port 8000 from backend/.",
+        "Confirm frontend/.env.local VITE_API_BASE matches that origin, then restart the dev server (Vite only reads env vars at startup).",
+        "Use the assistant's Retry button once the API answers."
+      ],
+      "retry": "Retry only after the health check answers. Retrying against a down API will keep failing.",
+      "escalate": "Report the health URL you checked, the status it returned, and whether you are running locally or against a deployment."
+    },
+    {
+      "id": "request-timeout",
+      "title": "The request timed out",
+      "keywords": ["timeout", "timed out", "took too long", "hanging", "slow request", "no answer after"],
+      "meaning": "The request was accepted but did not finish inside the allowed time. The work may have been partially done.",
+      "likely_causes": [
+        "The first request after startup warms the embedding model and can take noticeably longer.",
+        "The LLM provider was slow or unreachable (LLM_TIMEOUT_SECONDS defaults to 45).",
+        "A very large query or a large top_k increased retrieval work."
+      ],
+      "steps": [
+        "Wait a few seconds and press Retry — the second attempt usually runs against a warm model.",
+        "Shorten the query and lower the result count if you set one.",
+        "Check GET /api/support/health to see whether the LLM is even configured; retrieval answers without it.",
+        "If it reproduces on a short query with a warm model, treat it as a backend problem and report it."
+      ],
+      "retry": "Yes, once. Repeated long waits suggest the provider or the machine is the bottleneck.",
+      "escalate": "Report the query length, whether the answer eventually arrived, and whether LLM_PROVIDER is configured (not the key itself)."
+    },
+    {
+      "id": "llm-not-configured",
+      "title": "Results appear but there is no generated summary",
+      "keywords": ["no llm", "llm not configured", "no summary", "no generated answer", "api key", "not configured", "answer_origin", "retrieval only", "no api key"],
+      "meaning": "Retrieval is live and working, but no language model is configured, so the system shows the retrieved passages instead of writing prose. This is the documented fallback, not an error.",
+      "likely_causes": [
+        "No provider key is set in backend/.env (HF_API_TOKEN, OPENAI_API_KEY or ANTHROPIC_API_KEY).",
+        "A key is present but is a placeholder, so it is deliberately ignored.",
+        "LLM_PROVIDER names a provider whose key is not set."
+      ],
+      "steps": [
+        "Check GET /api/support/health — it reports whether an LLM provider is configured, without exposing the value.",
+        "To enable generation, set LLM_PROVIDER and the matching key in backend/.env, then restart the API.",
+        "Until then, use the retrieved sources directly: they are the same evidence the model would have been given.",
+        "Note the answer source label in the response — it says whether the text was generated or came from retrieval only."
+      ],
+      "retry": "No — retrying will not change the outcome until a key is configured.",
+      "escalate": "Report that generation is disabled and which provider you expect. Never paste the key itself into the chat."
+    },
+    {
+      "id": "rate-limit",
+      "title": "Rate limit or quota exceeded",
+      "keywords": ["rate limit", "429", "quota", "too many requests", "exceeded", "throttled", "limit reached"],
+      "meaning": "Something in the chain refused the request because a limit was reached — either the LLM provider's quota or the assistant's own feedback/request throttle.",
+      "likely_causes": [
+        "The provider's free tier or monthly quota is exhausted.",
+        "Many requests were made in a short window (for example from a shared machine or a demo session).",
+        "The assistant's feedback endpoint was posted repeatedly."
+      ],
+      "steps": [
+        "Wait a minute before retrying; short bursts recover quickly.",
+        "Reduce repeated identical requests — ask one clear question instead of several near-duplicates.",
+        "If the provider's quota is exhausted, research still works: retrieval and sources do not need the LLM.",
+        "For feedback, submit once — repeats are throttled on purpose."
+      ],
+      "retry": "Yes, after a pause. Immediately repeating a throttled request will fail again.",
+      "escalate": "Report the provider name, roughly how many requests you made, and the time window. Never paste the key."
+    },
+    {
+      "id": "no-search-results",
+      "title": "The legal search returned no results",
+      "keywords": ["no results", "nothing found", "empty results", "zero matches", "search returned nothing", "no matching records", "no relevant documents"],
+      "meaning": "The retrieval ran, but nothing in the indexed corpus matched closely enough with the current filters.",
+      "likely_causes": [
+        "The query is very specific, so no single stored chunk is close to it.",
+        "A Court or Year filter is narrower than you expect — filters come from the corpus and are easy to leave set.",
+        "The topic is outside this corpus, which covers 100 Indian Supreme Court judgment PDFs."
+      ],
+      "steps": [
+        "Press Reset on the filter panel to clear Court and Year, then search again.",
+        "Search the legal principle rather than the exact facts ('wrongful termination damages' rather than a long narrative).",
+        "Try the statutory provision you have in mind, for example 'IPC Section 302'.",
+        "Broaden one step at a time and watch the match count change.",
+        "If a topic returns nothing even unfiltered, it is simply not in this corpus."
+      ],
+      "retry": "Yes, with a modified query or cleared filters. Repeating the identical query will return the identical result.",
+      "escalate": "Report the exact query text, the filters in use, and the match count. That is enough to tell 'absent topic' from 'retrieval bug'."
+    },
+    {
+      "id": "missing-citations",
+      "title": "Missing or unverifiable source citations",
+      "keywords": ["no citations", "missing citations", "no sources", "cannot verify", "citation missing", "sources empty", "unverified citation"],
+      "meaning": "The answer did not carry citations you can check. Either nothing was retrieved, or generation was disabled and the answer is a retrieval listing rather than a cited summary.",
+      "likely_causes": [
+        "Retrieval returned nothing, so there were no chunks to cite.",
+        "The response was a low-confidence payload, which reports sources but generates no answer and no citations.",
+        "No LLM is configured, so the text is a deterministic listing labelled as such."
+      ],
+      "steps": [
+        "Check the response's answer source label: 'retrieved sources only' is not the same as a generated summary.",
+        "Look at the retrieved records themselves — they carry chunk ids and source filenames even when the answer cites nothing.",
+        "Verify a specific record with GET /api/research/chunk/{chunk_id}.",
+        "If the answer cites a source that is not in the retrieved list, treat that citation as unverified and tell the maintainers."
+      ],
+      "retry": "Only after changing the query or the filters. Retrying the same query returns the same empty citation set.",
+      "escalate": "Report the query, the chunk ids you could verify, and the citation text that did not verify."
+    },
+    {
+      "id": "invalid-input",
+      "title": "The request was rejected as invalid",
+      "keywords": ["422", "invalid request", "validation error", "bad request", "400", "rejected", "input invalid"],
+      "meaning": "Input validation refused the request before any retrieval or generation ran. Nothing was searched.",
+      "likely_causes": [
+        "The message or query was empty, or shorter than the required minimum (research queries need at least 2 characters).",
+        "A field was the wrong length — for example a scenario position over the allowed size, or an oversized message.",
+        "A numeric field was outside its allowed range (top_k must be 1–50)."
+      ],
+      "steps": [
+        "Read the validation message: it names the field and the rule.",
+        "For research, write a real question rather than a single character.",
+        "For the Compare tab, keep each scenario position to a normal paragraph and fill in the legal issue.",
+        "Resubmit — a corrected request is not charged or throttled."
+      ],
+      "retry": "Yes, immediately, once the named field is corrected.",
+      "escalate": "Report the field name and the rule from the message. Legal terminology in a question is never a validation error by itself."
+    },
+    {
+      "id": "auth-session",
+      "title": "Authentication or session problems",
+      "keywords": ["login", "sign in", "session expired", "logged out", "authentication", "password", "auth", "sign out suddenly"],
+      "meaning": "The workspace session is missing or expired, so the app returned you to the sign-in screen.",
+      "likely_causes": [
+        "The session expired — 12 hours for a session-storage sign-in.",
+        "You signed in without 'Remember me', so the session lived in sessionStorage and the tab or browser was closed.",
+        "Browser data was cleared, or a different browser/profile is being used.",
+        "The app is running in demo mode, where credentials are validated locally and no server session exists."
+      ],
+      "steps": [
+        "Sign in again; use 'Remember me' to keep the session in localStorage across restarts.",
+        "Check whether the sign-in screen says demo mode — if it does, authentication is not connected to a server in this build and there is no reset flow to look for.",
+        "Sign out deliberately before switching accounts, so the old session does not linger.",
+        "If a configured endpoint rejects valid credentials, report the HTTP status the screen showed."
+      ],
+      "retry": "Yes — signing in again is the intended recovery.",
+      "escalate": "Report whether the screen showed demo or live mode and the status code, if any. Never send a password."
+    },
+    {
+      "id": "theme-ui",
+      "title": "Theme or interface rendering problems",
+      "keywords": ["theme", "dark mode", "light mode", "colours wrong", "contrast", "ugly", "layout broken", "styling", "rendering"],
+      "meaning": "The interface is rendering with the wrong appearance, or a control is missing. Theme state is local to your browser, so a stale stored preference is a common cause.",
+      "likely_causes": [
+        "A stored palette or mode from an earlier version is still being applied.",
+        "The operating system appearance changed while the app was set to 'System default'.",
+        "A custom palette was saved with low-contrast colours.",
+        "The browser window is narrow, so a responsive layout moved or hid a control."
+      ],
+      "steps": [
+        "Open Settings, then choose Light or Dark explicitly rather than leaving 'System default'.",
+        "Pick a standard palette again to overwrite a custom one, then re-apply your colours.",
+        "Reload the page; theme tokens are applied on load.",
+        "Resize the window to check whether the control is only rearranged at narrow widths.",
+        "The reading view has its own independent theme — set it there rather than in Settings."
+      ],
+      "retry": "Not applicable — this is a settings and rendering issue, not a request that can be retried.",
+      "escalate": "Report the mode and palette selected, the browser, and a screenshot description. Note whether the reader theme is also affected."
+    },
+    {
+      "id": "network-error",
+      "title": "Network error reaching the backend",
+      "keywords": ["network error", "failed to fetch", "cors", "connection error", "offline", "network", "not reachable"],
+      "meaning": "The request never completed at the network layer. The browser reports it as a network failure rather than an HTTP status, so the server may never have seen it.",
+      "likely_causes": [
+        "The API is not running or is on a different origin than VITE_API_BASE.",
+        "Cross-origin access was refused — the backend allows localhost on any port and *.vercel.app, plus anything in CORS_ORIGINS.",
+        "The machine is offline, behind a proxy, or a browser extension is blocking the request.",
+        "Mixed content: an HTTPS page calling an HTTP API."
+      ],
+      "steps": [
+        "Open the API's health URL directly in a browser tab. If that fails too, the problem is not the app.",
+        "Confirm the frontend origin is allowed by the backend CORS configuration.",
+        "Restart the Vite dev server after changing VITE_API_BASE — it is read at startup only.",
+        "Disable extensions briefly, or try a private window, to rule out a blocker.",
+        "Check the browser console for the exact blocked request before reporting."
+      ],
+      "retry": "Yes, after fixing the origin or bringing the API up. Retrying without that will fail identically.",
+      "escalate": "Report the API origin, the frontend origin, and the browser console message."
+    },
+    {
+      "id": "unsupported-browser",
+      "title": "A browser feature is unavailable",
+      "keywords": ["browser not supported", "microphone not working", "speech recognition", "unsupported browser", "voice not working", "no microphone", "feature not supported"],
+      "meaning": "The browser does not expose an API the feature needs, so the feature cannot run. The rest of the application is unaffected.",
+      "likely_causes": [
+        "The browser does not implement the Web Speech API (or only the prefixed variant).",
+        "Microphone permission was denied, or no input device is present.",
+        "The page is served over an insecure origin, which blocks microphone access."
+      ],
+      "steps": [
+        "Use typing instead of dictation — every field accepts typed input and nothing is lost.",
+        "For voice, use a current Chromium-based browser and serve the app over https or localhost.",
+        "Re-check site permissions for microphone in the browser's address-bar settings.",
+        "Confirm a microphone is actually connected if the browser reports no input device."
+      ],
+      "retry": "Yes for the typed workflow. For voice, retry only after changing browser or permissions.",
+      "escalate": "Report the browser name and version and the exact message the feature displayed."
+    }
+  ]
+}

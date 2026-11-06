@@ -103,6 +103,24 @@ export function readableForeground(background, preferred = null) {
 }
 
 /**
+ * Keep a user-chosen accent readable against both the page and card surfaces.
+ * Accents are also used for small text and controls, so they need 3:1 against
+ * every surface they can appear on. Mixing toward the already-readable text
+ * colour preserves the hue while darkening/lightening only as much as needed.
+ */
+function readableAccent(accent, backgrounds, fallback) {
+  const passes = (candidate) =>
+    backgrounds.every((background) => contrastRatio(candidate, background) >= AA_LARGE)
+  if (passes(accent)) return accent
+
+  for (let weight = 0.98; weight >= 0; weight -= 0.02) {
+    const candidate = mix(accent, fallback, weight)
+    if (passes(candidate)) return candidate
+  }
+  return fallback
+}
+
+/**
  * Derive the eight palette primitives from the three colours a user chooses.
  *
  * Readability is derived from the *actual* background, not from the interface
@@ -126,13 +144,14 @@ export function deriveCustomPrimitives({ background, accent, highlight }, mode =
   const border = mix(text, bg, dark ? 0.18 : 0.16)
   const panel = dark ? mix(bg, '#ffffff', 0.84) : mix(hi, '#0b1220', 0.3)
   const panelText = readableForeground(panel, '#ffffff')
+  const accentColor = readableAccent(acc, [bg, surface], text)
 
   return {
     bg,
     surface,
     text,
     primary: dark ? mix(bg, '#000000', 0.6) : hi,
-    accent: acc,
+    accent: accentColor,
     border,
     panel,
     panelText,

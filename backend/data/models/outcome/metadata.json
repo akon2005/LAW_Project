@@ -1,0 +1,47 @@
+{
+  "version": "outcome-sigmoid_calibrated",
+  "classes": [
+    "acquitted",
+    "convicted"
+  ],
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "calibration": "sigmoid_calibrated",
+  "trained_at": "2026-10-15T04:42:18.511729+00:00",
+  "metrics": {
+    "accuracy": 0.9375,
+    "macro_precision": 0.4688,
+    "macro_recall": 0.5,
+    "macro_f1": 0.4839,
+    "weighted_f1": 0.9073,
+    "val_accuracy": 0.8667,
+    "val_macro_f1": 0.7917,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        15
+      ]
+    ],
+    "classes": [
+      "acquitted",
+      "convicted"
+    ],
+    "test_size": 16,
+    "val_size": 15,
+    "train_size": 71,
+    "class_distribution_train": {
+      "acquitted": 18,
+      "convicted": 53
+    },
+    "class_distribution_test": {
+      "acquitted": 1,
+      "convicted": 15
+    }
+  },
+  "n_train": 71,
+  "prompt_version": null
+}

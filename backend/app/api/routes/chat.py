@@ -25,29 +25,55 @@ class ChatResponse(BaseModel):
     citations: List[Dict[str, Any]]
     conversation_id: str
 
+def _build_filters_from_analysis(analysis: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+    filters = {}
+    if analysis.get("court"):
+        filters["court"] = analysis["court"]
+    if analysis.get("year"):
+        filters["year"] = analysis["year"]
+
+    # Range handling is tricky in basic Chroma filters without operators,
+    # but the retrieval service allows passing dicts. We'll stick to exact matches for now
+    # unless the vector store explicitly supports $gte/$lte
+    if analysis.get("year_from") and analysis.get("year_to"):
+        filters["year"] = {"$gte": analysis["year_from"], "$lte": analysis["year_to"]}
+
+    return filters if filters else None
+
 @router.post("/chat", response_model=ChatResponse)
 def chat_endpoint(request: ChatRequest):
     try:
-        # Analyze query for embedding
-        analysis = legal_query_analyzer.analyze(request.message)
+        history_dicts = [{"role": msg.role, "content": msg.content} for msg in request.history]
+
+        # 1. Query Rewriting (Contextualization)
+        # If the user says "summarize the second case", we need the LLM to rewrite it
+        # into a standalone query based on the history.
+        rewritten_query = chat_service.rewrite_query(request.message, history_dicts)
+
+        # 2. Query Analysis
+        analysis = legal_query_analyzer.analyze(rewritten_query)
         query_text = analysis["embedding_text"]
-        
-        # Retrieve context
+
+        # Extract sections and metadata filters
+        sections = [record["normalized_text"] for record in analysis.get("legal_sections", [])]
+        filters = _build_filters_from_analysis(analysis)
+
+        # 3. Retrieval
         retrieval_result = retrieval_service.retrieve(
             query=query_text,
             top_k=request.top_k,
-            filters=None,
-            sections=None
+            filters=filters,
+            sections=sections if sections else None
         )
-        
-        history_dicts = [{"role": msg.role, "content": msg.content} for msg in request.history]
-        
+
+        # 4. Generation
         response = chat_service.generate_chat_response(
-            query=request.message,
+            original_query=request.message,
             history=history_dicts,
-            retrieval_result=retrieval_result
+            retrieval_result=retrieval_result,
+            analysis=analysis
         )
-        
+
         return ChatResponse(
             answer=response.get("answer", ""),
             sources=response.get("sources", []),

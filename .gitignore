@@ -48,6 +48,8 @@ backend/data/ingestion_status.json
 
 # ---- Scratch / generated reports ----
 final.json
+tmp-qa/
+backend/data/support/
 
 # ---- Datasets / large data ----
 indian-supreme-court-judgments/

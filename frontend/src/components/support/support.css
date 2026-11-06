@@ -1,0 +1,231 @@
+/* Guides / demonstration mode. Every colour is an existing theme token, so the
+   page follows the active interface mode and palette like the rest of the app. */
+
+.guides-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.guides-subheading {
+  margin-top: 24px;
+}
+
+.guides-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.guides-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guides-group-title {
+  margin: 8px 0 0;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+.guides-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.guides-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.guides-card-top h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.guides-prompt {
+  margin: 0;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.guides-block p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.guides-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guides-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+.guides-notice {
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--gold-soft);
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.guides-notice--quiet {
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
+}
+
+.guides-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.guides-footnote {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.guides-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.guides-status-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.guides-status-note {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.guides-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.guides-table td {
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.guides-metrics {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.guides-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.guides-article {
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.guides-article-head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.guides-article-head small {
+  display: block;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.guides-article-excerpt {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.guides-article-body {
+  margin: 10px 0 0;
+  padding: 12px;
+  background: var(--surface-2);
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-family: inherit;
+  font-size: 12.5px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-height: 340px;
+}
+
+.guides-problems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.guides-problem-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 720px) {
+  .guides-grid,
+  .guides-articles {
+    grid-template-columns: 1fr;
+  }
+}

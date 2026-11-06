@@ -12,7 +12,7 @@ import sys
 
 from app.core.config import CORS_ORIGINS, API_HOST, API_PORT, CASE_LAW_COLLECTION
 from app.db.database import init_db
-from app.api.routes import search, reference, documents, sections, similar, trends, summarize, research, pipeline, knowledge, chat
+from app.api.routes import search, reference, documents, sections, similar, trends, summarize, research, pipeline, knowledge, chat, comparison, support
 
 
 @asynccontextmanager
@@ -45,6 +45,25 @@ async def lifespan(app: FastAPI):
             )
     except Exception as e:
         print(f"[Startup] Pipeline init warning: {e}")
+
+    # The support knowledge base is independent of the legal corpus; report what
+    # actually loaded rather than assuming it is present.
+    try:
+        from app.support.examples import examples_store
+        from app.support.features import feature_registry
+        from app.support.knowledge_base import support_knowledge_base
+
+        kb = support_knowledge_base.stats()
+        print(
+            f"[Startup] Support knowledge base: {kb['articles']} articles, "
+            f"{len(kb.get('categories') or [])} categories. "
+            f"Examples: {len(examples_store.all())}. "
+            f"Capability registry: {'loaded' if feature_registry.available() else 'unavailable'}."
+        )
+        if not kb["available"]:
+            print("[Startup] WARNING: no support articles found — /api/support/chat will return 503.")
+    except Exception as e:
+        print(f"[Startup] Support subsystem warning: {e}")
 
     print("[Startup] Ready to serve requests.")
     print("=" * 60)
@@ -93,6 +112,11 @@ app.include_router(trends.router, prefix="/api", tags=["Trend Analysis"])
 app.include_router(summarize.router, prefix="/api", tags=["Summarization"])
 app.include_router(knowledge.router, prefix="/api", tags=["Knowledge (OKF)"])
 app.include_router(chat.router, prefix="/api", tags=["Chat"])
+app.include_router(comparison.router, prefix="/api", tags=["Comparison"])
+# User Guide & Support Assistant. Separate from the legal research pipeline
+# (app/rag): it answers from backend/support/ documentation and never searches
+# the case-law corpus.
+app.include_router(support.router, prefix="/api", tags=["Support (User Guide)"])
 
 
 @app.get("/")
@@ -102,6 +126,13 @@ async def root():
         "service": "VIDHIVEDA Legal Research API",
         "docs": "/docs",
         "health": "/api/health",
+        "support": {
+            "chat": "/api/support/chat",
+            "health": "/api/support/health",
+            "articles": "/api/support/articles",
+            "examples": "/api/support/examples",
+            "features": "/api/support/features",
+        },
     }
 
 

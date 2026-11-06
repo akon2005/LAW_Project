@@ -58,7 +58,7 @@ trailing word); the builder detects the collision and appends a deterministic
 hash suffix rather than letting one concept silently overwrite the other.
 | `Dataset` | the Hugging Face corpus | 1 |
 | `Embedding Model` | configured embedding model | 1 |
-| `Model` | outcome-prediction status (unavailable) | 1 |
+| `Model` | the shipped outcome classifier and its recorded metrics | 1 |
 | `Evaluation Methodology` | retrieval evaluation | 1 |
 
 ## 2. Provenance and honesty rules
@@ -67,7 +67,8 @@ Every concept carries traceable provenance. The generator never invents a value
 that the corpus does not record:
 
 - **Sources** — each concept has a `sources` entry pointing at the concrete
-  artifact it derives from (the Hugging Face dataset). `sources[].resource` is
+  artifact it derives from (the Hugging Face dataset for corpus-derived concepts,
+  the curated training file for the outcome model). `sources[].resource` is
   always present.
 - **Content hash** — judgments carry `content_hash`, a sha256 over the indexed
   chunk text, for lineage and change detection.

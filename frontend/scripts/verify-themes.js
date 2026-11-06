@@ -78,7 +78,7 @@ function checkPrimitives(label, p, mode, onInkOverride = null) {
 /** Tokens the generator derives rather than authors. */
 function checkDerivedTokens(label, p) {
   const brandFg = mix(p.accent, '#ffffff', 0.5)
-  const panelAccent = mix(p.accent, p.panelText, 0.86)
+  const panelAccent = mix(p.accent, p.panelText, 0.72)
   record(`${label} · brand mark on brand panel`, contrastRatio(brandFg, p.primary), AA_LARGE)
   record(`${label} · panel accent on panel`, contrastRatio(panelAccent, p.panel), AA_LARGE)
 }

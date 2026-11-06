@@ -77,9 +77,26 @@ class OutcomeModelTests(unittest.TestCase):
             rng.normal(1.0, 0.05, (10, 4)),
         ])
         labels = ["allowed"] * 10 + ["dismissed"] * 10
-        estimator, _ = fit_classifier(vectors, labels, calibrate=False)
-        model = OutcomeModel(estimator=estimator, classes=list(estimator.classes_))
-        assert model.predict(vectors[:1])[0]["confidence"] > 0.5
+    def test_default_outcome_service_is_available(self):
+        from app.ml.outcome_model import outcome_model_service
+        outcome_model_service.reload()
+        status = outcome_model_service.status()
+        self.assertTrue(status["available"])
+        self.assertIn("convicted", status["classes"])
+        self.assertIn("acquitted", status["classes"])
+        self.assertIsNotNone(status["metrics"])
+        self.assertGreater(status["metrics"].get("accuracy", 0), 0.5)
+
+    def test_trained_model_predict_from_vectors(self):
+        from app.ml.outcome_model import outcome_model_service
+        # Generate dummy vector of dimension 384
+        vec = np.random.default_rng(42).normal(0.0, 0.1, (1, 384)).astype(np.float32)
+        res = outcome_model_service.predict_from_vectors(vec)
+        self.assertTrue(res["available"])
+        self.assertIn(res["label"], ["convicted", "acquitted"])
+        self.assertGreaterEqual(res["confidence"], 0.0)
+        self.assertLessEqual(res["confidence"], 1.0)
+        self.assertAlmostEqual(sum(res["probabilities"].values()), 1.0, places=3)
 
 
 if __name__ == "__main__":

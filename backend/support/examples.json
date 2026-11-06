@@ -1,0 +1,213 @@
+{
+  "version": "1",
+  "updated": "2026-10-16",
+  "note": "Approved demonstration prompts. 'evidence' distinguishes an example that is answered from verified project documentation or a live backend call ('verified') from one that is a clearly labelled teaching illustration ('illustrative'). Illustrative examples are never presented as legal output, and no example stages a fake search, citation or prediction.",
+  "categories": [
+    { "id": "basic_website_guidance", "label": "Basic website guidance", "letter": "A" },
+    { "id": "rag_explanation", "label": "Explain RAG", "letter": "B" },
+    { "id": "find_precedents", "label": "Find relevant precedents", "letter": "C" },
+    { "id": "opposing_arguments", "label": "Opposing legal arguments", "letter": "D" },
+    { "id": "outcome_analysis", "label": "Evidence-based outcome analysis", "letter": "E" },
+    { "id": "troubleshooting", "label": "Troubleshooting", "letter": "F" },
+    { "id": "feature_status", "label": "Feature status", "letter": "G" },
+    { "id": "voice_input", "label": "Voice input", "letter": "H" },
+    { "id": "theme_settings", "label": "Theme settings", "letter": "I" },
+    { "id": "citation_explanation", "label": "Source and citation explanation", "letter": "J" }
+  ],
+  "examples": [
+    {
+      "id": "ex-a-what-is-vidhiveda",
+      "category": "basic_website_guidance",
+      "title": "What VIDHIVEDA does and how to use it",
+      "prompt": "What is VIDHIVEDA, and how should I use it?",
+      "learning_objective": "See the project explain its own purpose, the real workflow, the features that exist, and the limits it holds itself to.",
+      "expected": [
+        "States the purpose: legal research over an indexed Indian case-law corpus, with a visible source trail.",
+        "Describes the actual workflow from the Research tab through retrieved records, the reading view and citation verification.",
+        "Lists features that exist in this build (Research, Compare, Knowledge, Statutes & Articles, Documents, Settings).",
+        "States the limits: 100 judgment PDFs, no legal advice, no outcome prediction.",
+        "Offers a next action that opens a real feature."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_research",
+      "article": "what-is-vidhiveda"
+    },
+    {
+      "id": "ex-b-how-rag-works",
+      "category": "rag_explanation",
+      "title": "Explain RAG in plain language",
+      "prompt": "Explain how VIDHIVEDA uses Retrieval-Augmented Generation in simple language.",
+      "learning_objective": "Understand retrieval-first design: what is retrieved, what the language model is allowed to do with it, and why a citation is checkable.",
+      "expected": [
+        "Explains retrieval first, generation second.",
+        "Names the real components: query analysis, embeddings with sentence-transformers/all-MiniLM-L6-v2, ChromaDB collection vidhiveda_legal_cases, optional reranking, generation, citation verification.",
+        "Explains that retrieved chunks are supplied to the model as numbered SOURCE blocks and that the prompt forbids inventing cases, citations, statutes and dates.",
+        "Explains the source references are chunk ids that can be fetched back.",
+        "States clearly that retrieval similarity does not guarantee legal correctness."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_research",
+      "article": "rag-explained"
+    },
+    {
+      "id": "ex-c-find-precedents",
+      "category": "find_precedents",
+      "title": "Submitting a query and reviewing judgments",
+      "prompt": "How can I submit a legal query and review relevant judgments?",
+      "learning_objective": "Learn the research workflow end to end, including which fields matter and what to do when nothing is found.",
+      "expected": [
+        "Walks through the Research tab step by step.",
+        "Names the required input (the query, minimum 2 characters) and the optional Court and Year filters.",
+        "Explains how results are displayed: case name, court/year, stored passage, chunk id, source filename, similarity.",
+        "Explains that citations are listed separately and verified against retrieved chunks.",
+        "Explains the 'no results' path: broaden the query, clear filters, or accept that the topic is outside the corpus."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_research",
+      "article": "legal-research-guide",
+      "notes": "This is a guidance example. It explains and links to the research interface; it does not itself search the legal corpus."
+    },
+    {
+      "id": "ex-d-opposing-arguments",
+      "category": "opposing_arguments",
+      "title": "Comparing two opposing arguments (illustrative)",
+      "prompt": "Show me how VIDHIVEDA can compare two opposing arguments in a hypothetical contract dispute.",
+      "learning_objective": "See how a two-sided comparison is structured, and how the system keeps facts, assumptions and missing information apart.",
+      "expected": [
+        "Explains the Compare tab inputs: legal issue (required), case facts, provisions, and one position per side.",
+        "Identifies the legal issues that would need researching in a contract dispute.",
+        "Explains that supporting and contrary precedents are both reviewed, with precedents grouped by source document.",
+        "Explains how the comparison separates established facts, stated assumptions and missing information.",
+        "States that any assessment must be grounded in actually retrieved authorities, and that evidence quality is reported as sufficient, limited or insufficient."
+      ],
+      "invokes_backend": true,
+      "evidence": "illustrative",
+      "expected_kind": "demo",
+      "quick_action": "open_comparison",
+      "article": "comparison-guide",
+      "illustrative_notice": "Illustrative educational example. No real judgment, case number, quotation or citation is invented, and no side is declared the winner."
+    },
+    {
+      "id": "ex-e-outcome-analysis",
+      "category": "outcome_analysis",
+      "title": "How an outcome estimate would work",
+      "prompt": "How would VIDHIVEDA estimate a possible case outcome?",
+      "learning_objective": "Learn why the prediction capability is honestly unavailable, and how it would have to be built and validated.",
+      "expected": [
+        "Checks the live model status rather than assuming one state, because the trained artifact is not committed and environments differ.",
+        "If no artifact is present: states that no prediction is produced and quotes the reason the API gives.",
+        "If an experimental classifier is loaded: reports its version, calibration and the recorded held-out metrics, and explains why a very small test partition makes it experimental.",
+        "Distinguishes the supervised classifier (which produces the label and calibrated probability) from the LLM (which only explains retrieved authorities in prose).",
+        "Explains the validation a prediction would need: pre-judgment features to avoid verdict leakage, a temporal split, calibration, and accuracy reported on unseen data.",
+        "Clarifies that the system supports legal research and does not make judicial decisions."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_status",
+      "article": "outcome-estimate",
+      "notes": "Demonstrates honest disclosure: the answer reports the live capability state — including the experimental caveat — instead of inventing or overstating a prediction."
+    },
+    {
+      "id": "ex-f-troubleshooting-search",
+      "category": "troubleshooting",
+      "title": "Legal search returned no results",
+      "prompt": "The legal search returned no results. What should I do?",
+      "learning_objective": "Practise a structured troubleshooting flow: meaning, causes, safe steps, whether retrying helps, and when to escalate.",
+      "expected": [
+        "Explains what 'no results' means: retrieval ran and nothing matched closely enough with the current filters.",
+        "Lists likely causes, including a narrow Court or Year filter and a topic outside the 100-document corpus.",
+        "Suggests refining the query, clearing filters, and trying the legal principle or the statutory provision instead of the exact facts.",
+        "States whether retrying is appropriate: yes, with a changed query or cleared filters.",
+        "Says when to contact the administrator, and what to include."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "troubleshooting",
+      "quick_action": "open_research",
+      "article": "troubleshooting-overview"
+    },
+    {
+      "id": "ex-g-feature-status",
+      "category": "feature_status",
+      "title": "Which features are implemented",
+      "prompt": "Which features of VIDHIVEDA are currently implemented?",
+      "learning_objective": "Check the capability registry: what is implemented, what is partial or experimental, and what is deliberately unavailable.",
+      "expected": [
+        "Returns the real status registry, grouped by status label.",
+        "Distinguishes implemented (research, citations, reading view, comparison, knowledge bundle, settings, voice input, support assistant, examples, troubleshooting, status, feedback) from partial, experimental and not_available entries.",
+        "Names the deliberate gaps: outcome prediction, area-of-law filter, persistent conversation history, statute full text.",
+        "Never presents a planned or unavailable capability as working."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_status",
+      "article": "limitations",
+      "notes": "Answered from backend/support/features.json, the maintained capability registry."
+    },
+    {
+      "id": "ex-h-voice-input",
+      "category": "voice_input",
+      "title": "Using the microphone",
+      "prompt": "How can I use voice input to ask a question?",
+      "learning_objective": "Learn the dictation workflow, its browser requirements, and its privacy caveat.",
+      "expected": [
+        "Points at the microphone button inside the research search bar and explains the listening state.",
+        "Explains that browser microphone permission is required and that the page must be served over https or localhost.",
+        "Explains that the transcript fills the same input for review and is never auto-submitted, and that typed input always remains available.",
+        "States plainly that the feature is unavailable in browsers without the Web Speech API.",
+        "Notes that browser speech recognition may use the browser vendor's cloud service."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_research",
+      "article": "voice-input"
+    },
+    {
+      "id": "ex-i-theme-settings",
+      "category": "theme_settings",
+      "title": "Dark mode and light mode",
+      "prompt": "How do I switch between dark mode and light mode?",
+      "learning_objective": "Find the appearance controls and understand that the reader has its own independent theme.",
+      "expected": [
+        "Points to Settings, then Appearance & personalization.",
+        "Names the three interface modes: Light, Dark and System default.",
+        "Mentions the palette gallery and the custom three-colour palette, which restyle the interface through theme tokens.",
+        "Notes the reading view has its own light/sepia/dark theme controlled separately.",
+        "Discloses that a control which is not there is not implemented, instead of inventing one."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_settings",
+      "article": "appearance-and-theme"
+    },
+    {
+      "id": "ex-j-citation-support",
+      "category": "citation_explanation",
+      "title": "Is a response supported by a judgment?",
+      "prompt": "How do I know whether a response is supported by a judgment?",
+      "learning_objective": "Understand the difference between retrieved source material and generated summary, and how to verify a citation yourself.",
+      "expected": [
+        "Explains how to open a cited record in the reading view to read the stored passage.",
+        "Explains the direct verification path: GET /api/research/chunk/{chunk_id} returns the exact stored row.",
+        "Distinguishes retrieved source material from generated prose, and names the answer-source label that tells them apart.",
+        "States that a citation must be verified against the original document and that similarity is not correctness.",
+        "Explains that a verified citation does not by itself prove the passage supports the proposition."
+      ],
+      "invokes_backend": true,
+      "evidence": "verified",
+      "expected_kind": "knowledge_base",
+      "quick_action": "open_research",
+      "article": "citations-and-sources"
+    }
+  ]
+}

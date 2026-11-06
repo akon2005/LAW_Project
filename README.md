@@ -4,8 +4,8 @@
 
 | Environment / Resource | URL |
 |---|---|
-| Primary Repository | https://github.com/akon2005/VIDHIVEDA |
-| Backup Repository | https://github.com/akon2005/LAW_Project |
+| Primary Repository | https://github.com/akon2005/LAW_Project |
+| Backup Repository | https://github.com/akon2005/VIDHIVEDA |
 | Frontend (Vercel, production) | https://frontend-akon2005s-projects.vercel.app |
 | Backend API (Render, production) | https://vidhiveda-backend.onrender.com |
 | API documentation (Swagger) | https://vidhiveda-backend.onrender.com/docs |
@@ -79,7 +79,7 @@ VIDHIVEDA uses a decoupled, high-performance production architecture:
 
 Production deploys are automated via GitHub Actions:
 1. **Frontend:** Push to `main` touching `frontend/**` or `vercel.json` triggers `.github/workflows/deploy-frontend.yml`. Verifies the build, pulls Vercel settings, builds the production bundle with `VITE_API_BASE`, and deploys via Vercel CLI.
-2. **Backend:** Push to `main` touching `backend/**` or `render.yaml` triggers `.github/workflows/deploy-backend.yml`. Runs all 118 unit tests, triggers the Render deploy hook via `RENDER_DEPLOY_HOOK_URL`, and polls `/health` until the new revision is live.
+2. **Backend:** Push to `main` touching `backend/**` or `render.yaml` triggers `.github/workflows/deploy-backend.yml`. Runs all 217 unit tests, triggers the Render deploy hook via `RENDER_DEPLOY_HOOK_URL`, and polls `/health` until the new revision is live.
 3. **Corpus Ingestion:** Controlled manually via `.github/workflows/ingest.yml`. Guarded to prevent accidental re-indexing.
 
 
@@ -298,12 +298,23 @@ checkpoint after every batch (`data/checkpoints/`) and a persistent status file
 and `versions`. Query understanding normalizes IPC/BNS section references and the
 section filter is applied to retrieval.
 
-### Outcome prediction: currently unavailable (by design)
+### Outcome prediction: trained on a curated, pre-judgment dataset
 
-The active corpus has **no outcome/label field**, and its text is judgment text,
-so training an outcome model on it would leak the verdict into the features.
-The system therefore reports `prediction.available = false` with a reason rather
-than inventing a classifier. See [docs/model.md](docs/model.md).
+The active RAG corpus has **no outcome/label field**, and its text is judgment
+text, so training on it would leak the verdict into the features — it is never
+used for training. The shipped classifier is instead trained on the curated local
+dataset `backend/data/dataset/cases.json`: 152 records, of which 102 carry both a
+pre-judgment `facts` field (the only features) and a normalized `outcome` label;
+the remaining 50 are excluded as `unmapped`. The artifact is committed at
+`backend/data/models/outcome/`, so `prediction.available = true` and
+`GET /api/model/status` reports its version, calibration and held-out metrics.
+
+Read the metrics in full before trusting a prediction: the held-out test split is
+15 convicted against 1 acquitted, so its 93.75% accuracy is carried by the
+majority class and the macro F1 is 0.48. A prediction is supporting signal, not a
+verdict — the API returns the calibrated probability and a `low_confidence` flag,
+and still abstains when the retrieved evidence is insufficient. See
+[docs/model.md](docs/model.md).
 
 ### Documentation
 
@@ -356,3 +367,78 @@ than guessed.
 OKF concepts, but original retrieved chunks remain authoritative — OKF summaries
 are never injected into the generation prompt in place of source evidence.
 See [docs/okf-implementation.md](docs/okf-implementation.md).
+
+---
+
+## 11. Two-scenario comparison and voice search
+
+### Two-scenario comparison — `POST /api/comparison`
+
+Compare two competing accounts of one dispute. This is **evidence-based argument
+analysis**, not a binary "A is right / B is wrong" classifier:
+
+1. one retrieval pass per account over the same ChromaDB corpus;
+2. retrieved chunks are grouped by source document, so several chunks of one
+   judgment are never counted as several precedents (`matched_chunks` records
+   how many chunks of a document matched);
+3. each precedent is placed next to the account its text is topically closest to
+   (with a required margin, otherwise it is reported `neutral`) — that account
+   gets it as *supporting* evidence, the other sees the same judgment as
+   *contrary* evidence;
+4. strengths / weaknesses / missing evidence are derived only from what was (or
+   was not) retrieved;
+5. every citation carries the stored chunk id and can be verified with
+   `GET /api/research/chunk/{chunk_id}`.
+
+```bash
+curl -s -X POST http://127.0.0.1:8000/api/comparison \
+  -H "Content-Type: application/json" \
+  -d '{
+    "legal_issue": "Whether the accused acted in private defence under IPC Section 302",
+    "provisions": ["IPC Section 302"],
+    "scenario_a": {"label": "Prosecution", "position": "The accused attacked first with intent to kill."},
+    "scenario_b": {"label": "Defence", "position": "The deceased attacked first; minimum force was used."}
+  }'
+```
+
+The response carries `case_summary`, `legal_issues`, `applicable_law`,
+`scenario_a`/`scenario_b` (supporting + contrary precedents, strengths,
+weaknesses, missing evidence), `evidence_comparison`, `evidence_quality`
+(`SUFFICIENT_EVIDENCE_FOR_ANALYSIS` / `LIMITED_EVIDENCE` / `INSUFFICIENT_EVIDENCE`),
+`outcome_prediction`, `citations`, `limitations` and `disclaimer`.
+
+**Outcome prediction** is reported separately from evidence quality: a calibrated
+probability, its `low_confidence` flag and the model version (see §9 and
+[docs/model.md](docs/model.md)), not a winner. Retrieval similarity is reported as
+similarity, never as a probability. When the retrieved evidence is insufficient
+the system abstains and explains what additional sources or facts would help — it
+does not pick a winner.
+
+### Voice search (browser speech-to-text)
+
+The microphone button sits inside the existing search bar. Recognized speech is
+written into the **same** input for the user to review and edit; it is never
+auto-submitted. Typed search keeps working when the browser has no Web Speech
+API.
+
+| File | Role |
+|---|---|
+| `src/utils/speech.js` | pure helpers: feature detection (`SpeechRecognition`/`webkitSpeechRecognition`), interim/final transcript extraction, input merge, error mapping |
+| `src/utils/useSpeechRecognition.js` | React hook: start/stop, listening state, interim transcript, error handling, cleanup (detaches handlers + aborts on unmount) |
+| `scripts/verify-speech.js` | `npm run verify:speech` — Node checks for the helpers |
+
+Handled states: permission denied, no microphone, no speech, network error,
+unsupported browser, and start failure. Language defaults to English (India)
+(`en-IN`), selectable in the Filters panel. Note that browser speech recognition
+may use the vendor's cloud service — it is not guaranteed to be local or private.
+
+### Dataset audit for supervised outcome prediction
+
+The active corpus (`dedol-hf/india-case-legal-rag`, 9,375 chunks from 100
+Supreme Court judgments) stores no outcome/label field, and its text is judgment
+text — training on it would leak the verdict into the features, so it trains
+nothing. The supervised outcome classifier that ships in this repository is
+trained from `backend/data/dataset/cases.json` instead (102 usable records: 80
+convictions, 22 acquittals, 50 unmapped and excluded). Its recorded metrics are
+quoted in full in `backend/data/models/outcome/metadata.json` — accuracy 0.9375
+against a macro F1 of 0.4839 on a 15:1 held-out class split.
