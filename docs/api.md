@@ -55,6 +55,90 @@ Response (abridged):
 `confidence` is **retrieval** similarity; `prediction.confidence` is a **model**
 probability. They are never the same number.
 
+## Comparison
+
+### `POST /api/comparison`
+
+Evidence-based comparison of two competing accounts of one dispute (or a single
+account when `scenario_b` is omitted). Retrieval runs once per scenario over the
+same indexed corpus; precedents are grouped per source document and every
+citation carries a stored chunk id. The endpoint returns argument analysis and an
+explicit evidence-quality status — never a verdict — and reports an outcome
+estimate only when a trained, evaluated classifier is loaded.
+
+Request:
+
+```json
+{
+  "legal_issue": "Whether the termination was lawful",
+  "case_facts": "optional shared facts",
+  "provisions": ["Industrial Disputes Act, 1947 s. 25F"],
+  "scenario_a": { "label": "Employer", "position": "The contract permitted termination without notice." },
+  "scenario_b": { "label": "Employee", "position": "No notice was given and natural justice applied." },
+  "court": null,
+  "year_from": null,
+  "year_to": null,
+  "top_k": 8
+}
+```
+
+Response (abridged):
+
+```json
+{
+  "status": "ok",
+  "mode": "comparison | single_scenario",
+  "legal_issue": "...",
+  "case_summary": "...",
+  "legal_issues": [ ... ],
+  "applicable_law": [ ... ],
+  "scenario_a": {
+    "label": "Employer",
+    "position": "...",
+    "supporting_precedents": [ ... ],
+    "contrary_precedents": [ ... ],
+    "strengths": [ ... ],
+    "weaknesses": [ ... ],
+    "missing_evidence": [ ... ],
+    "supporting_count": 4,
+    "contrary_count": 1,
+    "best_alignment_similarity": 0.71,
+    "provisions": [ ... ]
+  },
+  "scenario_b": { ... },
+  "comparative_analysis": { ... },
+  "evidence_comparison": [ ... ],
+  "evidence_quality": {
+    "status": "SUFFICIENT_EVIDENCE_FOR_ANALYSIS",
+    "best_similarity": 0.71,
+    "reasons": [ ... ],
+    "precedent_count": 12
+  },
+  "outcome_prediction": {
+    "available": true,
+    "status": "EXPERIMENTAL_PREDICTION",
+    "target": "historical_disposition_class",
+    "predicted_class": "...",
+    "calibrated_probability": 0.62,
+    "model_version": "...",
+    "per_scenario": { ... }
+  },
+  "precedents": [ ... ],
+  "citations": [ ... ],
+  "retrieval": { ... },
+  "limitations": [ ... ],
+  "disclaimer": "..."
+}
+```
+
+`evidence_quality.status` is one of `SUFFICIENT_EVIDENCE_FOR_ANALYSIS`,
+`LIMITED_EVIDENCE`, `INSUFFICIENT_EVIDENCE`. `outcome_prediction.available` is
+`false` with a `reason` when no trained classifier is loaded or the evidence is
+insufficient; `calibrated_probability` is a model estimate, never a retrieval
+similarity.
+
+`503` — the vector store is empty or unavailable, or retrieval failed.
+
 ## Pipeline stages
 
 | Method | Path | Purpose |

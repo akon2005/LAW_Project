@@ -33,13 +33,18 @@ through the **Ingest Legal Corpus** workflow.
 
 | Workflow | Trigger | What it does |
 |---|---|---|
-| `ci.yml` | every PR + every push to `main` | Backend test suite (118 tests, includes retrieval/RAG unit tests) and frontend production build. No deploy. |
+| `ci.yml` | every PR + every push to `main` | Backend test suite (217 tests, includes retrieval/RAG unit tests) and frontend production build. No deploy. |
 | `deploy-frontend.yml` | push to `main` touching `frontend/**` or `vercel.json`; or manual | Builds and deploys the frontend to **Vercel production** with the official Vercel CLI. |
 | `deploy-backend.yml` | push to `main` touching `backend/**`, `api/**`, or `render.yaml`; or manual | Runs backend tests, then triggers the **Render deploy hook**, then polls `/health` until the new revision is live. |
 | `ingest.yml` | manual only (`workflow_dispatch`) | The **only** path that re-embeds the dataset. Commits the refreshed store, which re-triggers `deploy-backend`. |
 
 Documentation-only and data-file-only changes match no deploy path, so they land
 on GitHub without redeploying the app.
+
+The `verify` job only polls `/health`, which proves the service is up but not
+which revision is running — an older image answers `/health` too. After a
+release, confirm the routes it added against the live `openapi.json` (for
+example `POST /api/comparison`).
 
 ### Deployment triggers, mapped to the requirement
 
